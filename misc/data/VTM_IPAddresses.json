@@ -1,0 +1,57 @@
+{
+	"lydserver" : 	{
+		"hostname" : "1.2.3.57",
+		"port" : 57120
+	}
+,
+	"flaate" : 	{
+		"hostname" : "1.2.3.75",
+		"port" : 57120
+}
+,
+	"aaa" : 	{
+		"hostname" : "1.2.3.114",
+		"port" : 50000
+	}
+,
+	"bbb" : 	{
+		"hostname" : "1.2.3.111",
+		"port" : 50000
+	}
+,
+	"ccc" : 	{
+		"hostname" : "1.2.3.133",
+		"port" : 50000
+	}
+,
+	"video" : 	{
+		"hostname" : "1.2.3.44",
+		"port" : 1234
+	}
+,
+	"mekanikk" : 	{
+		"hostname" : "1.2.3.150",
+		"port" : 57120
+	}
+,
+	"roof" : 	{
+		"hostname" : "1.2.3.54",
+		"port" : 57120
+	}
+,
+	"martin" : 	{
+		"hostname" : "1.2.3.90",
+		"port" : 57120
+	}
+,
+	"elisabeth" : 	{
+		"hostname" : "1.2.3.91",
+		"port" : 57120
+	}
+,
+	"ali" : 	{
+		"hostname" : "1.2.3.92",
+		"port" : 57120
+	}
+
+}

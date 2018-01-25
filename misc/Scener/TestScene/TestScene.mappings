@@ -1,0 +1,11 @@
+myInt, fader.1;
+myInt2, rotary.8;
+hei, fader.2;
+myBoolean2, toggle 1/C;
+myMessage, momentary 2/A;
+myMessage2, momentary 3/A burn 3/B freeze 3/C pingous;
+myMessage3, momentary 4/A kjipingenre;
+myString, radio 5/C bing 6/C bong 7/C IAMString;
+myIntLol, fader.5;
+pingu, fader.7;
+

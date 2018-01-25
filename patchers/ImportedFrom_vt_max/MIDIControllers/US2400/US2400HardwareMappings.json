@@ -1,0 +1,12 @@
+{
+	"input": {
+		"fader": "fader",
+		"encoder": "deltaRotary",
+		"button": "button"
+	},
+	"output": {
+		"fader": "fader_motor",
+		"rotary": "encoder_ring",
+		"button": "button_LED"
+	}
+}

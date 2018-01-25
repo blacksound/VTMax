@@ -1,0 +1,100 @@
+- cue "default"
+- description "something about this cue"
+# ###########################################
+# 
+/TestScene/hei 3.189184
+/TestScene/klasse 30
+/TestScene/myBoolean 0
+/TestScene/myBoolean2 0
+/TestScene/myInt -20
+/TestScene/myInt2 60
+/TestScene/myIntLol 20
+/TestScene/myString Runger
+/TestScene/pingu 30
+# 
+/TestScene/spat.1/db -96.000000
+# 
+/TestScene/spat.1/params/lfoAmount 0.311670
+/TestScene/spat.1/params/lfoSpeed 0.471130
+/TestScene/spat.1/params/lfoType ramp
+/TestScene/spat.1/params/pan 0.043733
+/TestScene/spat.1/params/spread 0.442137
+/TestScene/spat.1/params/width 0.362407
+# 
+# ###########################################
+
+- cue "baiuhg"
+- description "something about this cue"
+# ###########################################
+# 
+/TestScene/hei 6.600000
+/TestScene/klasse 30
+/TestScene/myBoolean 1
+/TestScene/myBoolean2 1
+/TestScene/myInt 33
+/TestScene/myInt2 60
+/TestScene/myIntLol 20
+/TestScene/myString IAMString
+/TestScene/pingu 30
+# 
+/TestScene/spat.1/db -19.111663
+# 
+/TestScene/spat.1/params/lfoAmount 0.724815
+/TestScene/spat.1/params/lfoSpeed 0.724815
+/TestScene/spat.1/params/lfoType sine
+/TestScene/spat.1/params/pan -0.594104
+/TestScene/spat.1/params/spread 0.123218
+/TestScene/spat.1/params/width 0.065233
+# 
+# ###########################################
+
+- cue "splayCue"
+- description "something about this cue"
+# ###########################################
+# 
+/TestScene/hei 0.000000
+/TestScene/klasse 30
+/TestScene/myBoolean 1
+/TestScene/myBoolean2 1
+/TestScene/myInt 60
+/TestScene/myInt2 60
+/TestScene/myIntLol 20
+/TestScene/myString IAMString
+/TestScene/pingu 30
+# 
+/TestScene/spat.1/db 6.024908
+# 
+/TestScene/spat.1/params/lfoAmount 1.000000
+/TestScene/spat.1/params/lfoSpeed 1.000244
+/TestScene/spat.1/params/lfoType rand
+/TestScene/spat.1/params/pan 1.000488
+/TestScene/spat.1/params/spread 1.000244
+/TestScene/spat.1/params/width 1.000244
+# 
+# ###########################################
+
+- cue "splayCue2"
+- description "something about this cue"
+# ###########################################
+# 
+/TestScene/hei 0.000000
+/TestScene/klasse 30
+/TestScene/myBoolean 1
+/TestScene/myBoolean2 1
+/TestScene/myInt 60
+/TestScene/myInt2 60
+/TestScene/myIntLol 20
+/TestScene/myString IAMString
+/TestScene/pingu 30
+# 
+/TestScene/spat.1/db -96.000000
+/TestScene/spat.1/method splay
+# 
+/TestScene/spat.1/params/lfoAmount 1.000000
+/TestScene/spat.1/params/lfoSpeed 0.999000
+/TestScene/spat.1/params/lfoType rand
+/TestScene/spat.1/params/spread 0.888000
+/TestScene/spat.1/params/width 0.777000
+# 
+# ###########################################
+
