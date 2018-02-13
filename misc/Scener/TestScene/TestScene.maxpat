@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, -1361.0, 647.0, 1266.0 ],
+		"rect" : [ 286.0, 79.0, 647.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,7 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"annotation" : "none",
-					"args" : [ "spat.1" ],
+					"args" : [ "/TestScene/spat.1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -53,7 +53,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 378.0, 158.0, 150.0, 560.0 ],
+					"patching_rect" : [ 389.0, 163.0, 150.0, 560.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 560.0 ],
 					"viewvisibility" : 1
 				}
@@ -618,7 +618,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 13.0, 9.0, 150.0, 735.0 ],
+					"patching_rect" : [ 5.0, 5.0, 150.0, 735.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 735.0 ],
 					"viewvisibility" : 1
 				}
@@ -663,6 +663,33 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "SceneCore.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
+				"patcherrelativepath" : "../../../patchers/SceneCore",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_cellblock.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../../patchers/ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "SceneCore.model.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
 				"patcherrelativepath" : "../../../patchers/SceneCore",
@@ -698,22 +725,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "GetAllParametersDict.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "../../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../../patchers/ImportedFrom_vt_max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -764,20 +778,6 @@
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SceneCore.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
-				"patcherrelativepath" : "../../../patchers/SceneCore",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTM_UI_cellblock.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../../patchers/Widgets",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -886,6 +886,26 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
@@ -906,35 +926,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.oscroute.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.init.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.cue.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.ui.mxo",
 				"type" : "iLaX"
 			}
  ],
