@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 61.0, 244.0, 797.0, 723.0 ],
+		"rect" : [ 685.0, 343.0, 1197.0, 700.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -115,9 +115,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 528.0, 62.0, 22.0 ],
+					"patching_rect" : [ 19.0, 528.0, 63.0, 22.0 ],
 					"style" : "",
-					"text" : "bbbSetup"
+					"text" : "bbb.setup"
 				}
 
 			}
