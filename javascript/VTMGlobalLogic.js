@@ -1,6 +1,7 @@
-var clientSetupCanvas = this.patcher.getnamed("clientSetupCanvas");
+
 
 function client( clientName ) {
+	var clientSetupCanvas = this.patcher.getnamed("clientSetupCanvas");
 	var pat = clientSetupCanvas.subpatcher();
 	var obj;
 	clearClientSetup();
@@ -12,6 +13,7 @@ function client( clientName ) {
 
 //like killing a fly with a cannon, behold:
 function clearClientSetup() {
+	var clientSetupCanvas = this.patcher.getnamed("clientSetupCanvas");
 	var pat = clientSetupCanvas.subpatcher();	
 	var obj = pat.firstobject;
 	var nextObj;

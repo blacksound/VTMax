@@ -88,7 +88,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 189.0, 335.0, 37.0, 22.0 ],
-									"presentation_rect" : [ 196.0, 152.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "test2"
 								}
@@ -1144,75 +1143,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bbb.setup.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/ClientSetups",
-				"patcherrelativepath" : "../../misc/ClientSetups",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400Slot.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400ButtonSet.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400ParseFaderValue.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400ParseEncoderValue.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTMEncoderToRotaryMapping.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
-				"patcherrelativepath" : "../../patchers/Control",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400SlotPageAssignScript.js",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "VTMGlobalLogic.js",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",
@@ -1248,6 +1178,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "j.view.mxo",
 				"type" : "iLaX"
 			}
@@ -1280,19 +1216,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.message_array.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.oscroute.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
 				"type" : "iLaX"
 			}
  ],

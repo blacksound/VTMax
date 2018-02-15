@@ -86,7 +86,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 448.0, 117.0, 22.0 ],
+					"patching_rect" : [ 653.5, 37.0, 117.0, 22.0 ],
 					"style" : "",
 					"text" : "NakedScriptCanvas",
 					"varname" : "clientSetupCanvas"
