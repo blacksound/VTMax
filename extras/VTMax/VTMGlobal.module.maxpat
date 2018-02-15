@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -49,11 +49,11 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 291.0, 79.0, 613.0, 783.0 ],
+						"rect" : [ 354.0, 79.0, 613.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -80,16 +80,41 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 189.0, 335.0, 37.0, 22.0 ],
+									"presentation_rect" : [ 196.0, 152.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "test2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 62.0, 340.0, 37.0, 22.0 ],
+									"style" : "",
+									"text" : "test2"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-16",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 215.0, 193.0, 67.0, 22.0 ],
-									"presentation_rect" : [ 215.0, 193.0, 0.0, 0.0 ],
+									"patching_rect" : [ 208.0, 376.0, 67.0, 22.0 ],
 									"style" : "",
 									"text" : "TestScene"
 								}
@@ -102,7 +127,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 211.5, 224.0, 120.0, 22.0 ],
+									"patching_rect" : [ 204.5, 407.0, 120.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend closeScene"
 								}
@@ -115,8 +140,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 82.5, 193.0, 67.0, 22.0 ],
-									"presentation_rect" : [ 320.0, 205.0, 0.0, 0.0 ],
+									"patching_rect" : [ 75.5, 376.0, 67.0, 22.0 ],
 									"style" : "",
 									"text" : "TestScene"
 								}
@@ -154,8 +178,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 79.0, 224.0, 119.0, 22.0 ],
-									"presentation_rect" : [ 459.0, 82.0, 0.0, 0.0 ],
+									"patching_rect" : [ 72.0, 407.0, 119.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend openScene"
 								}
@@ -181,7 +204,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 461.5, 192.0, 67.0, 22.0 ],
+									"patching_rect" : [ 454.5, 375.0, 67.0, 22.0 ],
 									"style" : "",
 									"text" : "TestScene"
 								}
@@ -194,7 +217,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 461.5, 224.0, 110.0, 22.0 ],
+									"patching_rect" : [ 454.5, 407.0, 110.0, 22.0 ],
 									"style" : "",
 									"text" : "hideSceneView $1"
 								}
@@ -207,7 +230,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 338.5, 196.0, 67.0, 22.0 ],
+									"patching_rect" : [ 331.5, 379.0, 67.0, 22.0 ],
 									"style" : "",
 									"text" : "TestScene"
 								}
@@ -220,7 +243,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 338.5, 224.0, 115.0, 22.0 ],
+									"patching_rect" : [ 331.5, 407.0, 115.0, 22.0 ],
 									"style" : "",
 									"text" : "showSceneView $1"
 								}
@@ -353,7 +376,7 @@
 											"major" : 7,
 											"minor" : 3,
 											"revision" : 4,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -673,6 +696,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-71", 0 ],
 									"source" : [ "obj-79", 0 ]
 								}
@@ -722,7 +759,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 562.0, 160.0, 29.0 ],
 					"style" : "",
-					"text" : "pageA/fader.2 0.",
+					"text" : "pageB/fader.3 0.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -741,11 +778,11 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 2179.0, 153.0, 576.0, 502.0 ],
+						"rect" : [ 979.0, 79.0, 576.0, 502.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1027,18 +1064,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 499.0, 102.0, 22.0 ],
-					"style" : "",
-					"text" : "print globalmodel"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"annotation" : "none",
 					"id" : "obj-4",
 					"maxclass" : "newobj",
@@ -1112,6 +1137,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "NakedScriptCanvas.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "bbb.setup.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/ClientSetups",
 				"patcherrelativepath" : "../../misc/ClientSetups",
@@ -1167,9 +1199,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "NakedScriptCanvas.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
+				"name" : "VTMEncoderToRotaryMapping.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1177,6 +1209,13 @@
 				"name" : "US2400SlotPageAssignScript.js",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
 				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMGlobalLogic.js",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

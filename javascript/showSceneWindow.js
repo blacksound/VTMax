@@ -1,6 +1,7 @@
 function bang()
 {
-	var scenePatcher;
-	scenePatcher = this.patcher.parentpatcher.parentpatcher;
-	scenePatcher.wind.bringtofront();
+	var viewCanvas;
+	viewCanvas = this.patcher.parentpatcher.parentpatcher;
+	viewCanvas = viewCanvas.getnamed("viewCanvas");
+	viewCanvas.wind.bringtofront();
 }
