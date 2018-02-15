@@ -1,14 +1,17 @@
 
 
 var scenes = new Dict("scenes");
-var scriptCanvas = this.patcher.getnamed("scriptCanvas");
-var scriptCanvasPatcher = scriptCanvas.subpatcher();
+
+var coreCanvas = this.patcher.getnamed("coreCanvas");
+var coreCanvasPatcher = coreCanvas.subpatcher();
+
+var viewCanvas = this.patcher.getnamed("viewCanvas");
+var viewCanvasPatcher = viewCanvas.subpatcher();
 
 function sceneExists(sceneName) {
 	var result = false;
 	var names = scenes.getkeys();
 	for(i = 0; i < names.length; i = i + 1) {
-		post("checking: " + names[i]); post();
 		if(names[i] == sceneName) {
 			result = true;
 			break;
@@ -53,10 +56,21 @@ function openScene(sceneName) {
 		if(sceneIsOpen(sceneName)) {
 			post("Scene already open: " + sceneName); post();
 		} else {
-			post("Scene not open yet: " + sceneName); post();
 			makeSceneCore( sceneName );
 			makeSceneView( sceneName );
+			showSceneView( sceneName );
 		}
+	} else {
+		post("scene does not exist: " + sceneName); post();
+	}
+}
+
+function closeScene( sceneName ) {
+	// does the scene exist?
+	if(sceneExists(sceneName)) {
+		deleteSceneCore( sceneName );
+		hideSceneView( sceneName );
+		deleteSceneView( sceneName );
 	} else {
 		post("scene does not exist: " + sceneName); post();
 	}
@@ -64,7 +78,7 @@ function openScene(sceneName) {
 
 function sceneCoreExists(sceneName) {
 	var result = false;
-	var obj = scriptCanvasPatcher.firstobject;
+	var obj = coreCanvasPatcher.firstobject;
 	while(obj != null) {
 		if(obj.varname == sceneName) {
 			result = true;
@@ -75,11 +89,25 @@ function sceneCoreExists(sceneName) {
 	return result;
 }
 
+function sceneViewExists(sceneName) {
+	var result = false;
+	var obj = viewCanvasPatcher.firstobject;
+	while(obj != null) {
+		if(obj.varname == sceneName) {
+			result = true;
+			break;
+		}
+		obj = obj.nextobject;
+	}
+	return result;
+}
+
+
 //if the core already exists it does nothing
 function makeSceneCore( sceneName ) {
 	var newobj;
 	if(!sceneCoreExists( sceneName ) ) {
-		newobj = scriptCanvasPatcher.newdefault(
+		newobj = coreCanvasPatcher.newdefault(
 			0, 0,
 			"SceneCore.model",
 			sceneName
@@ -92,39 +120,51 @@ function makeSceneCore( sceneName ) {
 
 function deleteSceneCore( sceneName ) {
 	if(sceneCoreExists( sceneName ) ) {
-		scriptCanvasPatcher.remove(
-			scriptCanvasPatcher.getnamed(sceneName)
+		coreCanvasPatcher.remove(
+			coreCanvasPatcher.getnamed(sceneName)
 		);
 	}
 }
 
 function makeSceneView( sceneName ) {
-	var pat, obj;
-	pat = this.patcher.getnamed("viewCanvas").subpatcher();
-	obj = pat.newdefault(
-		0, 0,
-		"SceneCore.view",
-		sceneName
-	);
-	obj.varname = sceneName;
+	var obj;
+	obj = viewCanvasPatcher.getnamed( sceneName );
+	//check if the scene view already exists
+	if(!sceneViewExists( sceneName )) {
+		obj = viewCanvasPatcher.newdefault(
+			0, 0,
+			sceneName
+		);
+		obj.varname = sceneName;	
+	}
 }
 
 function deleteSceneView( sceneName ) {
-	var pat, obj;
-	pat = this.patcher.getnamed("viewCanvas").subpatcher();
-	pat.remove(
-		pat.getnamed( sceneName )
+	var obj;
+	obj = viewCanvasPatcher.getnamed( sceneName );
+	viewCanvasPatcher.remove(
+		viewCanvasPatcher.getnamed( sceneName )
 	);
 }
 
 function showSceneView( sceneName ) {
-	var pat, obj;
-	pat = this.patcher.getnamed("viewCanvas").subpatcher();
-	obj = pat.getnamed( sceneName );
+	var obj;
+	obj = viewCanvasPatcher.getnamed( sceneName );
 	if(obj != null) {
-		obj.bringtofront();
+		obj = obj.subpatcher();
+		obj.front();
 	} else {
 		post("no scene view: " + sceneName + "\n");
-	}
-	
+	}	
+}
+
+function hideSceneView( sceneName ) {
+	var obj;
+	obj = viewCanvasPatcher.getnamed( sceneName );
+	if(obj != null) {
+		obj = obj.subpatcher();
+		obj.wclose();
+	} else {
+		post("no scene view: " + sceneName + "\n");
+	}	
 }
