@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 184.0, 783.0 ],
+		"rect" : [ 34.0, 79.0, 185.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 354.0, 79.0, 613.0, 783.0 ],
+						"rect" : [ 452.0, 79.0, 613.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -81,6 +81,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 349.0, 529.0, 95.0, 22.0 ],
+									"style" : "",
+									"text" : "newScene hallo"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "message",
@@ -588,7 +601,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 829.0, 133.0, 135.0, 22.0 ],
+									"patching_rect" : [ 665.0, 145.0, 135.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -737,6 +750,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -1148,6 +1168,19 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "deleteAllPatchers.js",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/VTMGlobal",
 				"patcherrelativepath" : "../../patchers/VTMGlobal",
@@ -1225,61 +1258,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "test2.core.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/test2",
-				"patcherrelativepath" : "../../misc/Scener/test2",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTMTestModule.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMTestModule",
-				"patcherrelativepath" : "../../patchers/Modules/VTMTestModule",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "PassNonEmptySymbol.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ScriptCanvas.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MappingScripter.js",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
-				"patcherrelativepath" : "../../patchers/Control",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "test2.mappings",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/test2",
-				"patcherrelativepath" : "../../misc/Scener/test2",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "TestScene.core.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
 				"patcherrelativepath" : "../../misc/Scener/TestScene",
@@ -1329,6 +1307,27 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "PassNonEmptySymbol.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ScriptCanvas.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MappingScripter.js",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "TestScene.mappings",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
 				"patcherrelativepath" : "../../misc/Scener/TestScene",
@@ -1336,9 +1335,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "test2.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/test2",
-				"patcherrelativepath" : "../../misc/Scener/test2",
+				"name" : "TestScene.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1367,13 +1366,6 @@
 				"name" : "VTM_UI_slider.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../patchers/Widgets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "TestScene.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
-				"patcherrelativepath" : "../../misc/Scener/TestScene",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1488,10 +1480,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.model.mxo",
 				"type" : "iLaX"
 			}
@@ -1512,15 +1500,11 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "j.return_array.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.init.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.cue.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1529,6 +1513,14 @@
 			}
 , 			{
 				"name" : "j.oscroute.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.cue.mxo",
 				"type" : "iLaX"
 			}
 , 			{

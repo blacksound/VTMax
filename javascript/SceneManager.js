@@ -1,5 +1,4 @@
 
-
 var scenes = new Dict("scenes");
 
 var coreCanvas = this.patcher.getnamed("coreCanvas");
@@ -18,6 +17,11 @@ function sceneExists(sceneName) {
 		}		
 	};
 	return result;
+}
+
+function newScene( sceneName ) {
+	var g = new Global("vt_max");
+	post(g.scenesFolder); post();
 }
 
 //assumes the the scene exists
