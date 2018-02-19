@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1980.0, 79.0, 1181.0, 787.0 ],
+		"rect" : [ 239.0, 79.0, 768.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -52,7 +52,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 850.0, 176.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 268.0, 153.0, 330.0 ],
+					"presentation_rect" : [ 1.0, 268.0, 153.0, 315.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -190,6 +190,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 54.5, 214.0, 99.5, 29.0 ],
 					"style" : "",
+					"text" : "50000",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -439,6 +440,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 54.5, 190.0, 99.5, 29.0 ],
 					"style" : "",
+					"text" : "1.2.3.133",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -482,6 +484,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 138.0, 153.0, 49.0 ],
 					"style" : "",
+					"text" : "ccc",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -589,7 +592,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -602,7 +605,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -824,35 +827,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "VTMSceneStateList.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMMax/patchers/VTMGlobal",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "deleteAllPatchers.js",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMMax/patchers/VTMGlobal",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
