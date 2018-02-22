@@ -190,7 +190,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 54.5, 214.0, 99.5, 29.0 ],
 					"style" : "",
-					"text" : "50000",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -440,7 +439,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 54.5, 190.0, 99.5, 29.0 ],
 					"style" : "",
-					"text" : "1.2.3.133",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -484,7 +482,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 138.0, 153.0, 49.0 ],
 					"style" : "",
-					"text" : "ccc",
+					"text" : "<none>",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

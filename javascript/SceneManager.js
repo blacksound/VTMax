@@ -1,3 +1,10 @@
+var g = new Global("vt_max");
+var scenesPath;
+outlets = 2;
+
+
+var shellMessageOutlet = 0;
+var scenesFoundOutlet = 1;
 
 var scenes = new Dict("scenes");
 
@@ -6,6 +13,28 @@ var coreCanvasPatcher = coreCanvas.subpatcher();
 
 var viewCanvas = this.patcher.getnamed("viewCanvas");
 var viewCanvasPatcher = viewCanvas.subpatcher();
+
+function findScenes(path) {
+	var scenesDict = new Dict("scenes");
+	var sceneFolder;
+	scenesPath = path;
+	sceneFolder = new Folder(scenesPath);	
+	sceneFolder.typelist = ["folder"];
+	
+	sceneFolder.next();
+	while(!sceneFolder.end) {
+		if(sceneFolder.filename != "_template") {
+			outlet(scenesFoundOutlet, sceneFolder.filename);
+			scenesDict.setparse(
+				sceneFolder.filename, 
+				'{"open": 0, "mapped": 0, "active": 0}'
+			);
+		}
+		sceneFolder.next();
+	}
+	messnamed("scenesFound", "bang");
+	
+}
 
 function sceneExists(sceneName) {
 	var result = false;
@@ -19,10 +48,19 @@ function sceneExists(sceneName) {
 	return result;
 }
 
-function newScene( sceneName ) {
-	var g = new Global("vt_max");
-	post(g.scenesFolder); post();
+function escapeSpaces( str ) {
+	var splitStr = str.split(" ");
+	var newStr = splitStr.join("\\\\ ");
+	return newStr;
 }
+
+function newScene( scriptFolder, sceneName ) {
+	//I hate Max.
+	outlet(0, "cd " + escapeSpaces(scriptFolder) + "\\; ./makeNewScene " + escapeSpaces(sceneName));
+	findScenes( scenesPath );
+	//I hate Max.
+}
+
 
 //assumes the the scene exists
 //return false if not.
