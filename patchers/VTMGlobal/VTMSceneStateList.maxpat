@@ -39,13 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 280.0, 123.0, 43.0, 22.0 ],
+					"style" : "",
+					"text" : "zl.sort"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 167.0, 655.0, 156.0, 22.0 ],
-					"presentation_rect" : [ 167.0, 657.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "zl reg"
 				}
@@ -59,7 +71,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 214.0, 616.0, 109.0, 22.0 ],
-					"presentation_rect" : [ 214.0, 618.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "pvar scenemenu 2"
 				}
@@ -261,7 +272,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "<none>" ],
-					"patching_rect" : [ 296.5, 168.0, 58.0, 22.0 ],
+					"patching_rect" : [ 297.5, 187.0, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "t <none>"
 				}
@@ -376,7 +387,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.0, 198.0, 98.0, 22.0 ],
+					"patching_rect" : [ 245.0, 217.0, 98.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend append"
 				}
@@ -389,7 +400,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.0, 168.0, 27.0, 22.0 ],
+					"patching_rect" : [ 245.0, 187.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "iter"
 				}
@@ -402,7 +413,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "clear" ],
-					"patching_rect" : [ 244.0, 138.0, 147.0, 22.0 ],
+					"patching_rect" : [ 245.0, 157.0, 147.0, 22.0 ],
 					"style" : "",
 					"text" : "t l b clear"
 				}
@@ -466,7 +477,7 @@
 					"fontface" : 1,
 					"fontsize" : 10.0,
 					"id" : "obj-4",
-					"items" : [ "<none>", ",", "test2", ",", "TestScene" ],
+					"items" : [ "<none>", ",", "Abab", ",", "Bangle", ",", "Feppert", ",", "Grunde", ",", "TestScene", ",", "currye", ",", "gangabeushi", ",", "heung hfhf jsjsf", ",", "hurtt", ",", "test2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1034,6 +1045,31 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "/gangabeushi" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-53",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTMSceneStatus.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 0.0, 62.0, 150.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 62.0, 150.0, 23.0 ],
+					"varname" : "/gangabeushi",
+					"viewvisibility" : 1
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1389,6 +1425,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -1471,7 +1514,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-100", 0 ],
+					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-94", 2 ]
 				}
 

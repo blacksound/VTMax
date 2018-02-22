@@ -18,6 +18,7 @@ function findScenes(path) {
 	var scenesDict = new Dict("scenes");
 	var sceneFolder;
 	scenesPath = path;
+	scenesDict.clear();
 	sceneFolder = new Folder(scenesPath);	
 	sceneFolder.typelist = ["folder"];
 	
