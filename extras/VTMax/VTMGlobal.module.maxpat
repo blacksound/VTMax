@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 46.0, 79.0, 179.0, 783.0 ],
+		"rect" : [ -439.0, -1361.0, 179.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 198.0, 79.0, 809.0, 783.0 ],
+						"rect" : [ -148.0, -1361.0, 809.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,32 +83,6 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-50",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 602.0, 177.0, 112.0, 22.0 ],
-									"style" : "",
-									"text" : "send scenesFound"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-49",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 346.25, 276.0, 139.0, 22.0 ],
-									"presentation_rect" : [ 348.0, 276.0, 0.0, 0.0 ],
-									"style" : "",
-									"text" : "newScene gangabeushi"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-48",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -124,7 +98,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -153,28 +127,27 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-9",
-													"linecount" : 2,
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 128.0, 446.0, 35.0 ],
+													"id" : "obj-2",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 54.0, 96.0, 30.0, 22.0 ],
 													"style" : "",
-													"text" : "\"cd /Users/eirikblekesaune/Documents/Max\\\\ 7/Packages/VTMax/misc/scripts; ./makeNewScene heung\\\\ hfhf\\\\ jsjsf\""
+													"text" : "t b l"
 												}
 
 											}
 , 											{
 												"box" : 												{
-													"id" : "obj-3",
+													"id" : "obj-1",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 50.0, 100.0, 30.0, 22.0 ],
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 54.0, 142.0, 102.0, 22.0 ],
 													"style" : "",
-													"text" : "t b l"
+													"text" : "NoSaveMessage"
 												}
 
 											}
@@ -187,7 +160,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+													"patching_rect" : [ 54.0, 40.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -208,29 +181,29 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
-													"destination" : [ "obj-9", 1 ],
-													"source" : [ "obj-3", 1 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-9", 0 ],
-													"source" : [ "obj-3", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
-													"source" : [ "obj-46", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-47", 0 ],
-													"source" : [ "obj-9", 0 ]
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-1", 1 ],
+													"source" : [ "obj-2", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-1", 0 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"source" : [ "obj-46", 0 ]
 												}
 
 											}
@@ -660,19 +633,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-42",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 204.0, 267.0, 94.0, 22.0 ],
-									"style" : "",
-									"text" : "newScene hurtt"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-15",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -712,169 +672,14 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 187.25, 400.0, 37.0, 22.0 ],
-									"style" : "",
-									"text" : "test2"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.25, 405.0, 37.0, 22.0 ],
-									"style" : "",
-									"text" : "test2"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-16",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 206.25, 441.0, 67.0, 22.0 ],
-									"style" : "",
-									"text" : "TestScene"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 202.75, 472.0, 120.0, 22.0 ],
-									"style" : "",
-									"text" : "prepend closeScene"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-13",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 73.75, 441.0, 67.0, 22.0 ],
-									"style" : "",
-									"text" : "TestScene"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-12",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 77.25, 556.0, 119.0, 22.0 ],
-									"style" : "",
-									"text" : "send sceneManager"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 77.25, 508.0, 31.0, 22.0 ],
-									"style" : "",
-									"text" : "thru"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.25, 472.0, 119.0, 22.0 ],
-									"style" : "",
-									"text" : "prepend openScene"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 471.25, 455.0, 158.0, 22.0 ],
+									"patching_rect" : [ 421.25, 257.0, 158.0, 22.0 ],
 									"style" : "",
 									"text" : "loadmess dictionary scenes"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 452.75, 440.0, 67.0, 22.0 ],
-									"style" : "",
-									"text" : "TestScene"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 452.75, 472.0, 110.0, 22.0 ],
-									"style" : "",
-									"text" : "hideSceneView $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 329.75, 444.0, 67.0, 22.0 ],
-									"style" : "",
-									"text" : "TestScene"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 329.75, 472.0, 115.0, 22.0 ],
-									"style" : "",
-									"text" : "showSceneView $1"
 								}
 
 							}
@@ -928,33 +733,8 @@
 									"maxclass" : "dict.view",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 467.25, 547.0, 162.0, 299.0 ],
+									"patching_rect" : [ 417.25, 349.0, 162.0, 299.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-73",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 240.25, 570.0, 100.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-72",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 176.5, 600.0, 97.0, 22.0 ],
-									"style" : "",
-									"text" : "prepend replace"
 								}
 
 							}
@@ -966,7 +746,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 176.5, 642.0, 71.0, 22.0 ],
+									"patching_rect" : [ 172.5, 52.0, 71.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0
@@ -1037,7 +817,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"comment" : "",
@@ -1203,19 +982,6 @@
 								}
 
 							}
-, 							{
-								"box" : 								{
-									"id" : "obj-79",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 276.5, 612.0, 50.0, 22.0 ],
-									"style" : "",
-									"text" : "clear"
-								}
-
-							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -1228,13 +994,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-13", 0 ]
 								}
 
 							}
@@ -1255,64 +1014,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-28", 0 ],
-									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-66", 0 ],
 									"source" : [ "obj-23", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-26", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"source" : [ "obj-27", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-28", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-42", 0 ]
 								}
 
 							}
@@ -1332,44 +1035,9 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-49", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-28", 0 ],
-									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
 									"midpoints" : [ 539.25, 93.0, 339.25, 93.0 ],
 									"source" : [ "obj-66", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-71", 0 ],
-									"source" : [ "obj-79", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -1781,6 +1449,19 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "VTMSceneStatus.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : "../../patchers/VTMGlobal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "deleteAllPatchers.js",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/VTMGlobal",
 				"patcherrelativepath" : "../../patchers/VTMGlobal",
@@ -1830,8 +1511,247 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"name" : "SceneCore.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
+				"patcherrelativepath" : "../../patchers/SceneCore",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TestScene.core.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSpatProxy.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splay.methodParameters.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
+				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SpatProxyLogic.js",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "GetAllParametersDict.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "BuildJSONCue.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSendMsg.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers",
+				"patcherrelativepath" : "../../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PassNonEmptySymbol.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ScriptCanvas.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MappingScripter.js",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TestScene.mappings",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gangabeushi.core.maxpat",
+				"bootpath" : "~/.Trash/gangabeushi",
+				"patcherrelativepath" : "../../../../../../.Trash/gangabeushi",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TestScene.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SceneCore.module.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
+				"patcherrelativepath" : "../../patchers/SceneCore",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SceneCore.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
+				"patcherrelativepath" : "../../patchers/SceneCore",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_cellblock.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_floatbox.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_intbox.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_textedit.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_textedit.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_booleanbutton.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_messagebutton.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_toggle.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_floatbox.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_intbox.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSpatProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splay.parameters.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
+				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gangabeushi.maxpat",
+				"bootpath" : "~/.Trash/gangabeushi",
+				"patcherrelativepath" : "../../../../../../.Trash/gangabeushi",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "NoSaveMessage.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1845,6 +1765,10 @@
 			}
 , 			{
 				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1868,7 +1792,23 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "j.namespace.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.oscroute.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.cue.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.ui.mxo",
 				"type" : "iLaX"
 			}
 , 			{
