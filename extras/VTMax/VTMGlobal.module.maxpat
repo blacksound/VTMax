@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -148.0, -1361.0, 809.0, 783.0 ],
+						"rect" : [ -197.0, -1361.0, 809.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -80,7 +80,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-48",
@@ -746,7 +745,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 172.5, 52.0, 71.0, 22.0 ],
+									"patching_rect" : [ 639.5, 98.0, 71.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0
@@ -765,7 +764,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 104.75, 712.0, 150.0, 60.0 ],
+									"patching_rect" : [ 481.0, 136.0, 150.0, 60.0 ],
 									"style" : "",
 									"text" : "EABDisk:/Users/eirikblekesaune/Documents/Max 7/Packages/VTMax/misc/Scener/",
 									"textcolor" : [ 0.862745, 0.741176, 0.137255, 1.0 ],
