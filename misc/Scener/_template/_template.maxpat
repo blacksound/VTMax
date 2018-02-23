@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 286.0, 79.0, 647.0, 783.0 ],
+		"rect" : [ 286.0, 79.0, 647.0, 965.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 5.0, 759.0, 41.0, 22.0 ],
+					"style" : "",
+					"text" : "j.view"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "_template" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -49,8 +62,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "SceneCore.module.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 5.0, 5.0, 150.0, 735.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 735.0 ],
 					"viewvisibility" : 1
@@ -58,7 +72,14 @@
 
 			}
  ],
-		"lines" : [  ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+ ],
 		"dependency_cache" : [ 			{
 				"name" : "SceneCore.module.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
@@ -94,15 +115,11 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -111,6 +128,10 @@
 			}
 , 			{
 				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
 				"type" : "iLaX"
 			}
  ],
