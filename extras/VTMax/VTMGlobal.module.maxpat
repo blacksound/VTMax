@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -439.0, -1361.0, 179.0, 783.0 ],
+		"rect" : [ 0.0, 45.0, 179.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -20,15 +20,15 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
+		"toolbarvisible" : 0,
+		"lefttoolbarpinned" : 2,
+		"toptoolbarpinned" : 2,
+		"righttoolbarpinned" : 2,
+		"bottomtoolbarpinned" : 2,
+		"toolbars_unpinned_last_save" : 15,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
+		"enablehscroll" : 0,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -197.0, -1361.0, 809.0, 783.0 ],
+						"rect" : [ 34.0, 79.0, 809.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -81,6 +81,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 612.0, 132.0, 56.0, 22.0 ],
+									"style" : "",
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-48",
 									"maxclass" : "newobj",
@@ -713,8 +726,8 @@
 									"id" : "obj-81",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 329.75, 98.0, 301.25, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "SceneManager.js",
@@ -764,7 +777,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 481.0, 136.0, 150.0, 60.0 ],
+									"patching_rect" : [ 436.0, 174.0, 150.0, 60.0 ],
 									"style" : "",
 									"text" : "EABDisk:/Users/eirikblekesaune/Documents/Max 7/Packages/VTMax/misc/Scener/",
 									"textcolor" : [ 0.862745, 0.741176, 0.137255, 1.0 ],
@@ -1013,6 +1026,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"midpoints" : [ 621.5, 164.0, 731.0, 158.0, 731.0, 93.0, 339.25, 93.0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-66", 0 ],
 									"source" : [ "obj-23", 0 ]
 								}
@@ -1037,6 +1058,13 @@
 									"destination" : [ "obj-81", 0 ],
 									"midpoints" : [ 539.25, 93.0, 339.25, 93.0 ],
 									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-81", 2 ]
 								}
 
 							}
@@ -1084,7 +1112,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 562.0, 160.0, 29.0 ],
 					"style" : "",
-					"text" : "pageB/fader.3 0.",
+					"text" : "pageA/fader.8 0.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1482,6 +1510,69 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "aaa.setup.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/ClientSetups",
+				"patcherrelativepath" : "../../misc/ClientSetups",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400Slot.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400ButtonSet.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400ParseFaderValue.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400ParseEncoderValue.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMEncoderToRotaryMapping.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400SlotPageAssignScript.js",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "VTMGlobalLogic.js",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",
@@ -1514,6 +1605,48 @@
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/SceneCore",
 				"patcherrelativepath" : "../../patchers/SceneCore",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "test2.core.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/test2",
+				"patcherrelativepath" : "../../misc/Scener/test2",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMTestModule.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMTestModule",
+				"patcherrelativepath" : "../../patchers/Modules/VTMTestModule",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PassNonEmptySymbol.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ScriptCanvas.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../../patchers/General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MappingScripter.js",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "test2.mappings",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/test2",
+				"patcherrelativepath" : "../../misc/Scener/test2",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1552,13 +1685,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "BuildJSONCue.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "../../patchers/General",
@@ -1573,24 +1699,31 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "PassNonEmptySymbol.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ScriptCanvas.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MappingScripter.js",
+				"name" : "VTMControlMapUnit.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
 				"patcherrelativepath" : "../../patchers/Control",
-				"type" : "TEXT",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMRadioButtonsMapping.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMMomentaryButtonMapping.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMToggleButtonMapping.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../../patchers/Control",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -1601,16 +1734,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gangabeushi.core.maxpat",
-				"bootpath" : "~/.Trash/gangabeushi",
-				"patcherrelativepath" : "../../../../../../.Trash/gangabeushi",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "TestScene.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
-				"patcherrelativepath" : "../../misc/Scener/TestScene",
+				"name" : "test2.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/test2",
+				"patcherrelativepath" : "../../misc/Scener/test2",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1639,6 +1765,13 @@
 				"name" : "VTM_UI_slider.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TestScene.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1741,13 +1874,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gangabeushi.maxpat",
-				"bootpath" : "~/.Trash/gangabeushi",
-				"patcherrelativepath" : "../../../../../../.Trash/gangabeushi",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "NoSaveMessage.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "../../patchers/General",
@@ -1791,11 +1917,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.namespace.mxo",
+				"name" : "j.message_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.oscroute.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.map.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1804,6 +1934,10 @@
 			}
 , 			{
 				"name" : "j.cue.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.namespace.mxo",
 				"type" : "iLaX"
 			}
 , 			{
