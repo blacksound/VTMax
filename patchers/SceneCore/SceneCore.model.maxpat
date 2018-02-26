@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -245.0, -1266.0, 1334.0, 1149.0 ],
+		"rect" : [ 227.0, 79.0, 1608.0, 966.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -99,7 +99,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "gangabeushi" ],
+									"outlettype" : [ "", "TestScene" ],
 									"patching_rect" : [ 148.25, 183.0, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "t l #1"
@@ -3166,7 +3166,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "gangabeushi", "int" ],
+					"outlettype" : [ "TestScene", "int" ],
 					"patching_rect" : [ 17.0, 935.0, 90.0, 22.0 ],
 					"style" : "",
 					"text" : "t #1 i"
@@ -3437,13 +3437,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-122",
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 17.0, 422.0, 385.0, 22.0 ],
+					"patching_rect" : [ 17.0, 393.0, 347.0, 49.0 ],
 					"style" : "",
-					"text" : "j.message mappingPage @type string @default pageA @value pageA"
+					"text" : "j.message mappingPage @type string @default pageA @value pageA @range pageA pageB pageC pageD pageE pageF pageG pageH"
 				}
 
 			}
@@ -3619,9 +3620,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 300.0, 200.0, 146.0, 22.0 ],
+					"patching_rect" : [ 300.0, 200.0, 134.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ gangabeushi.core 1",
+					"text" : "poly~ TestScene.core 1",
 					"varname" : "core"
 				}
 
