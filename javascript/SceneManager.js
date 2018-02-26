@@ -1,10 +1,11 @@
 var g = new Global("vt_max");
 var scenesPath;
-outlets = 2;
+outlets = 3;
 
 
 var shellMessageOutlet = 0;
 var scenesFoundOutlet = 1;
+var maxMSPMagicOutlet = 2;
 
 var scenes = new Dict("scenes");
 
@@ -34,7 +35,6 @@ function findScenes(path) {
 		sceneFolder.next();
 	}
 	messnamed("scenesFound", "bang");
-	
 }
 
 function sceneExists(sceneName) {
@@ -58,7 +58,9 @@ function escapeSpaces( str ) {
 function newScene( scriptFolder, sceneName ) {
 	//I hate Max.
 	outlet(0, "cd " + escapeSpaces(scriptFolder) + "\\; ./makeNewScene " + escapeSpaces(sceneName));
-	findScenes( scenesPath );
+//	findScenes( scenesPath );
+	
+	outlet(maxMSPMagicOutlet, "findScenes", scenesPath);
 	//I hate Max.
 }
 
