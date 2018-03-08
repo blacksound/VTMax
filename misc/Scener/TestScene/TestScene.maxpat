@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 286.0, 79.0, 647.0, 899.0 ],
+		"rect" : [ 217.0, 79.0, 575.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,19 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 5.0, 766.489441, 41.0, 22.0 ],
-					"style" : "",
-					"text" : "j.view"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"annotation" : "none",
 					"args" : [ "/TestScene/spat.1" ],
 					"bgmode" : 0,
@@ -66,9 +53,22 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 163.0, 150.0, 245.0 ],
+					"patching_rect" : [ 389.0, 163.0, 154.0, 252.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 245.0 ],
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 5.0, 766.489441, 41.0, 22.0 ],
+					"style" : "",
+					"text" : "j.view"
 				}
 
 			}
