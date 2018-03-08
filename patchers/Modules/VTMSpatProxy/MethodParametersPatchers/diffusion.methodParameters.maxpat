@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2057.0, 183.0, 1544.0, 749.0 ],
+		"rect" : [ 136.0, 206.0, 1544.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,62 +37,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 29.0, 239.0, 51.0, 23.0 ],
-					"style" : "",
-					"text" : "j.model"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 390.0, 56.0, 22.0 ],
-					"style" : "",
-					"text" : "deferlow"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 29.0, 337.0, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-8",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, 433.0, 25.0, 25.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
@@ -655,13 +599,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -783,13 +720,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -798,7 +728,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "diffusion.function.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -811,21 +741,21 @@
 			}
 , 			{
 				"name" : "GenerateRandomList.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMMax/patchers/General",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "../../../General",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "normalizeList.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMMax/patchers/General",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "../../../General",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMMax/patchers/ImportedFrom_vt_max",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
 				"patcherrelativepath" : "../../../ImportedFrom_vt_max",
 				"type" : "JSON",
 				"implicit" : 1
