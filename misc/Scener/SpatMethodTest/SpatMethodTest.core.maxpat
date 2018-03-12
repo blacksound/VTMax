@@ -39,12 +39,40 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"annotation" : "none",
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 41.0, 538.0, 226.0, 22.0 ],
+					"style" : "",
+					"text" : "VTMSpatProxy.model spat.11 diffusion 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 41.0, 502.0, 227.0, 22.0 ],
+					"style" : "",
+					"text" : "VTMSpatProxy.model spat.10 diffusion 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.5, 463.0, 220.0, 22.0 ],
+					"patching_rect" : [ 41.0, 464.0, 220.0, 22.0 ],
 					"style" : "",
 					"text" : "VTMSpatProxy.model spat.9 diffusion 1"
 				}
