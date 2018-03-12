@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 65.0, -1314.0, 521.0, 951.0 ],
+		"rect" : [ 271.0, -1361.0, 893.0, 1088.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,50 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "pushY" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTM_UI_slider.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 275.0, 219.0, 154.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 56.0, 150.0, 20.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "pushX" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTM_UI_slider.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 275.0, 193.0, 154.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 36.0, 150.0, 20.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "k" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -52,7 +96,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 546.0, 428.0, 153.0, 38.0 ],
+					"patching_rect" : [ 546.0, 419.0, 153.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 36.0 ],
 					"viewvisibility" : 1
@@ -61,22 +105,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 546.0, 290.0, 116.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote tumble"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "tumble", -90.0, 90.0, 0.0 ],
+					"args" : [ "tumble" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -89,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 546.0, 322.0, 154.0, 20.0 ],
+					"patching_rect" : [ 275.0, 395.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 196.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
@@ -98,22 +127,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 546.0, 195.0, 92.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote tilt"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "tilt", -90.0, 90.0, 0.0 ],
+					"args" : [ "tilt" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -126,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 546.0, 227.0, 154.0, 20.0 ],
+					"patching_rect" : [ 281.0, 370.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 176.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
@@ -135,22 +149,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 546.0, 97.0, 111.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote rotate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "rotate", -90.0, 90.0, 0.0 ],
+					"args" : [ "rotate" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -163,7 +162,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 546.0, 129.0, 154.0, 20.0 ],
+					"patching_rect" : [ 275.0, 346.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 156.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
@@ -172,22 +171,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 296.0, 598.0, 122.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote zoomY"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "zoomY", -90.0, 90.0, 0.0 ],
+					"args" : [ "zoomY" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -200,7 +184,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 296.0, 631.0, 154.0, 20.0 ],
+					"patching_rect" : [ 275.0, 322.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 136.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
@@ -209,22 +193,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 296.0, 500.0, 122.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote zoomX"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "zoomX", -90.0, 90.0, 0.0 ],
+					"args" : [ "zoomX" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -237,7 +206,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 296.0, 532.0, 154.0, 20.0 ],
+					"patching_rect" : [ 275.0, 293.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 116.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
@@ -246,22 +215,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 296.0, 405.0, 122.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote directY"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "directY", -90.0, 90.0, 0.0 ],
+					"args" : [ "directY" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -274,7 +228,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 296.0, 437.0, 154.0, 20.0 ],
+					"patching_rect" : [ 275.0, 269.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 96.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
@@ -283,22 +237,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 296.0, 307.0, 122.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote directX"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "directX", -90.0, 90.0, 0.0 ],
+					"args" : [ "directX" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -311,123 +250,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 296.0, 339.0, 154.0, 20.0 ],
+					"patching_rect" : [ 275.0, 247.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 76.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 287.0, 195.0, 119.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote pushY"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "pushY", -90.0, 90.0, 0.0 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-6",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "VTM_UI_slider.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 287.0, 227.0, 154.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 56.0, 150.0, 20.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 287.0, 97.0, 119.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote pushX"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "pushX", -90.0, 90.0, 0.0 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-4",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "VTM_UI_slider.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 287.0, 129.0, 154.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 36.0, 150.0, 20.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
  ],
-		"lines" : [  ],
-		"dependency_cache" : [ 			{
-				"name" : "VTM_UI_slider.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../../../Widgets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTM_UI_menu.large.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../../../Widgets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+		"lines" : [  ]
 	}
 
 }

@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 976.0, 900.0 ],
+		"rect" : [ 34.0, 79.0, 1281.0, 900.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,8 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"annotation" : "none",
-					"args" : [ "spatargs", "/TestScene/spat.1/params" ],
+					"args" : [ "spatargs", "/SpatMethodTest/spat.3/params" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -49,11 +48,10 @@
 					"id" : "obj-54",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "splay.parameters.view.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"name" : "ambidecoder.parameters.view.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 255.0, 700.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 135.5, 150.0, 800.0 ],
@@ -96,14 +94,15 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 255.0, 190.0, 80.0, 20.0 ],
+					"patching_rect" : [ 255.0, 190.0, 80.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 115.5, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "splay",
+					"text" : "ambidecoder",
 					"textjustification" : 1
 				}
 
@@ -281,8 +280,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -808,8 +807,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1119,7 +1118,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 121.0, 0.0, 29.0, 20.0 ],
 					"style" : "",
-					"text" : "2",
+					"text" : "4",
 					"textjustification" : 2
 				}
 
@@ -1230,8 +1229,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 4,
-							"architecture" : "x86",
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1603,7 +1602,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1616,7 +1615,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1696,8 +1695,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2.333344, 2.0, 150.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.333344, 2.0, 150.0, 245.0 ],
-					"text" : "/no_model_address"
+					"presentation_rect" : [ 2.333344, 2.0, 150.0, 350.0 ],
+					"text" : "/Spa..t.3"
 				}
 
 			}
@@ -2052,77 +2051,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "VTM_UI_textedit.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../Widgets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTM_UI_menu.large.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../Widgets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTM_UI_slider.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../Widgets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../ImportedFrom_vt_max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTM_UI_menu.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../Widgets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "splay.parameters.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "./MethodParametersPatchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.ui.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
