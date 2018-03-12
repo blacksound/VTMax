@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 67.0, 84.0, 663.0, 660.0 ],
+		"rect" : [ 67.0, 84.0, 634.0, 755.0 ],
 		"openrect" : [ 0.0, 0.0, 150.0, 20.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -147,7 +147,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-22",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -458,7 +458,7 @@
 					"fontname" : "Menlo Bold",
 					"fontsize" : 9.0,
 					"id" : "obj-6",
-					"items" : [ "controlled", ",", "single", ",", "velocity" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -488,7 +488,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 102.0, 17.0 ],
 					"style" : "",
-					"text" : "k:",
+					"text" : "#1:",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.57 ],
 					"varname" : "label"
 				}
@@ -780,7 +780,23 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
