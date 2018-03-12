@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 271.0, -1361.0, 893.0, 1088.0 ],
+		"rect" : [ 260.0, -962.0, 659.0, 829.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,7 +39,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "pushY" ],
+					"args" : [ "pushX", "@range", -90, 90 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTM_UI_slider.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 298.0, 144.0, 154.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 36.0, 150.0, 20.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "pushY", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -61,28 +83,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "pushX" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-4",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "VTM_UI_slider.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 275.0, 193.0, 154.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 36.0, 150.0, 20.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"args" : [ "k" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -96,7 +96,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 546.0, 419.0, 153.0, 38.0 ],
+					"patching_rect" : [ 255.0, 448.0, 153.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 36.0 ],
 					"viewvisibility" : 1
@@ -105,7 +105,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "tumble" ],
+					"args" : [ "tumble", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -127,7 +127,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "tilt" ],
+					"args" : [ "tilt", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -149,7 +149,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "rotate" ],
+					"args" : [ "rotate", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -171,7 +171,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "zoomY" ],
+					"args" : [ "zoomY", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -193,7 +193,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "zoomX" ],
+					"args" : [ "zoomX", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -215,7 +215,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "directY" ],
+					"args" : [ "directY", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -237,7 +237,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "directX" ],
+					"args" : [ "directX", "@range", -90, 90 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -250,7 +250,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 275.0, 247.0, 154.0, 20.0 ],
+					"patching_rect" : [ 275.0, 245.0, 154.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 76.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
