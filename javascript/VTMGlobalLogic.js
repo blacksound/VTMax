@@ -1,4 +1,5 @@
-
+outlets = 1;
+var lydserverOutlet = 0;
 
 function client( clientName ) {
 	var clientSetupCanvas = this.patcher.getnamed("clientSetupCanvas");
@@ -9,6 +10,7 @@ function client( clientName ) {
 		clientName + ".setup"
 	);
 	obj.varname = "clientSetup";
+	registerClientWithLydserver( clientName );
 }
 
 //like killing a fly with a cannon, behold:
@@ -23,4 +25,12 @@ function clearClientSetup() {
 		pat.remove( obj );
 		obj = nextObj;
 	}
+}
+
+function registerClientWithLydserver( clientName ) {
+	outlet(lydserverOutlet, "registerClient", clientName );
+}
+
+function unregisterClientWithLydserver( clientName ) {
+	outlet(lydserverOutlet, "unregisterClient", clientName );
 }

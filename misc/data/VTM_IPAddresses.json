@@ -1,6 +1,6 @@
 {
 	"lydserver" : 	{
-		"hostname" : "1.2.3.57",
+		"hostname" : "1.2.3.123",
 		"port" : 57120
 	}
 ,
@@ -20,7 +20,7 @@
 	}
 ,
 	"ccc" : 	{
-		"hostname" : "1.2.3.133",
+		"hostname" : "1.2.3.123",
 		"port" : 50000
 	}
 ,

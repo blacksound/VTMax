@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 239.0, 79.0, 768.0, 787.0 ],
+		"rect" : [ 239.0, 79.0, 853.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "lydserver" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTLydserverProxy.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 762.0, 329.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 267.0, 153.0, 19.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -50,9 +74,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 769.0, 190.0, 128.0, 128.0 ],
+					"patching_rect" : [ 779.0, 173.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 268.0, 153.0, 315.0 ],
+					"presentation_rect" : [ 1.0, 300.0, 153.0, 315.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -190,6 +214,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 54.5, 214.0, 99.5, 29.0 ],
 					"style" : "",
+					"text" : "50000",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -439,6 +464,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 54.5, 190.0, 99.5, 29.0 ],
 					"style" : "",
+					"text" : "1.2.3.133",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -482,7 +508,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 138.0, 153.0, 49.0 ],
 					"style" : "",
-					"text" : "<none>",
+					"text" : "ccc",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
