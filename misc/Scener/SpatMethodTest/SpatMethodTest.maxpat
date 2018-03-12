@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 467.0, 74.0, 146.0, 20.0 ],
+					"presentation_rect" : [ 464.0, 62.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "b-format decoder\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "none",
 					"args" : [ "spat.3" ],
 					"bgmode" : 0,
@@ -53,8 +66,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 463.0, 96.0, 152.0, 356.0 ],
-					"presentation_rect" : [ 460.0, 96.0, 150.0, 245.0 ],
+					"patching_rect" : [ 463.0, 96.0, 150.0, 350.0 ],
+					"presentation_rect" : [ 460.0, 96.0, 150.0, 350.0 ],
 					"viewvisibility" : 1
 				}
 

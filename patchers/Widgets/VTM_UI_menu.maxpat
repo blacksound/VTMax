@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 67.0, 84.0, 793.0, 680.0 ],
+		"rect" : [ 67.0, 84.0, 663.0, 660.0 ],
 		"openrect" : [ 0.0, 0.0, 150.0, 20.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -147,7 +147,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -445,6 +445,7 @@
 			}
 , 			{
 				"box" : 				{
+					"align" : 2,
 					"allowdrag" : 0,
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor_angle" : 270.0,
@@ -457,7 +458,7 @@
 					"fontname" : "Menlo Bold",
 					"fontsize" : 9.0,
 					"id" : "obj-6",
-					"items" : " ",
+					"items" : [ "controlled", ",", "single", ",", "velocity" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -465,9 +466,10 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 200.0, 480.0, 79.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 1.0, 75.0, 19.0 ],
+					"presentation_rect" : [ 17.0, 1.0, 132.0, 19.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : 2,
 					"varname" : "value"
 				}
 
@@ -486,7 +488,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 102.0, 17.0 ],
 					"style" : "",
-					"text" : "#1:",
+					"text" : "k:",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.57 ],
 					"varname" : "label"
 				}
@@ -778,23 +780,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

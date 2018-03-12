@@ -54,7 +54,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 298.0, 144.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 36.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 20.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -76,7 +76,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 275.0, 219.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 56.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 40.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -92,13 +92,13 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "VTM_UI_menu.large.maxpat",
+					"name" : "VTM_UI_menu.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 255.0, 448.0, 153.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 36.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 150.0, 23.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -120,7 +120,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 275.0, 395.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 196.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 180.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -142,7 +142,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 281.0, 370.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 176.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 160.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -164,7 +164,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 275.0, 346.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 156.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 140.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -186,7 +186,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 275.0, 322.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 136.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 120.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -208,7 +208,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 275.0, 293.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 116.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 100.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -230,7 +230,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 275.0, 269.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 96.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 80.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -252,7 +252,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 275.0, 245.0, 154.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 76.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 60.0, 150.0, 20.0 ],
 					"viewvisibility" : 1
 				}
 

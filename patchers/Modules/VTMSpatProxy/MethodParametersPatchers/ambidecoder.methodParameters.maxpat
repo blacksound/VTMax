@@ -233,13 +233,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-19",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 220.5, 624.341309, 358.0, 22.0 ],
+					"patching_rect" : [ 220.5, 624.341309, 463.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter k @type string @default controlled @value controlled"
+					"text" : "j.parameter k @type string @default controlled @value controlled @range controlled single velocity"
 				}
 
 			}
