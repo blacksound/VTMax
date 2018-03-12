@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1281.0, 900.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,29 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"args" : [ "spatargs", "/SpatMethodTest/spat.3/params" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-54",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ambidecoder.parameters.view.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 255.0, 700.0, 128.0, 128.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 135.5, 150.0, 800.0 ],
-					"varname" : "spatargs",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
@@ -94,30 +71,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-7",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 255.0, 190.0, 80.0, 33.0 ],
+					"patching_rect" : [ 255.0, 190.0, 80.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 115.5, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "ambidecoder",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"items" : "<empty>",
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 889.0, 109.0, 100.0, 22.0 ],
-					"style" : ""
 				}
 
 			}
@@ -1118,7 +1079,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 121.0, 0.0, 29.0, 20.0 ],
 					"style" : "",
-					"text" : "4",
+					"text" : "1",
 					"textjustification" : 2
 				}
 
@@ -1696,7 +1657,7 @@
 					"patching_rect" : [ 2.333344, 2.0, 150.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.333344, 2.0, 150.0, 350.0 ],
-					"text" : "/Spa..t.3"
+					"text" : "/Spa..t.9"
 				}
 
 			}
