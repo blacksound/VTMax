@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -76.0, -1166.0, 1329.0, 1120.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -85,7 +85,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 636.5, 666.5, 56.0, 22.0 ],
-					"presentation_rect" : [ 679.5, 655.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "deferlow"
 				}
@@ -215,8 +214,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 555.5, 265.5, 152.0, 39.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 57.134148, 150.0, 21.0 ],
@@ -893,7 +893,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 73.0, 55.0, 640.0, 480.0 ],
+						"rect" : [ 73.0, 79.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -929,7 +929,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 168.0, 116.5, 90.0, 18.0 ],
+									"patching_rect" : [ 168.0, 116.5, 90.0, 22.0 ],
 									"style" : "",
 									"text" : "color 1. 1. 1. 1."
 								}
@@ -944,7 +944,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 306.0, 116.5, 93.0, 18.0 ],
+									"patching_rect" : [ 306.0, 116.5, 93.0, 22.0 ],
 									"style" : "",
 									"text" : "color 0.3 1.0. 0."
 								}
@@ -959,7 +959,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 168.0, 84.0, 157.0, 20.0 ],
+									"patching_rect" : [ 168.0, 84.0, 157.0, 22.0 ],
 									"style" : "",
 									"text" : "sel none"
 								}
@@ -1199,7 +1199,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 121.0, 0.0, 29.0, 20.0 ],
 					"style" : "",
-					"text" : "1",
+					"text" : "2",
 					"textjustification" : 2
 				}
 
@@ -1315,7 +1315,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 155.0, 309.0, 469.0, 678.0 ],
+						"rect" : [ 291.0, 147.0, 469.0, 678.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 11.0,
@@ -1366,7 +1366,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.0, 386.0, 139.0, 33.0 ],
+									"patching_rect" : [ 44.0, 386.0, 139.0, 35.0 ],
 									"style" : "",
 									"text" : "append \"Define custom destination\""
 								}
@@ -1381,7 +1381,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.0, 264.5, 139.0, 20.0 ],
+									"patching_rect" : [ 44.0, 264.5, 139.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend none"
 								}
@@ -1396,7 +1396,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.0, 299.0, 139.0, 20.0 ],
+									"patching_rect" : [ 44.0, 299.0, 139.0, 22.0 ],
 									"style" : "",
 									"text" : "append <separator>"
 								}
@@ -1411,7 +1411,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.0, 230.0, 139.0, 20.0 ],
+									"patching_rect" : [ 44.0, 230.0, 139.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend <separator>"
 								}
@@ -1426,7 +1426,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.0, 144.0, 100.0, 20.0 ],
+									"patching_rect" : [ 44.0, 144.0, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "deferlow"
 								}
@@ -1441,7 +1441,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 44.0, 172.0, 179.0, 20.0 ],
+									"patching_rect" : [ 44.0, 184.0, 179.0, 22.0 ],
 									"style" : "",
 									"text" : "j.receive /global/destinationSets"
 								}
@@ -1456,7 +1456,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 44.0, 112.0, 100.0, 20.0 ],
+									"patching_rect" : [ 44.0, 112.0, 100.0, 22.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1471,7 +1471,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.0, 440.0, 87.0, 20.0 ],
+									"patching_rect" : [ 44.0, 440.0, 87.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend items"
 								}
@@ -1683,7 +1683,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1696,7 +1696,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1719,8 +1719,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.large.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 211.333344, 480.0, 152.5, 44.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 17.5, 150.0, 41.0 ],
@@ -1776,8 +1777,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 33.333344, 65.0, 150.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 2.0, 150.0, 735.0 ],
-					"text" : "/Spa..t.4",
+					"presentation_rect" : [ 2.0, 2.0, 150.0, 700.0 ],
+					"text" : "/no_..ess",
 					"varname" : "ui"
 				}
 
@@ -1885,6 +1886,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-29", 1 ]
 				}
 
 			}
@@ -2034,6 +2042,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
@@ -2069,6 +2084,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-48", 0 ]
 				}
@@ -2079,6 +2101,13 @@
 					"destination" : [ "obj-38", 0 ],
 					"midpoints" : [ 565.0, 481.0, 821.0, 481.0, 821.0, 29.0, 565.0, 29.0 ],
 					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -2163,6 +2192,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-61", 0 ]
 				}
@@ -2189,7 +2225,70 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "VTM_UI_textedit.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

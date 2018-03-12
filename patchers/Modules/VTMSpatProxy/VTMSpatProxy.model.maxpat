@@ -896,7 +896,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 491.0, 736.0, 185.0, 22.0 ],
 					"style" : "",
-					"text" : "/ccc/spat/SpatMethodTest_spat.1"
+					"text" : "/ccc/spat/SpatMethodTest_spat.6"
 				}
 
 			}
@@ -1680,7 +1680,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 267.0, 50.0, 42.0 ],
 									"style" : "",
-									"text" : "/ccc/spat/SpatMethodTest_spat.1"
+									"text" : "/ccc/spat/SpatMethodTest_spat.6"
 								}
 
 							}
@@ -1916,7 +1916,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1222.5, 303.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1328.5, 303.0, 56.0, 22.0 ],
 					"style" : "",
 					"text" : "sel none"
 				}
@@ -1929,7 +1929,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1222.5, 241.0, 24.0, 22.0 ],
+					"patching_rect" : [ 1328.5, 241.0, 24.0, 22.0 ],
 					"style" : "",
 					"text" : "t b"
 				}
@@ -1942,7 +1942,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1222.5, 273.8479, 143.0, 22.0 ],
+					"patching_rect" : [ 1328.5, 273.8479, 143.0, 22.0 ],
 					"style" : "",
 					"text" : "j.lazyReceive destination"
 				}
@@ -1955,7 +1955,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1222.5, 217.0, 95.0, 22.0 ],
+					"patching_rect" : [ 1328.5, 217.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "j.receive source"
 				}
@@ -3537,9 +3537,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 851.0, 303.0, 354.5, 22.0 ],
+					"patching_rect" : [ 851.0, 303.0, 464.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter destination @type string @priority 0 @default none"
+					"text" : "j.parameter destination @type string @priority 0 @default none @range genelec stue"
 				}
 
 			}
@@ -3663,8 +3663,8 @@
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 20.0, 484.0, 143.0, 22.0 ],
 					"style" : "",
 					"text" : "#2.methodParameters ",
