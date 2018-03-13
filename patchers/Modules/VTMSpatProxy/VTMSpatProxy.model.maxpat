@@ -81,9 +81,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 433.0, 546.0, 28.0, 35.0 ],
+					"patching_rect" : [ 433.0, 546.0, 36.0, 35.0 ],
 					"style" : "",
-					"text" : "-96."
+					"text" : "6.024908"
 				}
 
 			}
@@ -896,7 +896,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 491.0, 736.0, 185.0, 22.0 ],
 					"style" : "",
-					"text" : "/ccc/spat/SpatMethodTest_spat.6"
+					"text" : "/ccc/spat/TestScene_spat.1"
 				}
 
 			}
@@ -1680,7 +1680,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 267.0, 50.0, 42.0 ],
 									"style" : "",
-									"text" : "/ccc/spat/SpatMethodTest_spat.6"
+									"text" : "/ccc/spat/TestScene_spat.1"
 								}
 
 							}
@@ -3537,9 +3537,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 851.0, 303.0, 464.0, 22.0 ],
+					"patching_rect" : [ 851.0, 303.0, 347.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter destination @type string @priority 0 @default none @range genelec stue"
+					"text" : "j.parameter destination @type string @priority 0 @default none"
 				}
 
 			}
@@ -3663,8 +3663,8 @@
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 20.0, 484.0, 143.0, 22.0 ],
 					"style" : "",
 					"text" : "#2.methodParameters ",
@@ -3689,12 +3689,12 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 33,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 300.0, 75.0, 100.0, 22.0 ],
 					"style" : "",
-					"text" : "matrix~ 1 32",
+					"text" : "matrix~ 2 32",
 					"varname" : "matrix"
 				}
 
@@ -3711,6 +3711,21 @@
 					"patching_rect" : [ 300.0, 0.0, 30.0, 30.0 ],
 					"style" : "",
 					"varname" : "audioInlet_0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-13",
+					"index" : 3,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 325.0, 0.0, 30.0, 30.0 ],
+					"style" : "",
+					"varname" : "audioInlet_1"
 				}
 
 			}
@@ -3784,6 +3799,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-128", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
