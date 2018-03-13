@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 223.0, 99.0, 843.0, 762.0 ],
+		"rect" : [ 178.0, 79.0, 617.0, 762.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -80,37 +80,10 @@
 			}
 , 			{
 				"box" : 				{
-					"align" : 0,
-					"bgcolor" : [ 1.0, 0.501961, 0.0, 0.24 ],
-					"fontname" : "Menlo Bold",
-					"fontsize" : 10.0,
-					"hint" : "Close scene by shift-alt click",
-					"id" : "obj-20",
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 234.0, 295.0, 110.0, 27.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 1.0, 100.0, 22.0 ],
-					"style" : "",
-					"text" : "/no_model_address",
-					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"textjustification" : 0,
-					"texton" : "",
-					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 0.501961, 0.0, 0.24 ],
+					"annotation" : "none",
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 0.194487 ],
 					"bgoncolor" : [ 0.0, 1.0, 1.0, 1.0 ],
-					"fontname" : "Menlo Bold",
+					"fontname" : "Avenir Heavy",
 					"fontsize" : 14.0,
 					"id" : "obj-19",
 					"legacytextcolor" : 1,
@@ -136,9 +109,10 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.501961, 0.0, 0.24 ],
+					"annotation" : "none",
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 0.227058 ],
 					"bgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
-					"fontname" : "Menlo Bold",
+					"fontname" : "Avenir Heavy",
 					"fontsize" : 14.0,
 					"id" : "obj-18",
 					"legacytextcolor" : 1,
@@ -226,7 +200,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -239,7 +213,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -261,6 +235,34 @@
 					"patching_rect" : [ 35.0, 181.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "j.view"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"fontname" : "Avenir Book",
+					"fontsize" : 10.0,
+					"hint" : "Close scene by shift-alt click",
+					"id" : "obj-20",
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 234.0, 295.0, 110.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 1.0, 152.0, 22.0 ],
+					"style" : "",
+					"text" : "/TestScene",
+					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"textjustification" : 0,
+					"texton" : "",
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1
 				}
 
 			}
@@ -344,31 +346,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

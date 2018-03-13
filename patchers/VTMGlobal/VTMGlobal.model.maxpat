@@ -43,48 +43,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 326.0, 491.0, 341.0, 22.0 ],
+					"patching_rect" : [ 311.5, 474.0, 341.0, 22.0 ],
 					"style" : "",
 					"text" : "j.return totalNumberOfAudioOutputs @type integer @value 32"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 645.0, 117.0, 22.0 ],
-					"style" : "",
-					"text" : "j.send /VTLydserver"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 28.5, 610.0, 137.0, 22.0 ],
-					"style" : "",
-					"text" : "j.oscroute /VTLydserver"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 574.0, 106.0, 22.0 ],
-					"style" : "",
-					"text" : "udpreceive 50000"
 				}
 
 			}
@@ -485,13 +446,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
@@ -508,13 +462,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}

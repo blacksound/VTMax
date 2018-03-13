@@ -45,9 +45,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 675.0, 149.0, 35.0 ],
+					"patching_rect" : [ 6.0, 675.0, 147.0, 35.0 ],
 					"style" : "",
-					"text" : "VTLydserverProxy.model lydserver"
+					"text" : "VTLydserverProxy.model VTLydserver"
 				}
 
 			}
@@ -1127,7 +1127,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 562.0, 160.0, 29.0 ],
 					"style" : "",
-					"text" : "pageA/fader.8 0.",
+					"text" : "pageA/fader.6 0.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1581,9 +1581,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SpatMethodTest.core.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/SpatMethodTest",
-				"patcherrelativepath" : "../../misc/Scener/SpatMethodTest",
+				"name" : "TestScene.core.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1637,55 +1637,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ambidecoder.methodParameters.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ambipanner.methodParameters.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "3D.methodParameters.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "diffusion.methodParameters.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "diffusion.function.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "GenerateRandomList.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "normalizeList.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "PassNonEmptySymbol.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "../../patchers/General",
@@ -1707,9 +1658,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SpatMethodTest.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/SpatMethodTest",
-				"patcherrelativepath" : "../../misc/Scener/SpatMethodTest",
+				"name" : "TestScene.mappings",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TestScene.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/misc/Scener/TestScene",
+				"patcherrelativepath" : "../../misc/Scener/TestScene",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1735,9 +1693,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "VTMSpatProxy.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy",
+				"name" : "VTM_UI_slider.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_floatbox.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_intbox.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1749,14 +1721,35 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "VTM_UI_menu.large.maxpat",
+				"name" : "VTM_UI_textedit.large.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../patchers/Widgets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "VTM_UI_slider.maxpat",
+				"name" : "VTM_UI_booleanbutton.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_messagebutton.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_toggle.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.large.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../patchers/Widgets",
 				"type" : "JSON",
@@ -1770,59 +1763,45 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "splay.parameters.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ambidecoder.parameters.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ambipanner.parameters.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "diffusion.parameters.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "diffusion.function.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "3D.parameters.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTM_UI_floatbox.maxpat",
+				"name" : "VTM_UI_menu.large.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../patchers/Widgets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "3DPanningView.js",
-				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
+				"name" : "VTM_UI_floatbox.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_intbox.large.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSpatProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resizeParent.js",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splay.parameters.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
+				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -1883,15 +1862,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.oscroute.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.return_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.namespace.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.oscroute.mxo",
 				"type" : "iLaX"
 			}
 , 			{

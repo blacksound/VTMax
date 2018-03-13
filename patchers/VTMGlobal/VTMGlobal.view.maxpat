@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 239.0, 79.0, 853.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 918.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,8 +38,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.097325, 1.0 ],
+					"bgcolor2" : [ 1.0, 0.0, 0.097325, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.79,
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
+					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
+					"bgfillcolor_proportion" : 0.39,
+					"bgfillcolor_type" : "color",
+					"fontname" : "Avenir Next Regular",
+					"fontsize" : 24.0,
+					"gradient" : 1,
+					"hint" : "Number of available audio outputs",
+					"id" : "obj-45",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 123.166626, 614.0, 48.0, 41.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.0, 58.0, 52.0, 41.0 ],
+					"style" : "",
+					"text" : "0",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "none",
-					"args" : [ "lydserver" ],
+					"args" : [ "/VTLydserver" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -55,7 +84,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 762.0, 329.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 267.0, 153.0, 19.0 ],
+					"presentation_rect" : [ 3.0, 203.0, 154.0, 19.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -76,7 +105,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 779.0, 173.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 300.0, 153.0, 315.0 ],
+					"presentation_rect" : [ 1.0, 324.0, 153.0, 315.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -138,29 +167,31 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.615351, 0.854691, 0.77979, 1.0 ],
+					"bgcolor2" : [ 0.615351, 0.854691, 0.77979, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.79,
-					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgfillcolor_color1" : [ 0.615351, 0.854691, 0.77979, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "gradient",
-					"fontname" : "Arial",
-					"fontsize" : 48.0,
-					"gradient" : 0,
+					"bgfillcolor_type" : "color",
+					"fontname" : "Avenir Next Regular",
+					"fontsize" : 36.0,
+					"gradient" : 1,
 					"hint" : "Number of available audio outputs",
 					"id" : "obj-17",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.166626, 554.0, 75.0, 62.0 ],
+					"patching_rect" : [ 549.166626, 554.0, 61.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.0, 0.0, 92.0, 62.0 ],
+					"presentation_rect" : [ 65.0, 0.0, 92.0, 58.0 ],
 					"style" : "",
 					"text" : "24",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : 2
 				}
 
 			}
@@ -168,13 +199,15 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"annotation" : "none",
-					"bgcolor" : [ 0.920968, 0.687365, 0.792868, 1.0 ],
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_color" : [ 0.920968, 0.687365, 0.792868, 1.0 ],
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
 					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
+					"fontname" : "Avenir Next Regular",
 					"fontsize" : 18.0,
 					"id" : "obj-39",
 					"items" : [ "<none>", ",", "aaa", ",", "bbb", ",", "ccc" ],
@@ -183,9 +216,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 138.999969, 379.0, 100.0, 29.0 ],
+					"patching_rect" : [ 150.999969, 190.0, 100.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 237.0, 153.0, 29.0 ],
+					"presentation_rect" : [ 3.0, 130.0, 153.0, 33.0 ],
 					"style" : "",
 					"textcolor" : [ 0.149, 0.149, 0.149, 1.0 ]
 				}
@@ -194,43 +227,29 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
-					"bgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 1.0, 0.0, 0.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.79,
 					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.0, 1.0, 0.0, 0.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
-					"fontname" : "Arial",
-					"fontsize" : 18.0,
+					"fontname" : "Avenir Next Regular",
+					"fontsize" : 10.0,
 					"gradient" : 0,
 					"id" : "obj-25",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 544.0, 333.0, 90.0, 29.0 ],
+					"patching_rect" : [ 544.0, 329.0, 59.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.5, 214.0, 99.5, 29.0 ],
+					"presentation_rect" : [ 91.0, 183.0, 65.0, 22.0 ],
 					"style" : "",
 					"text" : "50000",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-77",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 524.083313, 66.0, 81.0, 22.0 ],
-					"style" : "",
-					"text" : "loadmess set"
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : 2
 				}
 
 			}
@@ -268,7 +287,7 @@
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"bgoncolor" : [ 1.0, 0.0, 0.0, 0.68 ],
 					"fontface" : 1,
-					"fontname" : "Menlo Bold",
+					"fontname" : "Avenir Next Regular",
 					"fontsize" : 20.0,
 					"id" : "obj-52",
 					"legacytextcolor" : 1,
@@ -280,7 +299,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 388.666656, 524.0, 49.166687, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 62.0, 61.0 ],
+					"presentation_rect" : [ 2.0, 0.0, 63.0, 58.0 ],
 					"style" : "",
 					"text" : "DSP OFF",
 					"textcolor" : [ 0.15, 0.15, 0.15, 1.0 ],
@@ -311,25 +330,26 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 0.0, 0.097325, 1.0 ],
+					"bgcolor2" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.79,
-					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
 					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "gradient",
-					"fontname" : "Arial",
-					"fontsize" : 36.0,
-					"gradient" : 0,
+					"bgfillcolor_type" : "color",
+					"fontname" : "Avenir Next Regular",
+					"fontsize" : 24.0,
+					"gradient" : 1,
 					"hint" : "Number of available audio outputs",
 					"id" : "obj-48",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.166626, 614.0, 106.0, 49.0 ],
+					"patching_rect" : [ 197.166626, 614.0, 72.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 62.0, 97.0, 49.0 ],
+					"presentation_rect" : [ 3.0, 58.0, 114.0, 41.0 ],
 					"style" : "",
 					"text" : "CPU:",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -368,34 +388,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.0, 0.097325, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.79,
-					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
-					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
-					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "gradient",
-					"fontname" : "Arial",
-					"fontsize" : 36.0,
-					"gradient" : 0,
-					"hint" : "Number of available audio outputs",
-					"id" : "obj-45",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 123.166626, 614.0, 63.0, 49.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 96.0, 62.0, 58.0, 49.0 ],
-					"style" : "",
-					"text" : "0",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-44",
@@ -411,16 +403,16 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 1.0, 1.0, 1.0 ],
-					"fontname" : "Arial",
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"fontname" : "Avenir Next Regular",
 					"fontsize" : 18.0,
 					"id" : "obj-29",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 27.0, 208.0, 27.0 ],
+					"patching_rect" : [ 390.0, 23.0, 214.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 112.0, 154.0, 27.0 ],
+					"presentation_rect" : [ 3.0, 99.0, 154.0, 31.0 ],
 					"style" : "",
 					"text" : "Client name:"
 				}
@@ -444,28 +436,29 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
-					"bgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 1.0, 0.0, 0.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.79,
 					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.0, 1.0, 0.0, 0.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
-					"fontname" : "Arial",
-					"fontsize" : 18.0,
+					"fontname" : "Avenir Next Regular",
+					"fontsize" : 10.0,
 					"gradient" : 0,
 					"id" : "obj-23",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 388.666656, 329.0, 88.0, 29.0 ],
+					"patching_rect" : [ 388.666656, 325.0, 54.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.5, 190.0, 99.5, 29.0 ],
+					"presentation_rect" : [ 54.0, 163.0, 101.0, 22.0 ],
 					"style" : "",
-					"text" : "1.2.3.133",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "1.2.3.123",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : 2
 				}
 
 			}
@@ -486,35 +479,6 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "none",
-					"bgcolor" : [ 0.0, 1.0, 1.0, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.79,
-					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 0.0, 1.0, 1.0, 1.0 ],
-					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
-					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "gradient",
-					"fontname" : "Arial",
-					"fontsize" : 36.0,
-					"gradient" : 0,
-					"hint" : "Client name",
-					"id" : "obj-14",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 524.083313, 112.0, 148.0, 49.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 138.0, 153.0, 49.0 ],
-					"style" : "",
-					"text" : "ccc",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-15",
@@ -530,20 +494,18 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial",
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"fontname" : "Avenir Next Regular",
 					"fontsize" : 10.0,
 					"id" : "obj-28",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 388.666656, 379.0, 131.0, 29.0 ],
+					"patching_rect" : [ 388.666656, 375.0, 131.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1.0, 187.0, 153.0, 29.0 ],
+					"presentation_rect" : [ 3.0, 163.0, 153.0, 20.0 ],
 					"style" : "",
-					"text" : "Host\nname"
+					"text" : "Hostname:"
 				}
 
 			}
@@ -554,7 +516,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 179.499969, 432.0, 117.0, 22.0 ],
+					"patching_rect" : [ 191.499969, 247.0, 117.0, 22.0 ],
 					"style" : "",
 					"text" : "j.remote clientName"
 				}
@@ -567,7 +529,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.999969, 292.0, 27.0, 22.0 ],
+					"patching_rect" : [ 150.999969, 107.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "iter"
 				}
@@ -580,7 +542,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.999969, 322.0, 67.0, 22.0 ],
+					"patching_rect" : [ 150.999969, 137.0, 67.0, 22.0 ],
 					"style" : "",
 					"text" : "append $1"
 				}
@@ -593,7 +555,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "clear" ],
-					"patching_rect" : [ 138.999969, 262.0, 110.0, 22.0 ],
+					"patching_rect" : [ 150.999969, 77.0, 110.0, 22.0 ],
 					"style" : "",
 					"text" : "t l clear"
 				}
@@ -606,7 +568,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 138.999969, 226.0, 153.0, 22.0 ],
+					"patching_rect" : [ 150.999969, 41.0, 153.0, 22.0 ],
 					"style" : "",
 					"text" : "j.receive clientName:range"
 				}
@@ -654,20 +616,18 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-					"fontname" : "Arial",
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"fontname" : "Avenir Next Regular",
 					"fontsize" : 10.0,
 					"id" : "obj-27",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 537.083313, 379.0, 135.0, 29.0 ],
+					"patching_rect" : [ 537.083313, 379.0, 132.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1.0, 212.0, 153.0, 29.0 ],
+					"presentation_rect" : [ 3.0, 183.0, 153.0, 20.0 ],
 					"style" : "",
-					"text" : "Port\n_"
+					"text" : "Port:"
 				}
 
 			}
@@ -689,7 +649,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 188.999969, 473.0, 112.0, 473.0, 112.0, 368.0, 148.499969, 368.0 ],
+					"midpoints" : [ 200.999969, 288.0, 124.0, 288.0, 124.0, 183.0, 160.499969, 183.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -710,16 +670,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"order" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -832,15 +783,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 239.499969, 363.0, 148.499969, 363.0 ],
+					"midpoints" : [ 251.499969, 178.0, 160.499969, 178.0 ],
 					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-77", 0 ]
 				}
 
 			}
