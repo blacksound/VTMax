@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1011.0, -1361.0, 864.0, 951.0 ],
+		"rect" : [ 1011.0, -1361.0, 592.0, 951.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -73,7 +73,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 45.0, 785.0, 138.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess 350 @defer 1"
+					"text" : "loadmess 250 @defer 1"
 				}
 
 			}
@@ -129,7 +129,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 73.0, 633.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 171.111115, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 172.111115, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -151,7 +151,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 73.0, 576.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 151.666672, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 152.666672, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -173,7 +173,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 66.0, 509.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 132.222229, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 134.222229, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -195,7 +195,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 66.0, 472.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 112.777779, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 114.777779, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -217,7 +217,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 66.0, 362.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 93.333336, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 96.333336, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -239,7 +239,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 73.0, 290.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 73.888885, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 76.888885, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -261,7 +261,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 73.0, 245.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 54.444443, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 58.444443, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -283,7 +283,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 66.0, 186.0, 152.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 35.0, 150.0, 21.0 ],
+					"presentation_rect" : [ 0.0, 39.0, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -301,11 +301,12 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.large.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 546.0, 745.0, 153.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 36.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 150.0, 45.0 ],
 					"viewvisibility" : 1
 				}
 

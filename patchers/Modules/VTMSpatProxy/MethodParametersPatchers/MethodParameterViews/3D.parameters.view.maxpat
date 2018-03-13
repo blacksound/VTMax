@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 592.0, -1331.0, 1454.0, 926.0 ],
+		"rect" : [ 184.0, -1328.0, 1182.0, 926.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -60,7 +60,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 89.0, 795.0, 92.0, 23.0 ],
 					"style" : "",
-					"text" : "loadmess 500"
+					"text" : "loadmess 400"
 				}
 
 			}

@@ -59,7 +59,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 107.0, 562.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess 250"
+					"text" : "loadmess 100"
 				}
 
 			}
@@ -93,7 +93,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 77.0, 208.0, 170.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 38.118443, 150.0, 35.0 ],
+					"presentation_rect" : [ -1.0, 37.0, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -159,7 +159,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 287.0, 416.0, 154.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 57.177666, 150.0, 21.0 ],
+					"presentation_rect" : [ -1.0, 56.0, 150.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 

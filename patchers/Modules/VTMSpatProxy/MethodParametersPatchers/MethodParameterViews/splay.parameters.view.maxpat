@@ -60,7 +60,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 115.0, 393.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess 250"
+					"text" : "loadmess 150"
 				}
 
 			}
@@ -90,11 +90,12 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 126.0, 248.0, 155.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 94.862068, 155.0, 32.0 ],
+					"presentation_rect" : [ 0.0, 94.862068, 155.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 

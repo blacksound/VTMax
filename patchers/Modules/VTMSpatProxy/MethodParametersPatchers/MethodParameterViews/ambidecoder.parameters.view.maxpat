@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 169.0, 172.0, 659.0, 829.0 ],
+		"rect" : [ 169.0, 79.0, 659.0, 783.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -60,7 +60,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 112.0, 592.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess 350"
+					"text" : "loadmess 250"
 				}
 
 			}
@@ -134,8 +134,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 255.0, 448.0, 153.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 23.0 ],
