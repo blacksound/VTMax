@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -266.0, -1361.0, 1880.0, 1325.0 ],
+		"rect" : [ -267.0, -1361.0, 1880.0, 1325.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -99,7 +99,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 924.0, 125.0, 150.0, 555.0 ],
+					"patching_rect" : [ 924.0, 125.0, 150.0, 559.0 ],
 					"presentation_rect" : [ 970.0, 255.0, 150.0, 315.0 ],
 					"viewvisibility" : 1
 				}
@@ -154,7 +154,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
-					"args" : [ "spat.9" ],
+					"args" : [ "spat.10" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -370,7 +370,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.0, 125.0, 150.0, 305.0 ],
+					"patching_rect" : [ 309.0, 125.0, 148.0, 316.0 ],
 					"presentation_rect" : [ 309.0, 98.0, 150.0, 315.0 ],
 					"viewvisibility" : 1
 				}
