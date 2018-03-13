@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 217.0, 79.0, 575.0, 783.0 ],
+		"rect" : [ -268.0, -1361.0, 575.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,8 +53,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 163.0, 154.0, 252.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 245.0 ],
+					"patching_rect" : [ 373.0, 137.0, 150.0, 700.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 150.0, 700.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -187,8 +187,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.large.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 201.0, 771.41687, 152.0, 41.0 ],
 					"viewvisibility" : 1
 				}
@@ -249,8 +250,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.large.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 201.0, 514.601562, 152.0, 41.0 ],
 					"viewvisibility" : 1
 				}
@@ -269,8 +271,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_menu.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 201.0, 485.456543, 149.0, 21.0 ],
 					"viewvisibility" : 1
 				}
