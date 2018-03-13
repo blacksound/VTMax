@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -250.0, -1361.0, 886.0, 1075.0 ],
+		"rect" : [ 139.0, -1220.0, 886.0, 1075.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,27 +38,14 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 321.0, 581.0, 409.0, 22.0 ],
-					"style" : "",
-					"text" : "j.return destinationSets @type none @range genelec stue plate @plate.flat"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 657.0, 95.0, 22.0 ],
+					"patching_rect" : [ 28.5, 645.0, 117.0, 22.0 ],
 					"style" : "",
-					"text" : "j.send lydserver"
+					"text" : "j.send /VTLydserver"
 				}
 
 			}
@@ -85,20 +72,6 @@
 					"patching_rect" : [ 28.5, 574.0, 106.0, 22.0 ],
 					"style" : "",
 					"text" : "udpreceive 50000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "none",
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 278.0, 196.0, 22.0 ],
-					"style" : "",
-					"text" : "VTLydserverProxy.model lydserver"
 				}
 
 			}
@@ -522,13 +495,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-20", 0 ]
 				}
 
 			}
