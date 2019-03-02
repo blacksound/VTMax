@@ -9,6 +9,7 @@ function client( clientName ) {
 	obj = pat.newdefault(0,0,
 		clientName + ".setup"
 	);
+	//set scripting name for the new object
 	obj.varname = "clientSetup";
 	registerClientWithLydserver( clientName );
 }

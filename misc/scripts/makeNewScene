@@ -1,25 +1,27 @@
 #!/bin/bash
 if [ ! -n "$1" ]; then
-echo au no scene name
-exit 1
+  echo au no scene path
+  exit 1
 fi
 
-SCENENAME="$1"
-echo Make new scene "$1" in "../Scener/$SCENENAME"
-pwd
+SCENEPATH="$1"
+if [ ! -d $SCENEPATH ]; then
+  SCENENAME="$(basename $SCENEPATH)"
+  echo Make new scene in "$SCENEPATH"
+  echo Scene name is "$SCENENAME"
+  pwd
 
-mkdir -p "../Scener/${SCENENAME}"
-cp -n ../Scener/_template/_template.core.maxpat "../Scener/${SCENENAME}/${SCENENAME}.core.maxpat"
+  mkdir -p "${SCENEPATH}"
+  cp -n ../Scener/_template/_template.core.maxpat "${SCENEPATH}/${SCENENAME}.core.maxpat"
 
-#change the scene name argument for the SceneCore bpatcher
-PATCHFILE="../Scener/${SCENENAME}/${SCENENAME}.maxpat"
-if [ ! -f $PATCHFILE ]; then
-SEDARGS='s/\"_template\"/\"'
-SEDARGS=$SEDARGS${SCENENAME}
-SEDARGS=$SEDARGS"\"/"
-sed -e $SEDARGS <../Scener/_template/_template.maxpat >"../Scener/${SCENENAME}/${SCENENAME}.maxpat"
-exit 0
+  #change the scene name argument for the SceneCore bpatcher
+  PATCHFILE="${SCENEPATH}/${SCENENAME}.maxpat"
+  SEDARGS='s/\"_template\"/\"'
+  SEDARGS=$SEDARGS${SCENENAME}
+  SEDARGS=$SEDARGS"\"/"
+  sed -e $SEDARGS <../Scener/_template/_template.maxpat >"$PATCHFILE"
+  exit 0
 else
-echo "file already exists"
-exit 127
+  echo "scene already exists"
+  exit 127
 fi

@@ -1,41 +1,19 @@
 var g = new Global("vt_max");
 var scenesPath;
-outlets = 3;
+outlets = 1;
 
 
 var shellMessageOutlet = 0;
-var scenesFoundOutlet = 1;
-var maxMSPMagicOutlet = 2;
 
 var scenes = new Dict("scenes");
 
-var coreCanvas = this.patcher.getnamed("coreCanvas");
+
+//This find the NakedScriptCanvas patcher in the root VTMGlobal.module window
+//There may be a better way to do this.
+//If the position in the patcher hierarchy should change sometime, this is a
+//line that may fail.
+var coreCanvas = this.patcher.parentpatcher.parentpatcher.getnamed("sceneCores").subpatcher().getnamed("coreCanvas");
 var coreCanvasPatcher = coreCanvas.subpatcher();
-
-var viewCanvas = this.patcher.getnamed("viewCanvas");
-var viewCanvasPatcher = viewCanvas.subpatcher();
-
-function findScenes(path) {
-	var scenesDict = new Dict("scenes");
-	var sceneFolder;
-	scenesPath = path;
-	scenesDict.clear();
-	sceneFolder = new Folder(scenesPath);	
-	sceneFolder.typelist = ["folder"];
-	
-	sceneFolder.next();
-	while(!sceneFolder.end) {
-		if(sceneFolder.filename != "_template") {
-			outlet(scenesFoundOutlet, sceneFolder.filename);
-			scenesDict.setparse(
-				sceneFolder.filename, 
-				'{"open": 0, "mapped": 0, "active": 0}'
-			);
-		}
-		sceneFolder.next();
-	}
-	messnamed("scenesFound", "bang");
-}
 
 function sceneExists(sceneName) {
 	var result = false;
@@ -55,12 +33,18 @@ function escapeSpaces( str ) {
 	return newStr;
 }
 
-function newScene( scriptFolder, sceneName ) {
+function newScene( scriptFolder, scenePath ) {
 	//I hate Max.
-	outlet(0, "cd " + escapeSpaces(scriptFolder) + "\\; ./makeNewScene " + escapeSpaces(sceneName));
-//	findScenes( scenesPath );
+	scenePath = escapeSpaces(scenePath);
 	
-	outlet(maxMSPMagicOutlet, "findScenes", scenesPath);
+	//Runs the makeNewScene bash script which makes a new folder
+	//and copies the templates to the new scene folder.
+	//Please read first and last comment in this method for a better
+	//explanation why this is done.
+	outlet(
+		shellMessageOutlet,
+		"cd " + escapeSpaces(scriptFolder) + "\\; ./makeNewScene " + scenePath
+	);
 	//I hate Max.
 }
 
@@ -134,23 +118,34 @@ function sceneCoreExists(sceneName) {
 	return result;
 }
 
-function sceneViewExists(sceneName) {
-	var result = false;
-	var obj = viewCanvasPatcher.firstobject;
-	while(obj != null) {
-		if(obj.varname == sceneName) {
-			result = true;
-			break;
-		}
-		obj = obj.nextobject;
+function deleteSceneCore( sceneName ) {
+	if(sceneCoreExists( sceneName ) ) {
+		coreCanvasPatcher.remove(
+			coreCanvasPatcher.getnamed(sceneName)
+		);
 	}
-	return result;
 }
 
+function registerOpenedScene(sceneName) {
+	
+	scenes.setparse(
+		sceneName,
+		'{"mapped": 0, "active": 0}'
+	);
+	makeSceneCore(sceneName);
+	//post("Making scene core for " + sceneName + "\n");
+	
+}
+
+function registerClosedScene(sceneName) {
+	scenes.remove(sceneName);
+	deleteSceneCore(sceneName);
+}
 
 //if the core already exists it does nothing
 function makeSceneCore( sceneName ) {
 	var newobj;
+	post("Making scene core for " + sceneName + "\n");
 	if(!sceneCoreExists( sceneName ) ) {
 		newobj = coreCanvasPatcher.newdefault(
 			0, 0,
@@ -161,55 +156,4 @@ function makeSceneCore( sceneName ) {
 	} else {
 		post("Scene core '" + sceneName + "' already exists\n");
 	}
-}
-
-function deleteSceneCore( sceneName ) {
-	if(sceneCoreExists( sceneName ) ) {
-		coreCanvasPatcher.remove(
-			coreCanvasPatcher.getnamed(sceneName)
-		);
-	}
-}
-
-function makeSceneView( sceneName ) {
-	var obj;
-	obj = viewCanvasPatcher.getnamed( sceneName );
-	//check if the scene view already exists
-	if(!sceneViewExists( sceneName )) {
-		obj = viewCanvasPatcher.newdefault(
-			0, 0,
-			sceneName
-		);
-		obj.varname = sceneName;	
-	}
-}
-
-function deleteSceneView( sceneName ) {
-	var obj;
-	obj = viewCanvasPatcher.getnamed( sceneName );
-	viewCanvasPatcher.remove(
-		viewCanvasPatcher.getnamed( sceneName )
-	);
-}
-
-function showSceneView( sceneName ) {
-	var obj;
-	obj = viewCanvasPatcher.getnamed( sceneName );
-	if(obj != null) {
-		obj = obj.subpatcher();
-		obj.front();
-	} else {
-		post("no scene view: " + sceneName + "\n");
-	}	
-}
-
-function hideSceneView( sceneName ) {
-	var obj;
-	obj = viewCanvasPatcher.getnamed( sceneName );
-	if(obj != null) {
-		obj = obj.subpatcher();
-		obj.wclose();
-	} else {
-		post("no scene view: " + sceneName + "\n");
-	}	
 }
