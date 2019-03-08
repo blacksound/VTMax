@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 470.0, 45.0, 805.0, 1002.0 ],
+		"rect" : [ 470.0, 45.0, 899.0, 1002.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -80,7 +80,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 151.0, 230.0, 157.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "makeViewBpatcher heisann"
 				}
 
@@ -129,7 +128,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 200.0, 121.0, 143.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "getScenePatcherFilepath"
 				}
 
@@ -167,7 +165,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 411.0, 91.0, 295.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "deferlow, my ol' good friend. Whatever you are doing, you're doing it."
 				}
 
@@ -472,7 +469,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"order" : 1,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -515,6 +521,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"order" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -606,8 +621,8 @@
 			}
 , 			{
 				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers",
-				"patcherrelativepath" : "../../../Jamoma/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../ImportedFrom_vt_max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
