@@ -1,0 +1,40 @@
+- cue "first"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/YetAnotherTestScene/hussa/alias none
+/YetAnotherTestScene/hussa/db -96.000000
+/YetAnotherTestScene/hussa/destination $plate.1
+/YetAnotherTestScene/hussa/lfoAmount 1.000000
+/YetAnotherTestScene/hussa/lfoSpeed 0.065233
+/YetAnotherTestScene/hussa/lfoType sine
+/YetAnotherTestScene/hussa/pan -0.376659
+/YetAnotherTestScene/hussa/source auto
+/YetAnotherTestScene/hussa/spread 0.608844
+/YetAnotherTestScene/hussa/width 0.797296
+# 
+/YetAnotherTestScene/mono/alias none
+/YetAnotherTestScene/mono/db -96.000000
+/YetAnotherTestScene/mono/destination stue
+/YetAnotherTestScene/mono/lfoAmount 0.108722
+/YetAnotherTestScene/mono/lfoSpeed 0.768304
+/YetAnotherTestScene/mono/lfoType sine
+/YetAnotherTestScene/mono/pan 0.348155
+/YetAnotherTestScene/mono/source auto
+/YetAnotherTestScene/mono/spread 0.188452
+/YetAnotherTestScene/mono/width 0.086978
+# 
+/YetAnotherTestScene/yessa/alias none
+/YetAnotherTestScene/yessa/db -96.000000
+/YetAnotherTestScene/yessa/destination genelec
+/YetAnotherTestScene/yessa/lfoAmount 0.173956
+/YetAnotherTestScene/yessa/lfoSpeed 0.057985
+/YetAnotherTestScene/yessa/lfoType ramp
+/YetAnotherTestScene/yessa/pan 0.000000
+/YetAnotherTestScene/yessa/source auto
+/YetAnotherTestScene/yessa/spread 0.152211
+/YetAnotherTestScene/yessa/width 0.202948
+# 
+# ###########################################
+
