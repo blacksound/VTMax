@@ -5,11 +5,11 @@
 # 
 /YetAnotherTestScene/hussa/alias none
 /YetAnotherTestScene/hussa/db -96.000000
-/YetAnotherTestScene/hussa/destination $plate.1
+/YetAnotherTestScene/hussa/destination genelec
 /YetAnotherTestScene/hussa/lfoAmount 1.000000
 /YetAnotherTestScene/hussa/lfoSpeed 0.065233
 /YetAnotherTestScene/hussa/lfoType sine
-/YetAnotherTestScene/hussa/pan -0.376659
+/YetAnotherTestScene/hussa/pan -0.217200
 /YetAnotherTestScene/hussa/source auto
 /YetAnotherTestScene/hussa/spread 0.608844
 /YetAnotherTestScene/hussa/width 0.797296
@@ -35,6 +35,74 @@
 /YetAnotherTestScene/yessa/source auto
 /YetAnotherTestScene/yessa/spread 0.152211
 /YetAnotherTestScene/yessa/width 0.202948
+/YetAnotherTestScene/ampu 0.000000
+/YetAnotherTestScene/dinosaur 0.326167
+/YetAnotherTestScene/smammi 0.181204
+# 
+/TestScene/hei 7.755517
+/TestScene/klasse 30
+/TestScene/myBoolean 0
+/TestScene/myBoolean2 0
+/TestScene/myInt -20
+/TestScene/myInt2 60
+/TestScene/myIntLol 20
+/TestScene/myString Runger
+/TestScene/pingu 30
+# 
+/TestScene/spat.1/alias none
+/TestScene/spat.1/db -96.000000
+/TestScene/spat.1/destination genelec
+/TestScene/spat.1/lfoAmount 0.000000
+/TestScene/spat.1/lfoSpeed 0.000000
+/TestScene/spat.1/lfoType ramp
+/TestScene/spat.1/pan 0.000000
+/TestScene/spat.1/source auto
+/TestScene/spat.1/spread 0.000000
+/TestScene/spat.1/width 0.000000
+# 
+# ###########################################
+
+- cue "second"
+- description "something about this cue"
+# ###########################################
+# 
+/YetAnotherTestScene/ampu 0.000000
+/YetAnotherTestScene/dinosaur 0.471130
+# 
+/YetAnotherTestScene/hussa/alias none
+/YetAnotherTestScene/hussa/db -96.000000
+/YetAnotherTestScene/hussa/destination none
+/YetAnotherTestScene/hussa/lfoAmount 1.000000
+/YetAnotherTestScene/hussa/lfoSpeed 0.065233
+/YetAnotherTestScene/hussa/lfoType sine
+/YetAnotherTestScene/hussa/pan -0.623096
+/YetAnotherTestScene/hussa/source auto
+/YetAnotherTestScene/hussa/spread 0.231941
+/YetAnotherTestScene/hussa/width 0.224693
+# 
+/YetAnotherTestScene/mono/alias none
+/YetAnotherTestScene/mono/db -96.000000
+/YetAnotherTestScene/mono/destination none
+/YetAnotherTestScene/mono/lfoAmount 0.108722
+/YetAnotherTestScene/mono/lfoSpeed 0.311670
+/YetAnotherTestScene/mono/lfoType sine
+/YetAnotherTestScene/mono/pan 0.348155
+/YetAnotherTestScene/mono/source auto
+/YetAnotherTestScene/mono/spread 0.297174
+/YetAnotherTestScene/mono/width 0.282678
+/YetAnotherTestScene/smammi 0.181204
+# 
+/YetAnotherTestScene/yessa/alias none
+/YetAnotherTestScene/yessa/db -96.000000
+/YetAnotherTestScene/yessa/destination none
+/YetAnotherTestScene/yessa/lfoAmount 0.173956
+/YetAnotherTestScene/yessa/lfoSpeed 0.326167
+/YetAnotherTestScene/yessa/lfoType ramp
+/YetAnotherTestScene/yessa/pan 0.203192
+/YetAnotherTestScene/yessa/source auto
+/YetAnotherTestScene/yessa/spread 0.456633
+/YetAnotherTestScene/yessa/width 0.413144
+/YetAnotherTestScene/wheis 481.849500
 # 
 # ###########################################
 

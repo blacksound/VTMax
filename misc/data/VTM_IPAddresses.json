@@ -1,6 +1,6 @@
 {
 	"lydserver" : 	{
-		"hostname" : "1.2.3.123",
+		"hostname" : "1.2.3.23",
 		"port" : 57120
 	}
 ,
@@ -10,7 +10,7 @@
 	}
 ,
 	"bbb" : 	{
-		"hostname" : "1.2.3.111",
+		"hostname" : "1.2.3.115",
 		"port" : 50000
 	}
 ,
