@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 365.0, 228.0, 497.0, 847.0 ],
+		"rect" : [ 334.0, 232.0, 705.0, 961.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,66 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "/YetAnotherTestScene/speed", "@labelformat", "global" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-11",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTM_UI_slider.large.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 389.0, 804.0, 152.0, 47.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "/YetAnotherTestScene/grainAmp", "@labelformat", "global" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-10",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTM_UI_floatbox.large.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 389.0, 758.0, 152.0, 44.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "/YetAnotherTestScene/wheis", "@labelformat", "global" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-9",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTM_UI_floatbox.large.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 80.0, 768.0, 153.0, 41.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "/YetAnotherTestScene/dinosaur", "@labelformat", "global" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -52,7 +112,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 241.0, 785.0, 164.0, 49.0 ],
+					"patching_rect" : [ 389.0, 662.0, 152.0, 44.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -72,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 241.0, 730.0, 164.0, 49.0 ],
+					"patching_rect" : [ 389.0, 616.0, 152.0, 44.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -92,7 +152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 241.0, 679.0, 164.0, 49.0 ],
+					"patching_rect" : [ 389.0, 572.0, 152.0, 42.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -114,7 +174,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.0, 204.0, 150.0, 320.0 ],
+					"patching_rect" : [ 341.0, 201.0, 150.0, 320.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -297,6 +357,13 @@
 			}
 , 			{
 				"name" : "VTM_UI_slider.large.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_floatbox.large.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../../patchers/Widgets",
 				"type" : "JSON",
