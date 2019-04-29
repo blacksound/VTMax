@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 706.0, 164.0, 640.0, 480.0 ],
+		"rect" : [ 131.0, 79.0, 1434.0, 679.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,11 +39,119 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "none",
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 835.0, 267.0, 202.0, 22.0 ],
+					"text" : "VTMSpatProxy.model spat.1 splay 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 881.0, 388.0, 50.0, 49.0 ],
+					"text" : "db -39.812369"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "/spat.1" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-26",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTMSpatProxy.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 585.0, 118.0, 150.0, 320.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 341.0, 562.0, 115.0, 22.0 ],
+					"text" : "j.send /VTLydserver"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 94.0, 458.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 94.0, 376.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 94.0, 502.0, 189.0, 22.0 ],
+					"text" : "j.send /VTLydserver/registerClient"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 94.0, 411.0, 202.0, 22.0 ],
+					"text" : "j.send /VTLydserver/unregisterClient"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 402.0, 309.0, 129.0, 22.0 ],
+					"patching_rect" : [ 141.0, 574.0, 129.0, 22.0 ],
 					"text" : "print lydserverRunning"
 				}
 
@@ -55,7 +163,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 358.0, 340.0, 50.0, 22.0 ],
+					"patching_rect" : [ 97.0, 605.0, 50.0, 22.0 ],
 					"text" : "1"
 				}
 
@@ -67,7 +175,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 354.0, 279.0, 171.0, 22.0 ],
+					"patching_rect" : [ 93.0, 544.0, 171.0, 22.0 ],
 					"text" : "j.receive /VTLydserver/running"
 				}
 
@@ -80,7 +188,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 411.0, 54.0, 24.0, 24.0 ]
+					"patching_rect" : [ 111.0, 41.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -91,7 +199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 397.0, 106.0, 165.0, 22.0 ],
+					"patching_rect" : [ 97.0, 93.0, 165.0, 22.0 ],
 					"text" : "j.send /VTLydserver/running?"
 				}
 
@@ -111,12 +219,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.0, 195.0, 513.0, 22.0 ],
-					"text" : "server_ip 127.0.0.1, server_port 57120, client_ip 127.0.0.1, client_port 50000, client_name aaa"
+					"patching_rect" : [ 94.0, 179.0, 271.0, 49.0 ],
+					"text" : "server_ip 127.0.0.1, server_port 57120, client_ip 127.0.0.1, client_port 50000, client_name aaa, allocatorChannels 1 2 3 4 5 6 7 8"
 				}
 
 			}
@@ -139,7 +248,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.0, 251.0, 213.0, 22.0 ],
+					"patching_rect" : [ 94.0, 255.0, 213.0, 22.0 ],
 					"text" : "VTLydserverProxy.model VTLydserver"
 				}
 
@@ -149,6 +258,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}
@@ -218,6 +341,90 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "VTMSpatProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_textedit.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.large.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resizeParent.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splay.parameters.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
+				"patcherrelativepath" : "../../Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSpatProxy.model.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splay.methodParameters.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
+				"patcherrelativepath" : "../../Modules/VTMSpatProxy/MethodParametersPatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SpatProxyLogic.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../Modules/VTMSpatProxy",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "GetAllParametersDict.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "BuildJSONCue.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "j.model.mxo",
 				"type" : "iLaX"
 			}
@@ -239,6 +446,30 @@
 			}
 , 			{
 				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.namespace.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
 				"type" : "iLaX"
 			}
  ],
