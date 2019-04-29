@@ -1,3 +1,5 @@
+var outlets = 1;
+var localJSendOutlet = 0;
 var spatMethod = jsarguments[1];
 var numInputs = jsarguments[2];
 var inletPos = {"x": 300, "y": 0};
@@ -9,6 +11,10 @@ function init()
 {
 	buildInletsAndDac();
 }
+
+function jinit() {
+	registerWithLydserverProxy();
+} 
 
 function buildInletsAndDac()
 {
@@ -76,3 +82,8 @@ function clearInletsAndDac()
 	}
 	
 }
+
+function registerWithLydserverProxy(){
+	outlet(localJSendOutlet, "registerSpatProxy")
+}
+
