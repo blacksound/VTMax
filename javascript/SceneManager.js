@@ -1,12 +1,13 @@
 var g = new Global("vt_max");
 var scenesPath;
 outlets = 1;
+autowatch = 1;
 
 
 var shellMessageOutlet = 0;
 
 // get the ref from the scenes dictionary
-var scenes = new Dict("scenes");
+var scenes = new Dict("VTM_scenes");
 
 
 //This find the NakedScriptCanvas patcher in the root VTMGlobal.module window

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 206.0, 79.0, 1680.0, 1087.0 ],
+		"rect" : [ 70.0, 220.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,8 +44,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 761.0, 124.0, 101.0, 22.0 ],
-					"text" : "dictionary scenes"
+					"patching_rect" : [ 778.5, 137.0, 133.0, 22.0 ],
+					"text" : "dictionary VTM_scenes"
 				}
 
 			}
@@ -243,7 +243,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 719.0, 38.0, 60.0, 22.0 ],
+					"patching_rect" : [ 719.0, 39.0, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -255,7 +255,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.0, 144.0, 109.0, 22.0 ],
+					"patching_rect" : [ 633.0, 145.0, 109.0, 22.0 ],
 					"text" : "prepend dictionary"
 				}
 
@@ -267,7 +267,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.0, 110.0, 89.0, 22.0 ],
+					"patching_rect" : [ 633.0, 111.0, 89.0, 22.0 ],
 					"text" : "sprintf %s_info"
 				}
 
@@ -279,7 +279,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 633.0, 78.0, 149.0, 22.0 ],
+					"patching_rect" : [ 633.0, 79.0, 149.0, 22.0 ],
 					"text" : "j.lazyReceive sceneName"
 				}
 
@@ -291,7 +291,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 616.0, 43.0, 32.0, 22.0 ],
+					"patching_rect" : [ 620.0, 30.0, 32.0, 22.0 ],
 					"text" : "j.init"
 				}
 
@@ -320,7 +320,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -499,7 +499,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 382.0, 274.0, 159.0, 35.0 ],
+									"patching_rect" : [ 382.0, 274.0, 162.0, 35.0 ],
 									"text" : "pageB pageC pageD pageE pageF pageG pageH"
 								}
 
