@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1509.0, 1134.0 ],
+		"rect" : [ 231.0, 79.0, 1322.0, 980.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,19 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-4",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 400.0, 439.5, 150.0, 37.0 ],
-					"text" : "so many @value ?? hmm :)"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
@@ -844,7 +831,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 491.0, 736.0, 185.0, 22.0 ],
-					"text" : "/aaa/spat/VTMSpatProxy"
+					"text" : "/<none>/spat/VTMSpatProxy"
 				}
 
 			}
@@ -1562,7 +1549,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 267.0, 46.0, 53.0 ],
-									"text" : "/aaa/spat/VTMSpatProxy"
+									"text" : "/<none>/spat/VTMSpatProxy"
 								}
 
 							}
@@ -3358,13 +3345,13 @@
 				"box" : 				{
 					"color" : [ 1.0, 0.0, 1.0, 1.0 ],
 					"id" : "obj-7",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 224.0, 420.0, 163.0, 76.0 ],
-					"text" : "j.parameter db @type decimal @value -96. @range -96 6 @dataspace gain @unit db @default -96. @value -96."
+					"patching_rect" : [ 224.0, 420.0, 167.0, 62.0 ],
+					"text" : "j.parameter db @type decimal @value -96. @range -96 6 @dataspace gain @unit db @default -96."
 				}
 
 			}
