@@ -15,7 +15,7 @@ function mapToPage()
 	if(arguments[0] == null)
 	{
 		post("ControlMappingScripter: Need page name for mapping" + sceneName);
-	} else {	
+	} else {
 		//var mappingPage = argument[1];
 		//var destPageNumTest = new RegExp("(.+)\\.(\\d+)").exec(destinationPage);
 		//destinationPage = destPageNumTest[1];
@@ -25,14 +25,14 @@ function mapToPage()
 			deactivateMapping();
 		}
 		pageName = arguments[0];
-		
+
 		resetPage(pageName);
-		
+
 		mappingDict.clear();
 		mappingDict.set('__bogus__', -1); //this hack fixes a bug where mappings with one element would fail.
 		mappingDict.pull_from_coll(collName);
-		
-		
+
+
 		keysToMap = mappingDict.getkeys();
 		scalarMappings = new Array();
 		if(keysToMap == "__bogus__") {
@@ -45,7 +45,7 @@ function mapToPage()
 				var paramName = keysToMap[i];
 				var ctrlParam, settings;
 				var controlData = mappingDict.get(paramName);
-	//			post("DATA:" + controlData + "type: " + (typeof controlData) + "\n");
+				post("DATA:" + controlData + "type: " + (typeof controlData) + "\n");
 				//if the mapping has no settings it is returned as string
 				if(typeof controlData == "string")
 				{
@@ -58,10 +58,10 @@ function mapToPage()
 					ctrlParam = controlData[0];
 					settings = controlData.slice(1);
 				}
-	//			post("TO:" + param + "\n");
-	//			post("SETTINGS:" + settings + "\n");
-	//			post("First: " + ctrlParam[0]);
-				
+				//post("TO:" + param + "\n");
+				//post("SETTINGS:" + settings + "\n");
+				//post("First: " + ctrlParam[0]);
+
 				//check if the ctrlParam is a button type
 				var buttonKey;
 				var moreStuff;
@@ -96,8 +96,8 @@ function mapToPage()
 							createMapping( ctrlParam, paramName, settings );
 						}
 						scalarMappings.push({"ctrlParam": ctrlParam, "paramName": paramName});
-						
-				}				
+
+				}
 			}
 
 			mappingActive = true;
@@ -128,7 +128,7 @@ function createToggleButtonMapping(paramName, buttonKey) {
 			0, 0, "VTMToggleButtonMapping",
 			"/" + sceneName + "/" + paramName,
 			"/control/" + pageName + "/button." + buttonKey
-		);	
+		);
 }
 
 function createMomentaryButtonMapping(paramName, buttonKey, moreStuff) {
@@ -163,7 +163,7 @@ function createMomentaryButtonMapping(paramName, buttonKey, moreStuff) {
 			}
 	}
 }
-	
+
 function createRadioButtonsMapping(paramName, buttonKeyVals) {
 	var canvas = this.patcher.getnamed("mappingCanvas").subpatcher();
 	var i;
@@ -179,16 +179,16 @@ function createRadioButtonsMapping(paramName, buttonKeyVals) {
 }
 
 function createMapping(ctrlParam, param, settings)
-{	
+{
 	var canvas = this.patcher.getnamed("mappingCanvas").subpatcher();
 	if(param[0] == "/") {
 		param = param;
 	} else {
 		param = "/" + sceneName + "/" + param;
 	}
-	
+
 	var newObj;//for temp storing new objects
-	
+
 	var isDb = RegExp("^.+\/db$");
 	//make the mapping from the parameter to the control parameter
 	if(settings != null)
@@ -209,7 +209,7 @@ function createMapping(ctrlParam, param, settings)
 			);
 		}
 	}
-	
+
 	//set the varname for the new j.map box
 	newObj.varname = param + "=>" + ctrlParam;
 }
@@ -236,7 +236,7 @@ function createRemotePath(ctrlParam, param, settings) {
 				0, 0, "VTMRemoteControlMapUnit", ip, port, param, ctrlParam
 		);
 	}
-	
+
 }
 
 

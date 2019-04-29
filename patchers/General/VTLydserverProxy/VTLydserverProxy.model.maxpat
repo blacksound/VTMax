@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 68.0, 92.0, 958.0, 713.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 302.0, 162.0, 958.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 280.0, 178.0, 64.0, 22.0 ],
-					"style" : "",
 					"text" : "print tunnf"
 				}
 
@@ -56,7 +56,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 127.0, 138.0, 106.0, 22.0 ],
-					"style" : "",
 					"text" : "j.oscroute running"
 				}
 
@@ -69,7 +68,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 127.0, 108.0, 137.0, 22.0 ],
-					"style" : "",
 					"text" : "j.oscroute /VTLydserver"
 				}
 
@@ -82,7 +80,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 127.0, 72.0, 106.0, 22.0 ],
-					"style" : "",
 					"text" : "udpreceive 50000"
 				}
 
@@ -95,7 +92,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 402.0, 61.0, 442.0, 22.0 ],
-					"style" : "",
 					"text" : "j.message destinationSets @type generic @value genelec stue tak $plate.1 gul.4"
 				}
 
@@ -108,7 +104,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 22.0, 618.0, 31.0, 22.0 ],
-					"style" : "",
 					"text" : "thru"
 				}
 
@@ -121,8 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.0, 432.0, 97.0, 49.0 ],
-					"style" : "",
+					"patching_rect" : [ 358.0, 507.0, 97.0, 49.0 ],
 					"text" : "prepend /VTLydserver/unregisterClient"
 				}
 
@@ -135,8 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 382.0, 432.0, 84.0, 49.0 ],
-					"style" : "",
+					"patching_rect" : [ 264.0, 507.0, 84.0, 49.0 ],
 					"text" : "prepend /VTLydserver/registerClient"
 				}
 
@@ -149,8 +142,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 476.0, 371.0, 97.0, 49.0 ],
-					"style" : "",
+					"patching_rect" : [ 358.0, 446.0, 97.0, 49.0 ],
 					"text" : "j.message unregisterClient @type string"
 				}
 
@@ -163,8 +155,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 382.0, 371.0, 84.0, 49.0 ],
-					"style" : "",
+					"patching_rect" : [ 264.0, 446.0, 84.0, 49.0 ],
 					"text" : "j.message registerClient @type string"
 				}
 
@@ -177,7 +168,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 127.0, 200.0, 86.0, 22.0 ],
-					"style" : "",
 					"text" : "j.send running"
 				}
 
@@ -190,7 +180,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 22.0, 465.0, 151.0, 22.0 ],
-					"style" : "",
 					"text" : "join 2"
 				}
 
@@ -203,7 +192,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 154.0, 432.0, 74.0, 22.0 ],
-					"style" : "",
 					"text" : "zl reg"
 				}
 
@@ -216,7 +204,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.0, 371.0, 183.0, 22.0 ],
-					"style" : "",
 					"text" : "j.lazyReceive /global/clientName"
 				}
 
@@ -229,7 +216,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 209.0, 401.0, 98.0, 22.0 ],
-					"style" : "",
 					"text" : "VTMGetIPString"
 				}
 
@@ -242,7 +228,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "/VTLydserver/running?", "bang", "bang" ],
 					"patching_rect" : [ 22.0, 320.0, 210.0, 22.0 ],
-					"style" : "",
 					"text" : "t /VTLydserver/running? b b"
 				}
 
@@ -254,7 +239,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 659.0, 139.0, 22.0 ],
-					"style" : "",
 					"text" : "VTMSendMsg lydserver"
 				}
 
@@ -267,7 +251,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 22.0, 290.0, 183.0, 22.0 ],
-					"style" : "",
 					"text" : "j.message running? @type none"
 				}
 
@@ -280,7 +263,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 371.0, 163.0, 50.0, 22.0 ],
-					"style" : "",
 					"text" : "1"
 				}
 
@@ -293,7 +275,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 402.0, 105.0, 291.0, 22.0 ],
-					"style" : "",
 					"text" : "j.return running @type boolean @default 0 @value 0"
 				}
 
@@ -302,12 +283,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 226.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 22.0, 226.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -315,13 +295,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 83.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 22.0, 83.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -333,7 +312,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 22.0, 187.0, 49.0, 22.0 ],
-					"style" : "",
 					"text" : "j.model"
 				}
 
@@ -488,7 +466,60 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "VTMSendMsg.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers",
+				"patcherrelativepath" : "../..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMGetIPString.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.return.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.oscroute.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

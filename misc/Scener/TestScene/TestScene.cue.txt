@@ -23,6 +23,33 @@
 # 
 # ###########################################
 
+- cue "jappa2"
+- description "something about this cue"
+# ###########################################
+# 
+/TestScene/hei 7.755517
+/TestScene/klasse 30
+/TestScene/myBoolean 0
+/TestScene/myBoolean2 0
+/TestScene/myInt -20
+/TestScene/myInt2 60
+/TestScene/myIntLol 20
+/TestScene/myString Runger
+/TestScene/pingu 30
+# 
+/TestScene/spat.1/alias none
+/TestScene/spat.1/db -96.000000
+/TestScene/spat.1/destination genelec
+/TestScene/spat.1/lfoAmount 0.000000
+/TestScene/spat.1/lfoSpeed 0.000000
+/TestScene/spat.1/lfoType ramp
+/TestScene/spat.1/pan 0.000000
+/TestScene/spat.1/source auto
+/TestScene/spat.1/spread 0.000000
+/TestScene/spat.1/width 0.000000
+# 
+# ###########################################
+
 - cue "baiuhg"
 - description "something about this cue"
 # ###########################################
@@ -37,7 +64,7 @@
 /TestScene/myString IAMString
 /TestScene/pingu 30
 # 
-/TestScene/spat.1/db -19.111663
+/TestScene/spat.1/db -19.111664
 # 
 /TestScene/spat.1/params/lfoAmount 0.724815
 /TestScene/spat.1/params/lfoSpeed 0.724815

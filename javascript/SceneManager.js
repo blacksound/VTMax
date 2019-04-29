@@ -5,6 +5,7 @@ outlets = 1;
 
 var shellMessageOutlet = 0;
 
+// get the ref from the scenes dictionary
 var scenes = new Dict("scenes");
 
 
@@ -22,7 +23,7 @@ function sceneExists(sceneName) {
 		if(names[i] == sceneName) {
 			result = true;
 			break;
-		}		
+		}
 	};
 	return result;
 }
@@ -36,7 +37,7 @@ function escapeSpaces( str ) {
 function newScene( scriptFolder, scenePath ) {
 	//I hate Max.
 	scenePath = escapeSpaces(scenePath);
-	
+
 	//Runs the makeNewScene bash script which makes a new folder
 	//and copies the templates to the new scene folder.
 	//Please read first and last comment in this method for a better
@@ -63,7 +64,7 @@ function getBooleanValueForScene(sceneName, key) {
 			result = false;
 		}
 	}
-	return result;	
+	return result;
 }
 
 function sceneIsOpen(sceneName) {
@@ -127,14 +128,12 @@ function deleteSceneCore( sceneName ) {
 }
 
 function registerOpenedScene(sceneName) {
-	
 	scenes.setparse(
 		sceneName,
 		'{"mapped": 0, "active": 0}'
 	);
 	makeSceneCore(sceneName);
-	//post("Making scene core for " + sceneName + "\n");
-	
+	post("Making scene core for " + sceneName + "\n");
 }
 
 function registerClosedScene(sceneName) {

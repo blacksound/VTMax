@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 137.0, 79.0, 886.0, 1075.0 ],
+		"rect" : [ 345.0, 1036.0, 843.0, 467.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 230.0, 79.0, 1059.0, 745.0 ],
+						"rect" : [ 920.0, 454.0, 1200.0, 868.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,15 +83,26 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 577.0, 431.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-35",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 492.25, 344.0, 35.0, 22.0 ],
+									"patching_rect" : [ 634.25, 476.0, 35.0, 22.0 ],
 									"text" : "clear"
 								}
 
@@ -105,28 +116,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 932.0, 279.0, 167.0, 22.0 ],
 									"text" : "prepend registerClosedScene"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 442.0, 351.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "dict.view",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 343.0, 546.0, 100.0, 100.0 ]
 								}
 
 							}
@@ -152,7 +141,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 937.0, 122.0, 150.0, 79.0 ],
-									"presentation_linecount" : 4,
 									"text" : "When a scene patch is closed this message is sent from its VTMSceneCore patch"
 								}
 
@@ -175,7 +163,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 550.0, 344.0, 69.0, 22.0 ],
+									"patching_rect" : [ 594.5, 559.0, 69.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -805,7 +793,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 492.25, 436.0, 71.0, 22.0 ],
+									"patching_rect" : [ 589.0, 522.0, 71.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -994,6 +982,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
+									"midpoints" : [ 699.5, 375.0, 192.0, 375.0 ],
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -1001,13 +990,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-71", 0 ],
-									"source" : [ "obj-30", 0 ]
+									"source" : [ "obj-32", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
+									"midpoints" : [ 941.5, 390.0, 192.0, 390.0 ],
 									"source" : [ "obj-33", 0 ]
 								}
 
@@ -1072,13 +1062,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-28", 0 ],
-									"source" : [ "obj-71", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-48", 0 ],
 									"source" : [ "obj-81", 0 ]
 								}
@@ -1103,7 +1086,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 142.0, 493.0, 98.0, 22.0 ],
+					"patching_rect" : [ 149.0, 356.0, 98.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
