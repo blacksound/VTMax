@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 131.0, 79.0, 1434.0, 679.0 ],
+		"rect" : [ 1415.0, 79.0, 1127.0, 679.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -105,7 +105,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 94.0, 458.0, 24.0, 24.0 ]
+					"patching_rect" : [ 68.0, 540.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -117,7 +117,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 94.0, 376.0, 24.0, 24.0 ]
+					"patching_rect" : [ 68.0, 458.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -128,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.0, 502.0, 189.0, 22.0 ],
+					"patching_rect" : [ 68.0, 584.0, 189.0, 22.0 ],
 					"text" : "j.send /VTLydserver/registerClient"
 				}
 
@@ -140,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.0, 411.0, 202.0, 22.0 ],
+					"patching_rect" : [ 68.0, 493.0, 202.0, 22.0 ],
 					"text" : "j.send /VTLydserver/unregisterClient"
 				}
 
@@ -151,7 +151,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 574.0, 129.0, 22.0 ],
+					"patching_rect" : [ 333.0, 71.0, 129.0, 22.0 ],
 					"text" : "print lydserverRunning"
 				}
 
@@ -163,7 +163,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.0, 605.0, 50.0, 22.0 ],
+					"patching_rect" : [ 289.0, 102.0, 50.0, 22.0 ],
 					"text" : "1"
 				}
 
@@ -175,7 +175,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 93.0, 544.0, 171.0, 22.0 ],
+					"patching_rect" : [ 285.0, 41.0, 171.0, 22.0 ],
 					"text" : "j.receive /VTLydserver/running"
 				}
 
@@ -188,7 +188,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 111.0, 41.0, 24.0, 24.0 ]
+					"patching_rect" : [ 76.0, 85.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -199,7 +199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.0, 93.0, 165.0, 22.0 ],
+					"patching_rect" : [ 76.0, 122.0, 165.0, 22.0 ],
 					"text" : "j.send /VTLydserver/running?"
 				}
 
@@ -211,7 +211,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 94.0, 144.0, 58.0, 22.0 ],
+					"patching_rect" : [ 68.0, 226.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -224,7 +224,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.0, 179.0, 271.0, 49.0 ],
+					"patching_rect" : [ 68.0, 261.0, 271.0, 49.0 ],
 					"text" : "server_ip 127.0.0.1, server_port 57120, client_ip 127.0.0.1, client_port 50000, client_name aaa, allocatorChannels 1 2 3 4 5 6 7 8"
 				}
 
@@ -235,7 +235,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.0, 299.0, 135.0, 22.0 ],
+					"patching_rect" : [ 68.0, 359.0, 135.0, 22.0 ],
 					"text" : "print VTLydserverDump"
 				}
 
@@ -248,7 +248,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.0, 255.0, 213.0, 22.0 ],
+					"patching_rect" : [ 68.0, 323.0, 213.0, 22.0 ],
 					"text" : "VTLydserverProxy.model VTLydserver"
 				}
 
@@ -317,13 +317,6 @@
 				"name" : "VTLydserverProxy.model.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTMSendMsg.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers",
-				"patcherrelativepath" : "../..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -421,6 +414,13 @@
 				"name" : "BuildJSONCue.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSendMsg.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers",
+				"patcherrelativepath" : "../..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
