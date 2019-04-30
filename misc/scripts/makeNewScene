@@ -20,6 +20,8 @@ if [ ! -d "${SCENEPATH}" ]; then #has to be a string literal to avoid issues wit
   SEDARGS=$SEDARGS${SCENENAME}
   SEDARGS=$SEDARGS"\"/"
   sed -e $SEDARGS <../Scener/_template/_template.maxpat >"$PATCHFILE"
+  touch "${SCENEPATH}/${SCENENAME}.cue.txt"
+  touch "${SCENEPATH}/${SCENENAME}.mappings"
   exit 0
 else
   echo "scene already exists"
