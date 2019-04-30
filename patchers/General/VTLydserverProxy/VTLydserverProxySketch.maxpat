@@ -45,7 +45,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 835.0, 267.0, 202.0, 22.0 ],
+					"patching_rect" : [ 824.0, 226.0, 202.0, 22.0 ],
 					"text" : "VTMSpatProxy.model spat.1 splay 2"
 				}
 
@@ -58,8 +58,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 881.0, 388.0, 50.0, 49.0 ],
-					"text" : "db -39.812369"
+					"patching_rect" : [ 869.0, 427.0, 50.0, 49.0 ],
+					"text" : "destination none"
 				}
 
 			}
