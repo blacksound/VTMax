@@ -256,7 +256,7 @@
 					"patching_rect" : [ 234.0, 325.0, 110.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 1.0, 152.0, 22.0 ],
-					"text" : "NowThis",
+					"text" : " ",
 					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"textjustification" : 0,
 					"texton" : "",
