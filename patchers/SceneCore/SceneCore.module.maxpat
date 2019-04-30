@@ -103,7 +103,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "NowThis" ],
+					"outlettype" : [ "Hey" ],
 					"patching_rect" : [ 349.0, 145.0, 153.0, 22.0 ],
 					"text" : "t #1"
 				}
@@ -202,7 +202,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "NowThis" ],
+					"args" : [ "Hey" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -215,6 +215,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 9.0, 22.0, 159.0, 98.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 153.0, 725.0 ],
 					"varname" : "view",
