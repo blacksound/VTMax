@@ -3,7 +3,7 @@ var g = new Global("vt_max");
 outlets = 2;
 
 function findScenes(path) {
-	var scenesDict = new Dict("scenes");
+	var scenesDict = new Dict("VTM_scenes");
 	var sceneFolder;
 	g.scenesFolder = path;
 	sceneFolder = new Folder(path);

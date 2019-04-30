@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 687.0, 79.0, 959.0, 937.0 ],
+		"rect" : [ 34.0, 79.0, 972.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 174.0, 863.5, 150.0, 47.0 ],
+					"text" : "has to be in symout mode so we can have spaces in names"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 42.0, 903.0, 128.0, 22.0 ],
+					"patching_rect" : [ 42.0, 926.0, 128.0, 22.0 ],
 					"text" : "conformpath max boot"
 				}
 
@@ -104,8 +116,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 42.0, 863.5, 81.0, 22.0 ],
-					"text" : "sprintf %s/%s"
+					"patching_rect" : [ 42.0, 863.5, 123.0, 22.0 ],
+					"text" : "sprintf symout %s/%s"
 				}
 
 			}
@@ -116,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 42.0, 789.5, 29.5, 22.0 ],
+					"patching_rect" : [ 42.0, 811.5, 29.5, 22.0 ],
 					"text" : "t l b"
 				}
 
@@ -212,7 +224,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 42.0, 934.0, 253.0, 22.0 ],
+					"patching_rect" : [ 42.0, 961.0, 253.0, 22.0 ],
 					"text" : "j.send /global/sceneManager/makeNewScene"
 				}
 

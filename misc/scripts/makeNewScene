@@ -5,8 +5,8 @@ if [ ! -n "$1" ]; then
 fi
 
 SCENEPATH="$1"
-if [ ! -d $SCENEPATH ]; then
-  SCENENAME="$(basename $SCENEPATH)"
+if [ ! -d "${SCENEPATH}" ]; then #has to be a string literal to avoid issues with spaces in names
+  SCENENAME="$(basename "${SCENEPATH}")" #has to be a string literal to avoid issues with spaces in names
   echo Make new scene in "$SCENEPATH"
   echo Scene name is "$SCENENAME"
   pwd
