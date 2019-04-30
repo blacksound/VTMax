@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 556.0, 387.0, 565.0, 886.0 ],
+		"rect" : [ 644.0, 98.0, 565.0, 886.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,46 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "front" ],
+					"patching_rect" : [ 7.0, 806.0, 39.0, 22.0 ],
+					"text" : "t front"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 7.0, 775.0, 127.0, 22.0 ],
+					"text" : "j.receive showWindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 7.0, 836.0, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "/YetAnotherTestScene/speed", "@labelformat", "global" ],
 					"bgmode" : 0,
@@ -259,6 +299,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -321,14 +377,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "VTM_UI_menu.large.maxpat",
+				"name" : "DestinationMenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../../patchers/Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../../patchers/Widgets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "VTM_UI_slider.maxpat",
+				"name" : "VTM_UI_menu.large.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
 				"patcherrelativepath" : "../../../patchers/Widgets",
 				"type" : "JSON",
