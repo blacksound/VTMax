@@ -116,8 +116,7 @@ function getWidgets() {
   });
   //check what's not there yet, and create it
   currentWidgets.forEach(function(widget) {
-    if (oldWidgets.indexOf(widget) != -1) {
-    } else {
+    if (oldWidgets.indexOf(widget) == -1) {
       buildWidget(widget);
     }
   });
