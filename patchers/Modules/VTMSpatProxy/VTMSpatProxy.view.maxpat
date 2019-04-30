@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "spatargs", "/spat.1/params" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-26",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "splay.parameters.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 255.0, 700.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 155.5, 150.0, 800.0 ],
+					"varname" : "spatargs",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-73",
 					"linecount" : 8,
@@ -95,30 +119,6 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 882.0, 193.0, 78.0, 22.0 ],
 					"text" : "zl reg"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "spatargs", "/ess/params" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-26",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "splay.parameters.view.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 700.0, 128.0, 128.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 155.5, 150.0, 800.0 ],
-					"varname" : "spatargs",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -481,7 +481,7 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "VTM_UI_menu.large.maxpat",
+					"name" : "SpatProxyMenu.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -1306,19 +1306,16 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.0, 0.0, 0.0 ],
 					"fontname" : "Menlo Bold",
 					"fontsize" : 8.0,
 					"id" : "obj-19",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 882.0, 293.5, 142.0, 25.0 ],
+					"patching_rect" : [ 882.0, 293.5, 142.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 69.5, 20.5, 78.5, 34.0 ],
-					"text" : "lydserver_proxy_not_initalized"
+					"presentation_rect" : [ 69.5, 20.5, 78.5, 16.0 ]
 				}
 
 			}
@@ -2071,7 +2068,7 @@
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "DestinationMenu.maxpat",
+					"name" : "SpatProxyMenu.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -2131,7 +2128,7 @@
 					"patching_rect" : [ 33.333343999999997, 65.0, 150.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 150.0, 315.0 ],
-					"text" : "/ess",
+					"text" : "/spat.1",
 					"varname" : "ui"
 				}
 
