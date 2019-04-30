@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 575.0, 172.0, 1680.0, 1293.0 ],
+		"rect" : [ 233.0, 79.0, 1680.0, 1293.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -535,18 +535,6 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-7",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 308.0, 325.0, 50.0, 22.0 ],
-									"text" : "32"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-34",
@@ -594,8 +582,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 71.0, 183.0, 274.0, 22.0 ],
-									"text" : "j.lazyReceive /global/totalNumberOfAudioOutputs"
+									"patching_rect" : [ 71.0, 183.0, 308.0, 22.0 ],
+									"text" : "j.lazyReceive /VTLydserver/totalNumberOfAudioOutputs"
 								}
 
 							}
@@ -692,8 +680,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 69.0, 374.0, 81.0, 22.0 ],
-									"text" : "prepend auto"
+									"patching_rect" : [ 69.0, 374.0, 101.0, 22.0 ],
+									"text" : "prepend allocator"
 								}
 
 							}
@@ -847,15 +835,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
-									"order" : 1,
-									"source" : [ "obj-27", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 1 ],
-									"order" : 0,
 									"source" : [ "obj-27", 0 ]
 								}
 
