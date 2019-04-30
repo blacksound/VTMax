@@ -39,13 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-178",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 567.0, 409.5, 150.0, 33.0 ],
+					"text" : "remove all widgets, clear memory, clear coll"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-239",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 540.5, 587.0, 79.0, 22.0 ],
-					"text" : "resetMemory"
+					"patching_rect" : [ 540.5, 587.0, 49.0, 22.0 ],
+					"text" : "resetAll"
 				}
 
 			}
@@ -56,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 430.5, 460.0, 35.0, 22.0 ],
+					"patching_rect" : [ 460.0, 460.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -363,7 +375,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 588.166687000000024, 475.0, 20.0, 20.0 ]
+					"patching_rect" : [ 540.5, 416.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -392,25 +404,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 302.0, 432.0, 56.0, 22.0 ],
 					"text" : "deferlow"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-110",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 588.166687000000024, 520.0, 128.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "deleteAllPatchers.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js deleteAllPatchers.js"
 				}
 
 			}
@@ -672,16 +665,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
-					"order" : 0,
-					"source" : [ "obj-219", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-223", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-219", 0 ]
 				}
 
@@ -689,7 +674,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-239", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-219", 0 ]
 				}
 
@@ -885,13 +870,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "deleteAllPatchers.js",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "SceneStateListBuilder.js",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",

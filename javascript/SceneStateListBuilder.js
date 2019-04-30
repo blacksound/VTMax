@@ -1,41 +1,70 @@
 autowatch = 1;
-
-var heightCounter = 0;
-var height = 10;
 var p = this.patcher;
+var currentWidgets;
+var oldWidgets = [];
 
-var currentWidgets, oldWidgets;
-oldWidgets = [];
-
-function resetMemory() {
-  oldWidgets = [];
+//used in: buildWidget
+//check if a particular widget exists
+function widgetExists(arg_widgetID) {
+  if (p.getnamed(arg_widgetID)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-function getWidgets() {
-  currentWidgets = arrayfromargs(arguments);
-
-  oldWidgets.forEach(function(widget) {
-    if (currentWidgets.indexOf(widget) == -1) {
-      removeWidget(widget);
-    }
-  });
-
-  currentWidgets.forEach(function(widget) {
-    if (oldWidgets.indexOf(widget) != -1) {
-    } else {
-      buildWidget(widget);
-    }
-  });
-  arrangeHeights();
-  oldWidgets = currentWidgets;
+//used in: getWidgets
+//build a widget if it's not there already
+function buildWidget(arg_sceneName) {
+  var sceneName = arg_sceneName;
+  if (!widgetExists("sceneWidget_" + sceneName)) {
+    var statusBPatcher;
+    statusBPatcher = p.newdefault(
+      0,
+      0,
+      "bpatcher",
+      "@name",
+      "VTMSceneStatus.view",
+      "@presentation",
+      1,
+      "@presentation_rect",
+      0,
+      0,
+      150,
+      23,
+      "@patching_rect",
+      0,
+      0,
+      150,
+      23,
+      "@args",
+      "/" + sceneName
+    );
+    //tag it with a unique scripting name
+    statusBPatcher.varname = "statusWidget_" + sceneName;
+  }
 }
 
+//used in: getWidgets
+//remove a widget corresponding to a scene name
+function removeWidget(arg_sceneName) {
+  var widgetID = "statusWidget_" + arg_sceneName;
+  var widgetToRemove = p.getnamed(widgetID);
+  p.remove(widgetToRemove);
+}
+
+//used in: getWidgets
 function arrangeHeights() {
-  height = 62;
-
+  //topmost widget is always 62px from top
+  var height = 62;
+  //Cycle through all the currently existing widgets (they are already arriving
+  //sorted from the coll) and put them under each other.
   currentWidgets.forEach(function(widget) {
     var thisWidget = p.getnamed("statusWidget_" + widget);
     var rectArray = [0, height, 150, 23];
+    //It is very weird and frustrating, but for some reason this twisted way
+    //is the only one which does the job. Setting it with the . operator should
+    //work, but it doesn't. As always, no explanation, no documentation, nothing.
     p.message(
       "script",
       "sendbox",
@@ -56,50 +85,44 @@ function arrangeHeights() {
       rectArray[2],
       rectArray[3]
     );
+    //increment height with the width of a widget
     height += 23;
   });
 }
 
-function widgetExists(arg_widgetID) {
-  if (this.patcher.getnamed(arg_widgetID)) {
-    return true;
-  } else {
-    return false;
-  }
+//reset memory and delete all widgets
+function resetAll() {
+  oldWidgets = [];
+  p.applyif(
+    function(obj) {
+      p.remove(obj);
+    },
+    function(obj) {
+      return obj.maxclass == "patcher";
+    }
+  );
 }
 
-function buildWidget(arg_sceneName) {
-  var sceneName = arg_sceneName;
-
-  if (!widgetExists("sceneWidget_" + sceneName)) {
-    var statusBPatcher;
-    statusBPatcher = this.patcher.newdefault(
-      0,
-      height,
-      "bpatcher",
-      "@name",
-      "VTMSceneStatus.view",
-      "@presentation",
-      1,
-      "@presentation_rect",
-      0,
-      height,
-      150,
-      23,
-      "@patching_rect",
-      0,
-      height,
-      150,
-      23,
-      "@args",
-      "/" + sceneName
-    );
-    statusBPatcher.varname = "statusWidget_" + sceneName;
-  }
-}
-
-function removeWidget(arg_sceneName) {
-  var widgetID = "statusWidget_" + arg_sceneName;
-  var widgetToRemove = this.patcher.getnamed(widgetID);
-  this.patcher.remove(widgetToRemove);
+//Main function: get the sorted list of scene names from the coll,
+//create new widgets, remove old ones, and rearrange heights according
+//to (new) alphanumeric order.
+function getWidgets() {
+  currentWidgets = arrayfromargs(arguments);
+  //check what's not there anymore, and remove it
+  oldWidgets.forEach(function(widget) {
+    if (currentWidgets.indexOf(widget) == -1) {
+      removeWidget(widget);
+    }
+  });
+  //check what's not there yet, and create it
+  currentWidgets.forEach(function(widget) {
+    if (oldWidgets.indexOf(widget) != -1) {
+    } else {
+      buildWidget(widget);
+    }
+  });
+  //rearrange widgets to keep the alphanumeric order
+  arrangeHeights();
+  //save list of scenes into memory
+  oldWidgets = currentWidgets;
 }
