@@ -242,7 +242,8 @@
 				"box" : 				{
 					"align" : 0,
 					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
-					"fontname" : "Avenir Book",
+					"fontface" : 0,
+					"fontname" : "Avenir Black",
 					"fontsize" : 10.0,
 					"hint" : "Close scene by shift-alt click",
 					"id" : "obj-20",
