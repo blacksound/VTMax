@@ -1,7 +1,19 @@
-outlets = 2;
+outlets = 3;
+autowatch = 1;
+
 var mainOutlet = 0;
 var jsendOutlet = 1;
+var addressOutlet = 2;
 var sceneName;
+
+function bindToAddress(sceneNameArg) {
+	sceneName = sceneNameArg;
+	//if (sceneName) {
+	outlet(addressOutlet, "model:address",  "/" + sceneName);
+	//} else {
+	//	post("initialize first!");
+	//}
+}
 
 function isOpenedInScenePatch() {
 	var result = false;
@@ -23,9 +35,16 @@ function getScenePatcherFilepath() {
 	}
 }
 
-function freeScene( ) {
+function sceneClosed() {
 	outlet(jsendOutlet,
 		"/global/sceneManager/sceneClosed",
+		sceneName
+	);
+}	
+
+function sceneOpened() {
+	outlet(jsendOutlet,
+		"/global/sceneManager/sceneOpened",
 		sceneName
 	);
 }	
@@ -33,8 +52,9 @@ function freeScene( ) {
 function initSceneCore( sceneNameArg ) {
 	if( isOpenedInScenePatch() ) {
 		sceneName = sceneNameArg;
-		deleteViewBpatcher();
 		makeViewBpatcher( sceneName );
+		sceneOpened();
+		bindToAddress(sceneName);
 	} else {
 		//this should never happen
 		post("trying to initSceneCore without being in a scene patch\n");
