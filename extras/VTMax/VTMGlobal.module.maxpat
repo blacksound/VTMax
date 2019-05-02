@@ -210,7 +210,7 @@
 									"numoutlets" : 5,
 									"outlettype" : [ "int", "int", "int", "int", "int" ],
 									"patching_rect" : [ 50.0, 160.0, 66.0, 22.0 ],
-									"save" : [ "#N", "menubar", 5, 0, ";", "#X", "about", "About", "VTM", ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "VTM", ";", "#X", "item", 5, 1, "Global", "model", ";", "#X", "item", 5, 2, "Scene", "cores", ";", "#X", "item", 5, 3, "Lydserver", "Proxy", ";", "#X", "end", ";" ],
+									"save" : [ "#N", "menubar", 5, 0, ";", "#X", "about", "About", "VTM", ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "VTM", ";", "#X", "item", 5, 1, "Global", "Model", ";", "#X", "item", 5, 2, "Scene", "Cores", ";", "#X", "item", 5, 3, "Lydserver", "Proxy", ";", "#X", "end", ";" ],
 									"text" : "menubar 5"
 								}
 
@@ -495,14 +495,14 @@
 					"fontname" : "Avenir Next Regular",
 					"fontsize" : 10.0,
 					"gradient" : 1,
-					"hint" : "Number of available audio outputs",
+					"hint" : "Turn on/off VTM menubar item",
 					"id" : "obj-33",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 798.0, 45.0, 22.0 ],
-					"text" : "Menues",
+					"patching_rect" : [ 6.0, 798.0, 39.0, 22.0 ],
+					"text" : "Menus",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -521,7 +521,7 @@
 					"fontname" : "Avenir Next Condensed Regular",
 					"fontsize" : 18.0,
 					"gradient" : 1,
-					"hint" : "Turn on/off VTM menubar item",
+					"hint" : "Last controller moved",
 					"id" : "obj-48",
 					"maxclass" : "message",
 					"numinlets" : 2,
