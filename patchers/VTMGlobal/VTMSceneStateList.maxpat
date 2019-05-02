@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 972.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 936.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,137 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 395.0, 177.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 395.0, 118.0, 101.0, 22.0 ],
+					"text" : "prepend openSet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 395.0, 150.0, 99.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "openSceneSet.js",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js openSceneSet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 562.0, 147.0, 89.0, 22.0 ],
+					"text" : "prepend export"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 562.0, 118.0, 109.0, 22.0 ],
+					"text" : "combine path .json"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "bang" ],
+					"patching_rect" : [ 562.0, 88.0, 66.0, 22.0 ],
+					"text" : "savedialog"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 562.0, 179.0, 113.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict VTM_sceneSet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 562.0, 61.0, 113.0, 22.0 ],
+					"text" : "pvar saveSetButton"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.56 ],
+					"fontsize" : 10.0,
+					"hint" : "Open all scenes from selected folder.",
+					"id" : "obj-3",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 562.0, 27.0, 116.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -1.0, 0.0, 76.0, 21.0 ],
+					"text" : "Save Set",
+					"texton" : "",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 0.36 ],
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"usebgoncolor" : 1,
+					"usetextovercolor" : 1,
+					"varname" : "saveSetButton"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-68",
 					"linecount" : 3,
@@ -65,11 +196,12 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
+					"bubbleside" : 2,
 					"id" : "obj-62",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 361.0, 85.0, 207.0, 24.0 ],
+					"patching_rect" : [ 364.5, 384.25, 207.0, 39.0 ],
 					"text" : "VTMSceneStateListContainer (lol)"
 				}
 
@@ -88,7 +220,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 187.0, 12.0, 172.0, 190.5 ],
+					"patching_rect" : [ 382.0, 422.5, 172.0, 190.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, 44.0, 170.0, 317.5 ],
 					"viewvisibility" : 1
@@ -127,8 +259,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 18.0, 86.0, 90.0, 22.0 ],
-					"text" : "opendialog fold"
+					"patching_rect" : [ 395.0, 88.0, 103.0, 22.0 ],
+					"text" : "opendialog JSON"
 				}
 
 			}
@@ -139,7 +271,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 46.0, 115.0, 22.0 ],
+					"patching_rect" : [ 395.0, 61.0, 115.0, 22.0 ],
 					"text" : "pvar openSetButton"
 				}
 
@@ -155,7 +287,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 18.0, 12.0, 116.0, 22.0 ],
+					"patching_rect" : [ 395.0, 27.0, 116.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, 21.0, 154.0, 21.0 ],
 					"text" : "Open Set",
@@ -296,7 +428,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 18.0, 216.5, 235.0, 35.0 ],
+					"patching_rect" : [ 18.0, 216.5, 281.0, 35.0 ],
 					"text" : "dialog \"Enter new scene name.                                (Spaces will be changed to underscores.)\""
 				}
 
@@ -325,7 +457,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 18.0, 124.5, 76.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, -1.0, 76.0, 21.0 ],
+					"presentation_rect" : [ 77.0, 0.0, 76.0, 21.0 ],
 					"text" : "New Scene",
 					"texton" : "",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.36 ],
@@ -339,6 +471,27 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -348,6 +501,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -376,6 +543,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -449,7 +623,21 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
  ],
+		"parameters" : 		{
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "VTMSceneStateListContainer.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
@@ -459,6 +647,13 @@
 			}
 , 			{
 				"name" : "SceneStateListBuilder.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "openSceneSet.js",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
