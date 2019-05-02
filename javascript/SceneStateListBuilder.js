@@ -61,7 +61,7 @@ function arrangeHeights() {
   //sorted from the coll) and put them under each other.
   currentWidgets.forEach(function(widget) {
     var thisWidget = p.getnamed("statusWidget_" + widget);
-    var rectArray = [0, height, 150, 23];
+    var rectArray = [0, height, 154, 23];
     //It is very weird and frustrating, but for some reason this twisted way
     //is the only one which does the job. Setting it with the . operator should
     //work, but it doesn't. As always, no explanation, no documentation, nothing.
