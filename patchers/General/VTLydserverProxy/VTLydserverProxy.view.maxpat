@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
+			"major" : 8,
+			"minor" : 0,
 			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 763.0, -766.0, 595.0, 490.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 327.0, 216.0, 640.0, 564.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +45,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 329.0, 321.0, 93.0, 22.0 ],
-					"style" : "",
 					"text" : "j.send running?"
 				}
 
@@ -52,8 +52,8 @@
 , 			{
 				"box" : 				{
 					"align" : 0,
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"bgoncolor" : [ 0.92549, 0.364706, 0.341176, 0.13 ],
+					"bgcolor" : [ 0.290196078431373, 0.309803921568627, 0.301960784313725, 0.0 ],
+					"bgoncolor" : [ 0.925490196078431, 0.364705882352941, 0.341176470588235, 0.0 ],
 					"fontname" : "Avenir Book",
 					"fontsize" : 10.0,
 					"id" : "obj-4",
@@ -65,13 +65,11 @@
 					"patching_rect" : [ 316.0, 264.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 153.0, 20.0 ],
-					"style" : "",
 					"text" : "Lydserver:",
 					"textjustification" : 0,
 					"texton" : "",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textovercolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-					"usebgoncolor" : 1
+					"textovercolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 
 			}
@@ -83,7 +81,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 274.0, 191.0, 55.0, 22.0 ],
-					"style" : "",
 					"text" : "Running"
 				}
 
@@ -96,7 +93,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 188.0, 191.0, 77.0, 22.0 ],
-					"style" : "",
 					"text" : "Not Running"
 				}
 
@@ -109,7 +105,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 188.0, 254.0, 74.0, 22.0 ],
-					"style" : "",
 					"text" : "prepend set"
 				}
 
@@ -122,7 +117,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
 					"patching_rect" : [ 188.0, 160.0, 191.0, 22.0 ],
-					"style" : "",
 					"text" : "sel 0 1"
 				}
 
@@ -135,14 +129,13 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 188.0, 123.0, 99.0, 22.0 ],
-					"style" : "",
 					"text" : "j.receive running"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.848164, 0.786889, 0.529305, 1.0 ],
+					"bgcolor" : [ 0.847058823529412, 0.788235294117647, 0.529411764705882, 0.0 ],
 					"fontface" : 1,
 					"fontname" : "Avenir Heavy",
 					"fontsize" : 10.0,
@@ -153,7 +146,6 @@
 					"patching_rect" : [ 245.0, 43.0, 171.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 153.0, 20.0 ],
-					"style" : "",
 					"text" : "Not Running",
 					"textjustification" : 2
 				}
@@ -163,12 +155,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 285.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 17.0, 285.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -176,13 +167,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 191.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 17.0, 191.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -194,7 +184,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 17.0, 240.0, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "j.view"
 				}
 
@@ -263,7 +252,21 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

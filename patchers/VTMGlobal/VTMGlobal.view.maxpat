@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 918.0, 783.0 ],
+		"rect" : [ 580.0, 574.0, 832.0, 859.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -64,7 +64,7 @@
 					"bgcolor2" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 0.0 ],
 					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
@@ -105,7 +105,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 761.0, 300.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 203.0, 154.0, 19.0 ],
+					"presentation_rect" : [ 3.0, 203.0, 151.0, 19.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -167,7 +167,7 @@
 					"bgcolor2" : [ 0.615351, 0.854691, 0.77979, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 0.0 ],
 					"bgfillcolor_color1" : [ 0.615351, 0.854691, 0.77979, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
@@ -183,7 +183,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 549.166625999999951, 554.0, 61.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.0, 0.0, 92.0, 58.0 ],
+					"presentation_rect" : [ 62.0, 0.0, 92.0, 58.0 ],
 					"text" : "24",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 2
@@ -194,10 +194,10 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"annotation" : "none",
-					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 0.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 0.0 ],
 					"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
@@ -321,7 +321,7 @@
 					"bgcolor2" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgfillcolor_color" : [ 0.847059, 0.788235, 0.529412, 0.0 ],
 					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
@@ -387,7 +387,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgcolor" : [ 0.847058823529412, 0.788235294117647, 0.529411764705882, 0.0 ],
 					"fontname" : "Avenir Next Regular",
 					"fontsize" : 18.0,
 					"id" : "obj-29",
@@ -396,7 +396,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.0, 23.0, 214.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 99.0, 154.0, 31.0 ],
+					"presentation_rect" : [ 3.0, 99.0, 150.5, 31.0 ],
 					"text" : "Client name:"
 				}
 
@@ -472,7 +472,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgcolor" : [ 0.847058823529412, 0.788235294117647, 0.529411764705882, 0.0 ],
 					"fontname" : "Avenir Next Regular",
 					"fontsize" : 10.0,
 					"id" : "obj-28",
@@ -481,7 +481,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 388.666655999999989, 375.0, 131.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 163.0, 153.0, 20.0 ],
+					"presentation_rect" : [ 3.0, 163.0, 150.5, 20.0 ],
 					"text" : "Hostname:"
 				}
 
@@ -585,7 +585,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 1.0 ],
+					"bgcolor" : [ 0.847058823529412, 0.788235294117647, 0.529411764705882, 0.0 ],
 					"fontname" : "Avenir Next Regular",
 					"fontsize" : 10.0,
 					"id" : "obj-27",
@@ -594,8 +594,26 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 537.083312999999976, 379.0, 132.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 183.0, 153.0, 20.0 ],
+					"presentation_rect" : [ 3.0, 183.0, 150.5, 20.0 ],
 					"text" : "Port:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
+					"bordercolor" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 0.0 ],
+					"id" : "obj-8",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 246.0, 231.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.0, 0.0, 151.5, 222.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
 				}
 
 			}
