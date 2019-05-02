@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 44.0, 187.0, 845.0 ],
+		"rect" : [ 0.0, 44.0, 195.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,12 +43,12 @@
 					"bgcolor2" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
-					"fontname" : "Avenir Next Regular",
+					"fontname" : "Avenir Next Condensed Regular",
 					"fontsize" : 10.0,
 					"gradient" : 1,
 					"hint" : "VTLydserverProxy.model VTLydserver",
@@ -57,9 +57,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.0, 734.0, 79.0, 22.0 ],
+					"patching_rect" : [ 114.0, 734.0, 62.0, 22.0 ],
 					"text" : "Lydserver Proxy",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -69,12 +70,12 @@
 					"bgcolor2" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
-					"fontname" : "Avenir Next Regular",
+					"fontname" : "Avenir Next Condensed Regular",
 					"fontsize" : 10.0,
 					"gradient" : 1,
 					"hint" : "sceneCores",
@@ -83,9 +84,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 734.0, 66.0, 22.0 ],
+					"patching_rect" : [ 49.333333313465118, 734.0, 51.0, 22.0 ],
 					"text" : "Scene Cores",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -469,12 +471,12 @@
 					"bgcolor2" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 1.0, 0.0, 0.097325, 1.0 ],
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "color",
-					"fontname" : "Avenir Next Regular",
+					"fontname" : "Avenir Next Condensed Regular",
 					"fontsize" : 10.0,
 					"gradient" : 1,
 					"hint" : "VTMGlobal.model global",
@@ -483,9 +485,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 734.0, 39.0, 22.0 ],
+					"patching_rect" : [ 6.0, 734.0, 31.0, 22.0 ],
 					"text" : "Global",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -510,7 +513,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6.0, 761.0, 170.0, 33.0 ],
-					"text" : "pageA/fader.2 0.",
+					"text" : "pageA/button.4/A_LED 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -818,7 +821,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 1.0, 170.0, 646.0 ],
+					"patching_rect" : [ 6.0, 1.0, 170.0, 723.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -921,6 +924,68 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "aaa.setup.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/misc/ClientSetups",
+				"patcherrelativepath" : "../../misc/ClientSetups",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400.model.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400Slot.model.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400ButtonSet.model.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400ParseFaderValue.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400ParseEncoderValue.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "US2400SlotPageAssignScript.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "VTMGlobalLogic.js",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",
@@ -945,19 +1010,6 @@
 				"name" : "VTLydserverProxy.model.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
 				"patcherrelativepath" : "../../patchers/General/VTLydserverProxy",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -998,11 +1050,19 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "shell.mxo",
+				"name" : "j.message_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.oscroute.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.map.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "shell.mxo",
 				"type" : "iLaX"
 			}
  ],
