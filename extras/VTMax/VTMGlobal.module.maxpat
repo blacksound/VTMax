@@ -306,20 +306,8 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
-												"box" : 												{
-													"comment" : "",
-													"id" : "obj-1",
-													"index" : 1,
-													"maxclass" : "inlet",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 202.0, 259.0, 30.0, 30.0 ]
-												}
-
-											}
-, 											{
 												"box" : 												{
 													"bubble" : 1,
 													"bubbleside" : 2,
@@ -353,6 +341,19 @@
 													"patching_rect" : [ 76.0, 259.0, 117.0, 22.0 ],
 													"text" : "NakedScriptCanvas",
 													"varname" : "coreCanvas"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-1",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 124.5, 110.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -946,38 +947,10 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SceneCore.model.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/SceneCore",
-				"patcherrelativepath" : "../../patchers/SceneCore",
+				"name" : "VTLydserverProxy.model.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
+				"patcherrelativepath" : "../../patchers/General/VTLydserverProxy",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "TestScene.core.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/misc/Scener/TestScene",
-				"patcherrelativepath" : "../../misc/Scener/TestScene",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTMSpatProxy.model.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "splay.methodParameters.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SpatProxyLogic.js",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
-				"patcherrelativepath" : "../../patchers/Modules/VTMSpatProxy",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -987,58 +960,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "GetAllParametersDict.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "j.lazyReceive.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
 				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BuildJSONCue.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "PassNonEmptySymbol.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ScriptCanvas.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../patchers/General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MappingScripter.js",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Control",
-				"patcherrelativepath" : "../../patchers/Control",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "TestScene.mappings",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/misc/Scener/TestScene",
-				"patcherrelativepath" : "../../misc/Scener/TestScene",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTLydserverProxy.model.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
-				"patcherrelativepath" : "../../patchers/General/VTLydserverProxy",
 				"type" : "JSON",
 				"implicit" : 1
 			}
