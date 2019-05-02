@@ -55,8 +55,8 @@ function removeWidget(arg_sceneName) {
 
 //used in: getWidgets
 function arrangeHeights() {
-  //topmost widget is always 62px from top
-  var height = 62;
+  //topmost widget is always 0px from top
+  var height = 0; //changed from 62 when moved to its own container bpatcher
   //Cycle through all the currently existing widgets (they are already arriving
   //sorted from the coll) and put them under each other.
   currentWidgets.forEach(function(widget) {
