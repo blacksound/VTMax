@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 161.0, 288.0, 222.0, 51.0 ],
+					"patching_rect" : [ 161.0, 301.0, 222.0, 51.0 ],
 					"text" : "here we ensure that the name of the new scene does not contain spaces (every \" \" is substituted with \"_\")"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 275.5, 71.0, 22.0 ],
+					"patching_rect" : [ 18.0, 288.5, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -103,7 +103,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 147.0, 501.0, 206.0, 37.0 ],
+					"patching_rect" : [ 147.0, 514.0, 206.0, 37.0 ],
 					"text" : "has to be in symout mode so we can have spaces in file paths"
 				}
 
@@ -115,7 +115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 18.0, 543.0, 128.0, 22.0 ],
+					"patching_rect" : [ 18.0, 556.0, 128.0, 22.0 ],
 					"text" : "conformpath max boot"
 				}
 
@@ -175,7 +175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 508.5, 123.0, 22.0 ],
+					"patching_rect" : [ 18.0, 521.5, 123.0, 22.0 ],
 					"text" : "sprintf symout %s/%s"
 				}
 
@@ -187,7 +187,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 18.0, 437.5, 29.5, 22.0 ],
+					"patching_rect" : [ 18.0, 450.5, 29.5, 22.0 ],
 					"text" : "t l b"
 				}
 
@@ -199,7 +199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 394.5, 59.0, 22.0 ],
+					"patching_rect" : [ 18.0, 407.5, 59.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -211,7 +211,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 18.0, 334.5, 142.0, 22.0 ],
+					"patching_rect" : [ 18.0, 347.5, 142.0, 22.0 ],
 					"text" : "t b l"
 				}
 
@@ -223,7 +223,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 122.0, 473.5, 38.0, 22.0 ],
+					"patching_rect" : [ 122.0, 486.5, 38.0, 22.0 ],
 					"text" : "zl reg"
 				}
 
@@ -235,7 +235,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "bang" ],
-					"patching_rect" : [ 18.0, 365.5, 89.0, 22.0 ],
+					"patching_rect" : [ 18.0, 378.5, 89.0, 22.0 ],
 					"text" : "savedialog fold"
 				}
 
@@ -259,7 +259,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 302.5, 133.0, 22.0 ],
+					"patching_rect" : [ 18.0, 315.5, 133.0, 22.0 ],
 					"text" : "tosymbol @separator _"
 				}
 
@@ -271,7 +271,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 18.0, 246.5, 79.0, 22.0 ],
+					"patching_rect" : [ 18.0, 259.5, 79.0, 22.0 ],
 					"text" : "route symbol"
 				}
 
@@ -283,7 +283,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 578.0, 253.0, 22.0 ],
+					"patching_rect" : [ 18.0, 591.0, 253.0, 22.0 ],
 					"text" : "j.send /global/sceneManager/makeNewScene"
 				}
 
@@ -291,12 +291,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-27",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 18.0, 216.5, 177.0, 22.0 ],
-					"text" : "dialog \"Enter new scene name\""
+					"patching_rect" : [ 18.0, 216.5, 235.0, 35.0 ],
+					"text" : "dialog \"Enter new scene name.                                (Spaces will be changed to underscores.)\""
 				}
 
 			}
@@ -449,6 +450,30 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "VTMSceneStateListContainer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SceneStateListBuilder.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 	}
 
