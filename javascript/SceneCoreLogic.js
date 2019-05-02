@@ -47,6 +47,17 @@ function sendPathToCue() {
   }
 }
 
+function sendScenePathToSceneManager() {
+  if (isOpenedInScenePatch()) {
+    var path = this.patcher.parentpatcher.filepath;
+    outlet(deferlowOutlet, "/global/sceneManager/scenePath", sceneName, path);
+    return path;
+  } else {
+    post("not opened in scene patch\n");
+    return null;
+  }
+}
+
 function deleteViewBpatcher() {
   var viewPatcher;
   viewPatcher = this.patcher.getnamed("view");
@@ -95,6 +106,7 @@ function initSceneCore(sceneNameArg) {
     bindToAddress(sceneName);
     sendPathToCore();
     sendPathToCue();
+    sendScenePathToSceneManager();
     initialized = true;
   } else {
     //this should never happen
