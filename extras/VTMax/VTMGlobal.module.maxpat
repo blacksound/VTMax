@@ -58,7 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 97.0, 734.0, 79.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Lydserver Proxy",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -85,7 +84,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 734.0, 66.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Scene Cores",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -136,7 +134,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -307,7 +304,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"comment" : "",
@@ -799,7 +795,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 119.0, 880.0, 56.0, 22.0 ],
+					"patching_rect" : [ 120.0, 880.0, 56.0, 22.0 ],
 					"text" : "onecopy"
 				}
 
