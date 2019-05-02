@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 44.0, 167.0, 821.0 ],
+		"rect" : [ 0.0, 44.0, 168.0, 825.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -508,6 +508,7 @@
 					"gradient" : 1,
 					"hint" : "Last controller moved",
 					"id" : "obj-48",
+					"ignoreclick" : 1,
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
