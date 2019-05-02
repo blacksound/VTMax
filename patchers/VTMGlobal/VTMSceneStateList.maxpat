@@ -45,8 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 161.0, 288.0, 218.0, 51.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 161.0, 288.0, 222.0, 51.0 ],
 					"text" : "here we ensure that the name of the new scene does not contain spaces (every \" \" is substituted with \"_\")"
 				}
 
@@ -89,9 +88,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 187.0, 12.0, 166.0, 189.5 ],
+					"patching_rect" : [ 187.0, 12.0, 172.0, 190.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 44.0, 166.0, 317.5 ],
+					"presentation_rect" : [ -1.0, 44.0, 170.0, 317.5 ],
 					"viewvisibility" : 1
 				}
 

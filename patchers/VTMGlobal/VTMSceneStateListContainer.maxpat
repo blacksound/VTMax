@@ -119,7 +119,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 317.0, 434.0, 139.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "SceneStateListBuilder",
+						"filename" : "SceneStateListBuilder.js",
 						"parameter_enable" : 0
 					}
 ,
