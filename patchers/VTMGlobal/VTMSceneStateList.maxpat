@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 936.0, 787.0 ],
+		"rect" : [ 432.0, 239.0, 580.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 395.0, 150.0, 99.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "openSceneSet.js",
+						"filename" : "openSceneSet",
 						"parameter_enable" : 0
 					}
 ,
@@ -148,7 +148,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.56 ],
 					"fontsize" : 10.0,
-					"hint" : "Open all scenes from selected folder.",
+					"hint" : "Save set to a .json",
 					"id" : "obj-3",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -280,7 +280,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.56 ],
 					"fontsize" : 10.0,
-					"hint" : "Open all scenes from selected folder.",
+					"hint" : "Open scenes set from a selected .json",
 					"id" : "obj-88",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -289,7 +289,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 395.0, 27.0, 116.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 21.0, 154.0, 21.0 ],
+					"presentation_rect" : [ -1.0, 23.0, 154.0, 21.0 ],
 					"text" : "Open Set",
 					"texton" : "",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.36 ],
@@ -449,6 +449,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.56 ],
 					"fontsize" : 10.0,
+					"hint" : "Create a new scene",
 					"id" : "obj-24",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -631,13 +632,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "VTMSceneStateListContainer.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
