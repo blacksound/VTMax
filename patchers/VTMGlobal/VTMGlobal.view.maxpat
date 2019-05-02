@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,9 +51,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 687.0, 84.0, 128.0, 128.0 ],
+					"patching_rect" : [ 687.0, 84.0, 176.0, 173.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 324.0, 153.0, 315.0 ],
+					"presentation_rect" : [ 1.0, 324.0, 172.0, 368.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -550,7 +550,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -562,7 +562,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -763,7 +763,53 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "VTLydserverProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
+				"patcherrelativepath" : "../General/VTLydserverProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSceneStateList.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSceneStateListContainer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SceneStateListBuilder.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
