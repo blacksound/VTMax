@@ -85,25 +85,70 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-32",
-									"maxclass" : "button",
+									"id" : "obj-17",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 589.0, 476.0, 24.0, 24.0 ]
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 897.0, 332.0, 155.0, 22.0 ],
+									"text" : "prepend registerScenePath"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-35",
-									"maxclass" : "message",
+									"bubble" : 1,
+									"bubbleside" : 2,
+									"id" : "obj-18",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 902.0, 175.0, 150.0, 79.0 ],
+									"presentation_linecount" : 4,
+									"text" : "When a scene patch is initialized this message is sent from its VTMSceneCore patch"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 934.0, 294.0, 92.0, 22.0 ],
+									"text" : "print scenePath"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 897.0, 260.0, 204.0, 22.0 ],
+									"text" : "j.message scenePath @type generic"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 626.25, 476.0, 35.0, 22.0 ],
-									"text" : "clear"
+									"numoutlets" : 4,
+									"outlettype" : [ "dictionary", "", "", "" ],
+									"patching_rect" : [ 363.0, 527.0, 113.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0
+									}
+,
+									"text" : "dict VTM_sceneSet"
 								}
 
 							}
@@ -114,7 +159,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 932.0, 279.0, 167.0, 22.0 ],
+									"patching_rect" : [ 664.0, 332.0, 167.0, 22.0 ],
 									"text" : "prepend registerClosedScene"
 								}
 
@@ -126,7 +171,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 690.0, 279.0, 173.0, 22.0 ],
+									"patching_rect" : [ 437.0, 332.0, 173.0, 22.0 ],
 									"text" : "prepend registerOpenedScene"
 								}
 
@@ -140,7 +185,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 937.0, 122.0, 150.0, 79.0 ],
+									"patching_rect" : [ 669.0, 175.0, 150.0, 79.0 ],
 									"text" : "When a scene patch is closed this message is sent from its VTMSceneCore patch"
 								}
 
@@ -151,7 +196,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 969.0, 241.0, 105.0, 22.0 ],
+									"patching_rect" : [ 701.0, 294.0, 105.0, 22.0 ],
 									"text" : "print sceneClosed"
 								}
 
@@ -165,7 +210,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 690.0, 131.0, 150.0, 79.0 ],
+									"patching_rect" : [ 437.0, 184.0, 150.0, 79.0 ],
 									"text" : "When a scene patch is opened this message is sent from its VTMSceneCore patch"
 								}
 
@@ -176,7 +221,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 715.0, 241.0, 110.0, 22.0 ],
+									"patching_rect" : [ 462.0, 294.0, 110.0, 22.0 ],
 									"text" : "print sceneOpened"
 								}
 
@@ -775,7 +820,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 589.0, 522.0, 101.0, 22.0 ],
+									"patching_rect" : [ 363.0, 494.0, 101.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -863,7 +908,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 932.0, 207.0, 220.0, 22.0 ],
+									"patching_rect" : [ 664.0, 260.0, 220.0, 22.0 ],
 									"text" : "j.message sceneClosed @type string"
 								}
 
@@ -876,7 +921,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 690.0, 207.0, 220.0, 22.0 ],
+									"patching_rect" : [ 437.0, 260.0, 220.0, 22.0 ],
 									"text" : "j.message sceneOpened @type string"
 								}
 
@@ -956,6 +1001,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"midpoints" : [ 906.5, 408.0, 192.0, 408.0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
@@ -963,31 +1016,33 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"order" : 1,
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"order" : 0,
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
-									"midpoints" : [ 699.5, 375.0, 192.0, 375.0 ],
+									"midpoints" : [ 446.5, 375.0, 192.0, 375.0 ],
 									"source" : [ "obj-27", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-71", 0 ],
-									"source" : [ "obj-32", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
-									"midpoints" : [ 941.5, 390.0, 192.0, 390.0 ],
+									"midpoints" : [ 673.5, 390.0, 192.0, 390.0 ],
 									"source" : [ "obj-33", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-71", 0 ],
-									"source" : [ "obj-35", 0 ]
 								}
 
 							}
