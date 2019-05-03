@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 645.0, 732.0 ],
+		"rect" : [ 34.0, 79.0, 750.0, 742.0 ],
 		"openrect" : [ 0.0, 0.0, 206.0, 678.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,25 +40,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-38",
+					"id" : "obj-37",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 63.0, 54.0, 22.0 ],
+					"patching_rect" : [ 153.0, 46.0, 54.0, 22.0 ],
 					"text" : "deferlow"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 22.0, 35.0, 55.0, 22.0 ],
-					"text" : "del 2000"
 				}
 
 			}
@@ -298,7 +286,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 22.0, 6.0, 154.0, 22.0 ],
+					"patching_rect" : [ 153.0, 13.0, 154.0, 22.0 ],
 					"text" : "j.receive global/refreshZero"
 				}
 
@@ -803,15 +791,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-38", 0 ]
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
