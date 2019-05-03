@@ -57,8 +57,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 22.0, 35.0, 48.0, 22.0 ],
-					"text" : "del 200"
+					"patching_rect" : [ 22.0, 35.0, 55.0, 22.0 ],
+					"text" : "del 2000"
 				}
 
 			}
