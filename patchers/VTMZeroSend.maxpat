@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 208.0, 256.0, 359.0, 305.0 ],
+		"rect" : [ 208.0, 255.0, 206.0, 25.0 ],
 		"openrect" : [ 0.0, 0.0, 206.0, 25.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -178,7 +178,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"items" : [ "Balint's float", ",", "Niklas' float", ",", "lalalalala" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
