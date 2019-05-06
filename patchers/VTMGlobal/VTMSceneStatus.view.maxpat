@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 39.0, 79.0, 569.0, 787.0 ],
+		"rect" : [ 465.0, 110.0, 569.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -90,7 +90,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
-					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 0.194487 ],
+					"bgcolor" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
 					"bgoncolor" : [ 0.0, 1.0, 1.0, 1.0 ],
 					"fontname" : "Avenir Heavy",
 					"fontsize" : 14.0,
@@ -118,7 +118,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
-					"bgcolor" : [ 0.847059, 0.788235, 0.529412, 0.227058 ],
+					"bgcolor" : [ 0.843137254901961, 0.784313725490196, 0.525490196078431, 1.0 ],
 					"bgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 					"fontname" : "Avenir Heavy",
 					"fontsize" : 14.0,
@@ -132,7 +132,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 238.0, 112.0, 26.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 100.0, 1.0, 26.0, 22.0 ],
+					"presentation_rect" : [ 101.0, 1.0, 26.0, 22.0 ],
 					"text" : "A",
 					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"texton" : "A",
@@ -203,7 +203,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -215,7 +215,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -255,8 +255,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 234.0, 325.0, 110.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 1.0, 154.0, 22.0 ],
-					"text" : " ",
+					"presentation_rect" : [ 0.0, 1.0, 100.000000029802322, 22.0 ],
+					"text" : "no_model_address",
 					"textcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"textjustification" : 0,
 					"texton" : "",
@@ -354,6 +354,30 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 	}
 
