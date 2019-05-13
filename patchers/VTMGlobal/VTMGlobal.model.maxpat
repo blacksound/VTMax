@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 260.0, 141.0, 843.0, 467.0 ],
+		"rect" : [ 260.0, 141.0, 945.0, 801.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -98,7 +98,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -308,7 +308,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -348,7 +348,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 192.0, 103.0, 482.0, 100.0 ],
+													"patching_rect" : [ 192.0, 103.0, 485.0, 100.0 ],
 													"text" : "Since Max struggles with discerning escape characters (e.g. space) in strings, this trick is used to keep the arguments for the shell command.\n\nWhen setting the contents in the message box the string is kept intact, but makes the window 'dirty', i.e. it ask to be saved. Hence I made this NoSaveMessage patcher so that the message can change without making the window dirty. Clean windows, mmmmmmm. Dirty windows ....oooooouchhh Max shit."
 												}
 
@@ -458,7 +458,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -527,7 +527,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 5,
+															"revision" : 3,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1179,18 +1179,6 @@
 					}
 ,
 					"text" : "p sceneManager"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 311.5, 289.0, 341.0, 22.0 ],
-					"text" : "j.return totalNumberOfAudioOutputs @type integer @value 32"
 				}
 
 			}
