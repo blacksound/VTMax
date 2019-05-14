@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 471.0, 144.0, 1690.0, 1072.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "freed" ],
+					"patching_rect" : [ 554.0, 939.0, 43.0, 22.0 ],
+					"text" : "t freed"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -53,11 +65,11 @@
 				"box" : 				{
 					"comment" : "(mc signal) Incoming audio channels in a single MC cord",
 					"id" : "obj-37",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 454.0, 13.0, 30.0, 30.0 ]
 				}
 
@@ -80,7 +92,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 693.0, 56.0, 107.0, 22.0 ],
+					"patching_rect" : [ 693.0, 56.0, 135.0, 22.0 ],
 					"text" : "print #1.ALLOC"
 				}
 
@@ -120,7 +132,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -294,7 +306,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -682,7 +694,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 620.0, 388.0, 168.0, 74.0 ],
-					"text" : "free module at server whenmodel is freed.\ni.e. scene closed or user removed VTMSpatProxy.model object "
+					"text" : "free module at server when model is freed.\ni.e. scene closed or user removed VTMSpatProxy.model object "
 				}
 
 			}
@@ -695,19 +707,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 661.0, 463.0, 56.0, 22.0 ],
 					"text" : "freebang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"linecount" : 25,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.5, 234.0, 292.0, 344.0 ],
-					"text" : "/cue/json \"{\n\t\\\"aaa\\\" : \t{\n\t\t\\\"spat\\\" : \t\t{\n\t\t\t\\\"balint1_spat.mono\\\" : \t\t\t{\n\t\t\t\t\\\"db\\\" : -14.675797632319373,\n\t\t\t\t\\\"destination\\\" : \\\"/destination/genelec\\\",\n\t\t\t\t\\\"lfoAmount\\\" : 0.0,\n\t\t\t\t\\\"lfoSpeed\\\" : 0.0,\n\t\t\t\t\\\"lfoType\\\" : \\\"ramp\\\",\n\t\t\t\t\\\"pan\\\" : 0.0,\n\t\t\t\t\\\"source\\\" : \\\"<2>\\\",\n\t\t\t\t\\\"spread\\\" : 0.0,\n\t\t\t\t\\\"width\\\" : 0.0,\n\t\t\t\t\\\"name\\\" : \\\"splay\\\",\n\t\t\t\t\\\"client_port\\\" : 50000,\n\t\t\t\t\\\"client_ip\\\" : \\\"127.0.0.1\\\",\n\t\t\t\t\\\"client_name\\\" : \\\"aaa\\\"\n\t\t\t}\n\n\t\t}\n\n\t}\n\n}\n\""
 				}
 
 			}
@@ -736,7 +735,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1008,54 +1007,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-63",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1248.0, 725.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-34",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1374.0, 837.0, 50.0, 49.0 ],
-					"text" : "/aaa/spat/spat.1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1242.5, 774.0, 128.0, 22.0 ],
-					"text" : "j.lazyReceive oscPath"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1071.5, 886.0, 104.0, 22.0 ],
-					"text" : "print bbb_oscpath"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1111,7 +1062,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 435.5, 935.0, 146.0, 22.0 ],
+					"patching_rect" : [ 451.0, 984.0, 146.0, 22.0 ],
 					"text" : "j.send channelAllocations"
 				}
 
@@ -1141,7 +1092,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1335,11 +1286,11 @@
 				"box" : 				{
 					"id" : "obj-64",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 348.0, 904.0, 195.0, 22.0 ],
-					"text" : "j.oscroute state channelAllocations"
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 348.0, 904.0, 328.0, 22.0 ],
+					"text" : "j.oscroute state channelAllocations channelAllocationsFreed"
 				}
 
 			}
@@ -1351,7 +1302,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 484.0, 877.0, 160.0, 22.0 ],
-					"text" : "/aaa/spat/balint1_spat.mono"
+					"text" : "/aaa/spat/balint1_biala"
 				}
 
 			}
@@ -1618,7 +1569,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1972,7 +1923,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2025,7 +1976,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 194.0, 179.0, 90.0, 20.0 ],
-									"text" : "/VTMSpatProxy"
+									"text" : "/balint1/biala"
 								}
 
 							}
@@ -2126,7 +2077,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 98.0, 381.0, 155.0, 20.0 ],
-									"text" : "/aaa/spat/balint1_spat.mono"
+									"text" : "/aaa/spat/balint1_biala"
 								}
 
 							}
@@ -2443,7 +2394,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3107,7 +3058,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3523,7 +3474,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3866,7 +3817,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-101",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3880,7 +3831,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-42",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3990,15 +3941,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
-					"order" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -4028,13 +3970,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-34", 1 ],
-					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -4101,6 +4036,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -4298,8 +4240,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-63", 0 ]
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-64", 2 ]
 				}
 
 			}
@@ -4427,15 +4369,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
-					"order" : 1,
-					"source" : [ "obj-93", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"order" : 0,
 					"source" : [ "obj-93", 0 ]
 				}
 
@@ -4447,72 +4380,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "GetAllParametersDict.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../ImportedFrom_vt_max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BuildJSONCue.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
-				"patcherrelativepath" : "../../General",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.return.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.namespace.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.oscroute.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.init.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
