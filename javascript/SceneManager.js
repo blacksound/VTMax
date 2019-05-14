@@ -3,6 +3,8 @@ var scenesPath;
 outlets = 1;
 autowatch = 1;
 
+var coreCount;
+
 var shellMessageOutlet = 0;
 
 // get the ref from the scenes dictionary
@@ -45,6 +47,7 @@ function sceneCoreExists(sceneName) {
 function deleteSceneCore(sceneName) {
   if (sceneCoreExists(sceneName)) {
     coreCanvasPatcher.remove(coreCanvasPatcher.getnamed(sceneName));
+    rearrangePatchers();
   }
 }
 
@@ -54,8 +57,16 @@ function makeSceneCore(sceneName) {
   var newobj;
   post("Making scene core for " + sceneName + "\n");
   if (!sceneCoreExists(sceneName)) {
-    newobj = coreCanvasPatcher.newdefault(0, 0, "SceneCore.model", sceneName);
+    countCores();
+    newobj = coreCanvasPatcher.newdefault(
+      Math.floor(coreCount / 13) * 107,
+      (coreCount % 13) * 37,
+      "SceneCore.model",
+      sceneName
+    );
     newobj.varname = sceneName;
+    coreCanvasPatcher.message("script", "size", sceneName, 105, 35);
+    rearrangePatchers();
   } else {
     post("Scene core '" + sceneName + "' already exists\n");
   }
@@ -90,4 +101,44 @@ function newScene(scriptFolder, scenePath) {
     "cd " + escapeSpaces(scriptFolder) + "\\; ./makeNewScene " + scenePath
   );
   //I hate Max.
+}
+
+function countCores() {
+  coreCount = 0;
+  coreCanvasPatcher.applyif(
+    function() {
+      coreCount += 1;
+    },
+    function(obj) {
+      var result;
+      result = obj.maxclass == "patcher";
+      return result;
+    }
+  );
+}
+
+function rearrangePatchers() {
+  coreCount = 0;
+  var coreList = [];
+  coreCanvasPatcher.applyif(
+    function(obj) {
+      coreList.push(obj.varname);
+    },
+    function(obj) {
+      var result;
+      result = obj.maxclass == "patcher";
+      return result;
+    }
+  );
+  coreList.sort();
+  coreList.forEach(function(sc) {
+    coreCanvasPatcher.message(
+      "script",
+      "move",
+      sc,
+      Math.floor(coreCount / 13) * 107,
+      (coreCount % 13) * 37
+    );
+    coreCount += 1;
+  });
 }
