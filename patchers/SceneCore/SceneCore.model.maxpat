@@ -3329,8 +3329,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 412.0, 23.5, 279.0, 22.0 ],
-					"text" : "j.message sceneActive @type boolean @default 0"
+					"patching_rect" : [ 412.0, 23.5, 331.0, 22.0 ],
+					"text" : "j.message sceneActive @type boolean @default 0 @value 0"
 				}
 
 			}
@@ -3460,6 +3460,17 @@
 			}
 , 			{
 				"box" : 				{
+					"background" : 1,
+					"id" : "obj-53",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1031.0, 312.0, 300.0, 125.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -3467,17 +3478,6 @@
 					"patching_rect" : [ 300.0, 200.0, 100.0, 22.0 ],
 					"text" : "poly~ 1",
 					"varname" : "core"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"id" : "obj-53",
-					"maxclass" : "panel",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1031.0, 312.0, 300.0, 125.0 ]
 				}
 
 			}
