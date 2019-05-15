@@ -1,5 +1,5 @@
 outlets = 1;
-var lydserverOutlet = 0;
+var lydserverProxyOutlet = 0;
 
 function client( clientName ) {
 	var clientSetupCanvas = this.patcher.getnamed("clientSetupCanvas");
@@ -11,7 +11,6 @@ function client( clientName ) {
 	);
 	//set scripting name for the new object
 	obj.varname = "clientSetup";
-	registerClientWithLydserver( clientName );
 }
 
 //like killing a fly with a cannon, behold:
@@ -28,15 +27,7 @@ function clearClientSetup() {
 	}
 }
 
-function registerClientWithLydserver( clientName ) {
-	outlet(lydserverOutlet, "registerClient", clientName );
-}
-
-function unregisterClientWithLydserver( clientName ) {
-	outlet(lydserverOutlet, "unregisterClient", clientName );
-}
-
-function networkConnected( isConnected, clientName, receivePort ) {
+function networkConnected( isConnected, clientName, receivePort, ip ) {
 	var mDNSCanvas = this.patcher.getnamed("mDNSServerice_canvas");
 	var pat = mDNSCanvas.subpatcher();
 	var obj;
@@ -48,10 +39,11 @@ function networkConnected( isConnected, clientName, receivePort ) {
 			obj = pat.newdefault(0,0,
 				"zero.announce",
 				"@type", "_osc._udp",
-				"@name", "VTMax:" + clientName,
+				"@name", "VTMax",
 				"@port", receivePort
 			);
-			obj.varname = "mDNSService";			
+			obj.varname = "mDNSService";
+			initLydserverProxy( clientName, receivePort, ip );						
 		}
 	} else {
 		removemDNSService();
@@ -64,4 +56,16 @@ function removemDNSService() {
 	var obj;
 	obj = pat.getnamed("mDNSService");
 	pat.remove(obj);
+}
+
+function initLydserverProxy(clientName, receivePort, ip) {
+	outlet(lydserverProxyOutlet,
+		"client_ip", ip
+	);
+	outlet(lydserverProxyOutlet,
+		"client_port", receivePort
+	);
+	outlet(lydserverProxyOutlet,
+		"client_name", clientName
+	);		
 }

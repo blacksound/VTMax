@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 276.0, 255.0, 1690.0, 1050.0 ],
+		"rect" : [ 230.0, 79.0, 1416.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,17 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 262.0, 265.0, 84.0, 22.0 ],
+					"text" : "print lydserver"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "newobj",
@@ -509,7 +520,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 517.0, 290.0, 50.0, 22.0 ],
-					"text" : "128"
+					"text" : "2"
 				}
 
 			}
@@ -825,7 +836,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1112.0, 258.0, 50.0, 22.0 ],
-					"text" : "50000"
+					"text" : "0"
 				}
 
 			}
@@ -837,7 +848,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1112.0, 200.0, 131.0, 22.0 ],
-					"text" : "127.0.0.1"
+					"text" : "EABBook"
 				}
 
 			}
@@ -1110,6 +1121,15 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
