@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "set" ],
+					"patching_rect" : [ 1459.0, 177.0, 31.0, 22.0 ],
+					"text" : "t set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1459.0, 106.5, 67.0, 22.0 ],
+					"text" : "route freed"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "spatargs", "/spat.1/params" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -172,31 +196,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-67",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1183.0, 402.0, 50.0, 35.0 ],
-					"text" : "unknown"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-82",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 223.0, 51.0, 22.0 ],
-					"text" : "genelec"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -269,7 +268,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1459.0, 100.0, 131.0, 22.0 ],
+					"patching_rect" : [ 1495.0, 148.0, 131.0, 22.0 ],
 					"text" : "tosymbol @separator \\,"
 				}
 
@@ -281,7 +280,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1459.0, 134.0, 74.0, 22.0 ],
+					"patching_rect" : [ 1495.0, 177.0, 74.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -295,7 +294,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1459.0, 166.0, 159.0, 19.0 ],
+					"patching_rect" : [ 1459.0, 283.5, 159.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 50.0, 58.134147644042969, 98.0, 19.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.509999990463257 ],
@@ -2036,7 +2035,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2048,7 +2047,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2128,7 +2127,7 @@
 					"patching_rect" : [ 33.333343999999997, 65.0, 150.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 150.0, 315.0 ],
-					"text" : "/spat.1",
+					"text" : "/no_..ess",
 					"varname" : "ui"
 				}
 
@@ -2166,6 +2165,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"source" : [ "obj-18", 1 ]
 				}
 
 			}
@@ -2598,6 +2611,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-79", 0 ],
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-68", 0 ]
 				}
@@ -2647,7 +2667,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-86", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -2663,13 +2683,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"source" : [ "obj-80", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-82", 0 ]
 				}
 
 			}
@@ -2711,6 +2724,83 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "VTM_UI_textedit.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SpatProxyMenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resizeParent.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splay.parameters.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
+				"patcherrelativepath" : "./MethodParametersPatchers/MethodParameterViews",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 	}
 
