@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 205.0, 141.0, 980.0, 875.0 ],
+		"rect" : [ 367.0, 79.0, 980.0, 875.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,36 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 2,
+					"id" : "obj-73",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 574.0, 150.0, 66.0 ],
+					"presentation_linecount" : 3,
+					"text" : "The global patches receives all OSC message here"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 2,
+					"id" : "obj-72",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 149.0, 449.0, 150.0, 66.0 ],
+					"presentation_linecount" : 3,
+					"text" : "the mDNS service announcement is created here."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "newobj",
@@ -232,7 +262,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 634.0, 77.0, 22.0 ],
+					"patching_rect" : [ 19.0, 680.0, 77.0, 22.0 ],
 					"text" : "prepend port"
 				}
 
@@ -256,7 +286,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 666.0, 104.0, 22.0 ],
+					"patching_rect" : [ 19.0, 712.0, 104.0, 22.0 ],
 					"text" : "udpreceive 50000"
 				}
 
@@ -268,7 +298,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 597.5, 109.0, 22.0 ],
+					"patching_rect" : [ 19.0, 643.5, 109.0, 22.0 ],
 					"text" : "r #0_receivePort"
 				}
 
@@ -501,7 +531,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 19.0, 227.0, 94.0, 49.0 ],
+					"patching_rect" : [ 19.0, 237.5, 94.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -521,7 +551,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 19.0, 184.5, 115.0, 35.0 ],
+					"patching_rect" : [ 19.0, 195.0, 115.0, 35.0 ],
 					"text" : "j.receive networkConnected"
 				}
 
@@ -532,7 +562,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 339.0, 115.0, 22.0 ],
+					"patching_rect" : [ 166.5, 517.0, 115.0, 22.0 ],
 					"text" : "NakedScriptCanvas",
 					"varname" : "mDNSServerice_canvas"
 				}
@@ -540,12 +570,13 @@
 			}
 , 			{
 				"box" : 				{
+					"bubble" : 1,
 					"id" : "obj-42",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 597.0, 38.5, 150.0, 33.0 ],
+					"patching_rect" : [ 597.0, 38.5, 150.0, 37.0 ],
 					"text" : "client setup pathcers are scripte here"
 				}
 
@@ -5655,7 +5686,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 19.0, 379.0, 98.0, 22.0 ],
+					"patching_rect" : [ 19.0, 342.5, 98.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
