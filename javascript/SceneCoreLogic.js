@@ -37,7 +37,7 @@ function sendPathToCore() {
 function sendPathToCue() {
   if (isOpenedInScenePatch()) {
     var path = this.patcher.parentpatcher.filepath;
-    path = path.slice(0, -7); // removing ".maxpat"
+    path = path.slice(0, -7); // removing ".maxpat" /
     path += ".cue.txt";
     outlet(deferlowOutlet, "/" + sceneName + "/pathToCue", path);
     return path;
