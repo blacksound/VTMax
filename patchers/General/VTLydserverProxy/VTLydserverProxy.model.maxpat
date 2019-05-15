@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 230.0, 79.0, 1416.0, 913.0 ],
+		"rect" : [ 231.0, 207.0, 1727.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,56 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 258.5, 200.0, 186.5, 35.0 ],
+					"text" : "j.send numAvailableAllocationChannels"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1092.0, 444.0, 190.0, 49.0 ],
+					"text" : "j.return numAvailableAllocationChannels @type integer @value 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1084.0, 806.0, 50.0, 22.0 ],
+					"text" : "yoyo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1064.0, 697.0, 104.0, 22.0 ],
+					"text" : "udpreceive 50000"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-54",
 					"maxclass" : "newobj",
@@ -464,7 +514,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1098.0, 471.0, 103.0, 22.0 ],
+					"patching_rect" : [ 1261.0, 684.0, 103.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -483,7 +533,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1098.0, 507.0, 257.0, 22.0 ],
+					"patching_rect" : [ 1261.0, 720.0, 257.0, 22.0 ],
 					"text" : "j.return hasInitialized @type boolean @value 0"
 				}
 
@@ -495,7 +545,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 770.5, 623.0, 213.0, 22.0 ],
+					"patching_rect" : [ 728.5, 633.0, 213.0, 22.0 ],
 					"text" : "loadmess dictionary VTM_spatProxies"
 				}
 
@@ -507,7 +557,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 447.0, 252.0, 278.0, 22.0 ],
+					"patching_rect" : [ 541.0, 242.0, 278.0, 22.0 ],
 					"text" : "j.return totalNumberOfAudioOutputs @type integer"
 				}
 
@@ -519,8 +569,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 517.0, 290.0, 50.0, 22.0 ],
-					"text" : "2"
+					"patching_rect" : [ 611.0, 280.0, 50.0, 22.0 ],
+					"text" : "128"
 				}
 
 			}
@@ -531,7 +581,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 447.0, 220.0, 120.0, 22.0 ],
+					"patching_rect" : [ 541.0, 210.0, 120.0, 22.0 ],
 					"text" : "adstatus numoutputs"
 				}
 
@@ -601,7 +651,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 758.0, 661.0, 119.0, 152.0 ]
+					"patching_rect" : [ 728.5, 662.0, 119.0, 152.0 ]
 				}
 
 			}
@@ -722,30 +772,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-49",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1109.0, 396.0, 346.0, 22.0 ],
-					"text" : "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1098.0, 353.0, 226.0, 22.0 ],
-					"text" : "j.return allocatorChannels @type generic"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -776,7 +802,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1106.0, 320.0, 131.0, 22.0 ],
-					"text" : "aaa"
+					"text" : "VTLydserver"
 				}
 
 			}
@@ -836,7 +862,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1112.0, 258.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "50000"
 				}
 
 			}
@@ -848,7 +874,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1112.0, 200.0, 131.0, 22.0 ],
-					"text" : "EABBook"
+					"text" : "1.2.3.23"
 				}
 
 			}
@@ -884,7 +910,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1106.0, 54.0, 176.0, 22.0 ],
-					"text" : "127.0.0.1"
+					"text" : "1.2.3.23"
 				}
 
 			}
@@ -928,11 +954,11 @@
 				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 127.0, 138.0, 106.0, 22.0 ],
-					"text" : "j.oscroute running"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 127.0, 138.0, 282.0, 22.0 ],
+					"text" : "j.oscroute running numAvailableAllocationChannels"
 				}
 
 			}
@@ -1221,7 +1247,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-29", 1 ]
+					"source" : [ "obj-29", 2 ]
 				}
 
 			}
@@ -1229,6 +1255,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-29", 1 ]
 				}
 
 			}
@@ -1313,13 +1346,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-49", 1 ],
-					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -1422,6 +1448,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-8", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 1 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
