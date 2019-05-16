@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 232.0, 131.0, 1105.0, 938.0 ],
+		"rect" : [ 228.0, 78.0, 1105.0, 938.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -869,6 +869,7 @@
 					"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"fontsize" : 10.0,
 					"format" : 6,
+					"hint" : "playback speed, hold shift",
 					"id" : "obj-66",
 					"ignoreclick" : 1,
 					"maxclass" : "flonum",
@@ -902,7 +903,7 @@
 					"bgcolor" : [ 0.745098039215686, 0.745098039215686, 0.745098039215686, 1.0 ],
 					"bgoncolor" : [ 0.0, 0.729411764705882, 0.007843137254902, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "reset loop points",
+					"hint" : "reset loop points, hold shift",
 					"id" : "obj-53",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
@@ -987,7 +988,7 @@
 					"bgcolor" : [ 0.745098039215686, 0.745098039215686, 0.745098039215686, 1.0 ],
 					"bgoncolor" : [ 0.0, 0.729411764705882, 0.007843137254902, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "clear buffer",
+					"hint" : "clear buffer, hold shift",
 					"id" : "obj-44",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
@@ -1101,7 +1102,7 @@
 					"bgcolor" : [ 0.745098039215686, 0.745098039215686, 0.745098039215686, 1.0 ],
 					"bgoncolor" : [ 0.0, 0.729411764705882, 0.007843137254902, 1.0 ],
 					"fontsize" : 10.0,
-					"hint" : "open file",
+					"hint" : "open file, hold shift",
 					"id" : "obj-23",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
@@ -1222,7 +1223,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1234,7 +1235,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1259,6 +1260,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"buffername" : "#0_bufferplayer",
+					"hint" : "playback start/end, hold shift",
 					"id" : "obj-7",
 					"ignoreclick" : 1,
 					"labels" : 0,
@@ -1288,7 +1290,7 @@
 					"patching_rect" : [ 0.0, -1.0, 150.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 105.0 ],
-					"text" : "/bob..yer"
+					"text" : "/no_..ess"
 				}
 
 			}
@@ -1571,6 +1573,28 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
