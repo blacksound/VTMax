@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 699.0, 103.0, 1680.0, 1293.0 ],
+		"rect" : [ 488.0, 331.0, 1680.0, 956.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "spatargs", "/balint1/spat.mono/params" ],
+					"args" : [ "spatargs", "/balint1/trek/params" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1140,7 +1140,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1056.0, 662.0, 640.0, 480.0 ],
+						"rect" : [ 1205.0, 567.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1167,15 +1167,40 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 359.0, 316.0, 52.0, 22.0 ],
+									"text" : "gate 1 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 264.0, 367.5, 108.0, 22.0 ],
+									"text" : "color 0.9 0. 0.2 0.1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-10",
 									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 47.5, 87.0, 112.0, 100.0 ],
+									"patching_rect" : [ 47.5, 87.0, 115.0, 100.0 ],
 									"text" : "safe guard that none is gating out running messages, i.e. make view blank on none, nevertheless scene active"
 								}
 
@@ -1315,7 +1340,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 168.0, 394.5, 25.0, 25.0 ]
+									"patching_rect" : [ 168.0, 419.5, 25.0, 25.0 ]
 								}
 
 							}
@@ -1343,6 +1368,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-49", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
@@ -1357,7 +1389,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-51", 0 ],
+									"destination" : [ "obj-5", 1 ],
 									"source" : [ "obj-32", 2 ]
 								}
 
@@ -1385,6 +1417,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-51", 0 ]
 								}
@@ -1400,6 +1439,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"order" : 1,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"order" : 0,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1407,7 +1455,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 211.333343505859375, 372.5, 135.0, 22.0 ],
+					"patching_rect" : [ 211.333343505859375, 372.5, 220.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1415,7 +1463,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p ColorGreenIfNotNone"
+					"text" : "p controlViewColorCueToStateChanges"
 				}
 
 			}
@@ -1537,7 +1585,7 @@
 					"patching_rect" : [ 898.0, 504.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 121.0, 0.0, 29.0, 20.0 ],
-					"text" : "1",
+					"text" : "10",
 					"textjustification" : 2
 				}
 
@@ -2285,7 +2333,7 @@
 					"patching_rect" : [ 33.333343999999997, 65.0, 150.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 150.0, 315.0 ],
-					"text" : "/bal..ono",
+					"text" : "/bal..rek",
 					"varname" : "ui"
 				}
 
