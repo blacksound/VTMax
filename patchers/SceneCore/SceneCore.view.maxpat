@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 972.0, 787.0 ],
+		"rect" : [ 520.0, 110.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,27 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-66",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTMSceneStateListContainer.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 1010.5, 760.0, 102.0, 156.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 476.0, 101.0, 239.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
@@ -160,18 +181,6 @@
 					}
 ,
 					"text" : "dict VTM_scenes @quiet 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-49",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.5, 137.0, 133.0, 22.0 ],
-					"text" : "dictionary VTM_scenes"
 				}
 
 			}
@@ -419,18 +428,6 @@
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 620.0, 30.0, 32.0, 22.0 ],
 					"text" : "j.init"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "dict.view",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 663.0, 188.0, 100.0, 100.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 475.0, 150.0, 243.0 ]
 				}
 
 			}
@@ -2040,7 +2037,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 891.5, 807.5, 150.0, 150.0 ],
+					"patching_rect" : [ 1010.5, 569.0, 150.0, 150.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 195.0, 150.0, 150.0 ],
 					"viewvisibility" : 1
@@ -2314,7 +2311,7 @@
 					"patching_rect" : [ 134.0, 162.0, 159.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, -1.0, 151.0, 27.0 ],
-					"text" : "/Hey"
+					"text" : "loading..."
 				}
 
 			}
@@ -2816,15 +2813,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"order" : 1,
-					"source" : [ "obj-41", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"order" : 0,
 					"source" : [ "obj-41", 1 ]
 				}
 
@@ -2861,13 +2849,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -3251,6 +3232,27 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "VTMSceneStateListContainer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : "../VTMGlobal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSceneStatus.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : "../VTMGlobal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SceneStateListBuilder.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "j.receive.mxo",
 				"type" : "iLaX"
 			}
@@ -3264,6 +3266,10 @@
 			}
 , 			{
 				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
 				"type" : "iLaX"
 			}
  ],
