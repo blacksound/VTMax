@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 268.0, 79.0, 496.0, 787.0 ],
+		"rect" : [ 328.0, 167.0, 891.0, 972.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,73 +39,67 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 169.0, 764.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 228.0, 732.0, 34.0, 22.0 ],
-					"text" : "sel 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 228.0, 706.0, 40.0, 22.0 ],
-					"text" : "active"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 201.0, 691.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "myEq" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-9",
-					"maxclass" : "message",
-					"numinlets" : 2,
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTMEq.view.maxpat",
+					"numinlets" : 1,
 					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 191.0, 803.0, 212.0, 22.0 ],
-					"text" : "/balint1"
+					"patching_rect" : [ 455.0, 355.0, 300.0, 210.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"annotation" : "none",
+					"args" : [ "myFilePlayer" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTMFilePlayer.view.maxpat",
+					"numinlets" : 1,
 					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 228.0, 762.0, 161.0, 22.0 ],
-					"text" : "j.lazyReceive model:address"
+					"patching_rect" : [ 459.0, 233.0, 150.0, 105.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "biala" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTMSpatProxy.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 272.0, 181.0, 150.0, 320.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -192,46 +186,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 1,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
-					"order" : 0,
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -244,6 +201,18 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-9::obj-14" : [ "Gain", "Gain", 0 ],
+			"obj-9::obj-11" : [ "live.text[3]", "live.text", 0 ],
+			"obj-9::obj-13" : [ "live.text[4]", "live.text", 0 ],
+			"obj-9::obj-215" : [ "live.text[2]", "live.text", 0 ],
+			"obj-9::obj-214" : [ "live.text", "live.text", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "SceneCore.module.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/SceneCore",
@@ -279,10 +248,94 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "VTMSceneStateListContainer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : "../../../patchers/VTMGlobal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSceneStatus.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : "../../../patchers/VTMGlobal",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SceneStateListBuilder.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "SceneCoreLogic.js",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSpatProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../../patchers/Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_textedit.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SpatProxyMenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy",
+				"patcherrelativepath" : "../../../patchers/Modules/VTMSpatProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_slider.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resizeParent.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "splay.parameters.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
+				"patcherrelativepath" : "../../../patchers/Modules/VTMSpatProxy/MethodParametersPatchers/MethodParameterViews",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTM_UI_menu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../../patchers/Widgets",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMFilePlayer.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMFilePlayer",
+				"patcherrelativepath" : "../../../patchers/Modules/VTMFilePlayer",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMEq.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMEq",
+				"patcherrelativepath" : "../../../patchers/Modules/VTMEq",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -303,6 +356,18 @@
 			}
 , 			{
 				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "spat5.frequencyresponse.embedded.mxo",
 				"type" : "iLaX"
 			}
  ],
