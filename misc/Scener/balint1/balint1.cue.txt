@@ -1,0 +1,249 @@
+- cue "awesomeJuice"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/balint1/biala/alias none
+/balint1/biala/db -96.000000
+/balint1/biala/destination genelec
+/balint1/biala/lfoAmount 0.000000
+/balint1/biala/lfoSpeed 0.000000
+/balint1/biala/lfoType ramp
+/balint1/biala/pan 0.000000
+/balint1/biala/source allocator
+/balint1/biala/spread 0.000000
+/balint1/biala/width 0.000000
+# 
+/balint1/myEq/equalizer/bypass 0
+/balint1/myEq/equalizer/filter/number 3
+/balint1/myEq/equalizer/filter/1/type BandPass
+/balint1/myEq/equalizer/filter/1/active 1
+/balint1/myEq/equalizer/filter/1/freq 1158.000000
+/balint1/myEq/equalizer/filter/1/gain 22.000000
+/balint1/myEq/equalizer/filter/1/q 79.660004
+/balint1/myEq/equalizer/filter/2/type BandPass
+/balint1/myEq/equalizer/filter/2/active 1
+/balint1/myEq/equalizer/filter/2/freq 102.000000
+/balint1/myEq/equalizer/filter/2/gain 30.000000
+/balint1/myEq/equalizer/filter/2/q 100.000000
+/balint1/myEq/equalizer/filter/3/type SimpleGain
+/balint1/myEq/equalizer/filter/3/active 1
+/balint1/myEq/equalizer/filter/3/freq 1000.000000
+/balint1/myEq/equalizer/filter/3/gain 0.000000
+/balint1/myEq/equalizer/filter/3/q 1.000000
+/balint1/myEq/equalizer/gain 20.000000
+/balint1/myEq/equalizer/mute 0
+/balint1/myEq/equalizer/samplerate 48000
+/balint1/myEq/equalizer/window/floating 1
+# 
+/balint1/myFilePlayer/soundFile 2.wav
+/balint1/myFilePlayer/audio/gain 1.000000
+/balint1/myFilePlayer/audio/mute 0
+/balint1/myFilePlayer/bufferName buffername 2984_bufferplayer
+/balint1/myFilePlayer/fileLength 56645.083333
+/balint1/myFilePlayer/fileLoaded 0
+/balint1/myFilePlayer/numChan 2
+/balint1/myFilePlayer/playbackBegin 17250.062500
+/balint1/myFilePlayer/playbackEnd 30670.770833
+/balint1/myFilePlayer/playbackLoop 1
+/balint1/myFilePlayer/playbackPlay 1
+/balint1/myFilePlayer/playbackSpeed 3.245000
+/balint1/myFilePlayer/playbackSync 0.733154
+/balint1/myFilePlayer/resetLoopPoints 0
+# 
+# ###########################################
+
+- cue "anotherThing"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/balint1/biala/alias none
+/balint1/biala/db -96.000000
+/balint1/biala/destination genelec
+/balint1/biala/lfoAmount 0.000000
+/balint1/biala/lfoSpeed 0.000000
+/balint1/biala/lfoType ramp
+/balint1/biala/pan 0.000000
+/balint1/biala/source allocator
+/balint1/biala/spread 0.000000
+/balint1/biala/width 0.000000
+# 
+/balint1/myEq/equalizer/bypass 0
+/balint1/myEq/equalizer/filter/number 4
+/balint1/myEq/equalizer/filter/1/type LowPass
+/balint1/myEq/equalizer/filter/1/active 1
+/balint1/myEq/equalizer/filter/1/freq 7711.000000
+/balint1/myEq/equalizer/filter/1/gain 0.000000
+/balint1/myEq/equalizer/filter/1/q 1.000000
+/balint1/myEq/equalizer/filter/2/type HighShelf
+/balint1/myEq/equalizer/filter/2/active 1
+/balint1/myEq/equalizer/filter/2/freq 538.000000
+/balint1/myEq/equalizer/filter/2/gain 15.000000
+/balint1/myEq/equalizer/filter/2/q 0.370000
+/balint1/myEq/equalizer/filter/3/type Notch
+/balint1/myEq/equalizer/filter/3/active 1
+/balint1/myEq/equalizer/filter/3/freq 3476.000000
+/balint1/myEq/equalizer/filter/3/gain 4.700000
+/balint1/myEq/equalizer/filter/3/q 0.250000
+/balint1/myEq/equalizer/filter/4/type HighPass
+/balint1/myEq/equalizer/filter/4/active 1
+/balint1/myEq/equalizer/filter/4/freq 196.000000
+/balint1/myEq/equalizer/filter/4/gain 0.000000
+/balint1/myEq/equalizer/filter/4/q 5.950000
+/balint1/myEq/equalizer/gain 0.000000
+/balint1/myEq/equalizer/mute 0
+/balint1/myEq/equalizer/samplerate 48000
+/balint1/myEq/equalizer/window/floating 0
+# 
+/balint1/myFilePlayer/soundFile 6.wav
+/balint1/myFilePlayer/audio/gain 0.160000
+/balint1/myFilePlayer/audio/mute 0
+/balint1/myFilePlayer/bufferName buffername 2984_bufferplayer
+/balint1/myFilePlayer/fileLength 39740.958333
+/balint1/myFilePlayer/fileLoaded 0
+/balint1/myFilePlayer/numChan 2
+/balint1/myFilePlayer/playbackBegin 4300.333333
+/balint1/myFilePlayer/playbackEnd 7023.645833
+/balint1/myFilePlayer/playbackLoop 1
+/balint1/myFilePlayer/playbackPlay 1
+/balint1/myFilePlayer/playbackSpeed 0.757000
+/balint1/myFilePlayer/playbackSync 0.120153
+/balint1/myFilePlayer/resetLoopPoints 0
+# 
+# ###########################################
+
+- cue "yesdd"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/balint1/biala/alias none
+/balint1/biala/db -25.765462
+/balint1/biala/destination genelec
+/balint1/biala/lfoAmount 0.000000
+/balint1/biala/lfoSpeed 0.000000
+/balint1/biala/lfoType ramp
+/balint1/biala/pan 0.000000
+/balint1/biala/source allocator
+/balint1/biala/spread 0.000000
+/balint1/biala/width 0.000000
+# 
+/balint1/myEq/equalizer/bypass 0
+/balint1/myEq/equalizer/filter/number 4
+/balint1/myEq/equalizer/filter/1/type LowPass
+/balint1/myEq/equalizer/filter/1/active 1
+/balint1/myEq/equalizer/filter/1/freq 7711.000000
+/balint1/myEq/equalizer/filter/1/gain 0.000000
+/balint1/myEq/equalizer/filter/1/q 1.000000
+/balint1/myEq/equalizer/filter/2/type HighShelf
+/balint1/myEq/equalizer/filter/2/active 1
+/balint1/myEq/equalizer/filter/2/freq 538.000000
+/balint1/myEq/equalizer/filter/2/gain 15.000000
+/balint1/myEq/equalizer/filter/2/q 0.370000
+/balint1/myEq/equalizer/filter/3/type Notch
+/balint1/myEq/equalizer/filter/3/active 1
+/balint1/myEq/equalizer/filter/3/freq 3476.000000
+/balint1/myEq/equalizer/filter/3/gain 4.700000
+/balint1/myEq/equalizer/filter/3/q 0.250000
+/balint1/myEq/equalizer/filter/4/type HighPass
+/balint1/myEq/equalizer/filter/4/active 1
+/balint1/myEq/equalizer/filter/4/freq 196.000000
+/balint1/myEq/equalizer/filter/4/gain 0.000000
+/balint1/myEq/equalizer/filter/4/q 5.950000
+/balint1/myEq/equalizer/gain 0.000000
+/balint1/myEq/equalizer/mute 0
+/balint1/myEq/equalizer/samplerate 48000
+/balint1/myEq/equalizer/window/floating 0
+# 
+/balint1/myFilePlayer/soundFile 6.wav
+/balint1/myFilePlayer/audio/gain 3.000000
+/balint1/myFilePlayer/audio/mute 0
+/balint1/myFilePlayer/bufferName buffername 2984_bufferplayer
+/balint1/myFilePlayer/fileLength 39740.958333
+/balint1/myFilePlayer/fileLoaded 0
+/balint1/myFilePlayer/numChan 2
+/balint1/myFilePlayer/playbackBegin 4300.333333
+/balint1/myFilePlayer/playbackEnd 7023.645833
+/balint1/myFilePlayer/playbackLoop 1
+/balint1/myFilePlayer/playbackPlay 1
+/balint1/myFilePlayer/playbackSpeed 18.030000
+/balint1/myFilePlayer/playbackSync 0.159446
+/balint1/myFilePlayer/resetLoopPoints 0
+# 
+/balint1/theFilter/audio/bypass 0
+/balint1/theFilter/audio/gain 12.000000
+/balint1/theFilter/audio/mix 91.000000
+/balint1/theFilter/audio/mute 0
+/balint1/theFilter/cutoff 1415.000000
+/balint1/theFilter/filterType 0
+# 
+# ###########################################
+
+- cue "banana"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/balint1/biala/alias none
+/balint1/biala/db -25.765462
+/balint1/biala/destination gogo
+/balint1/biala/lfoAmount 0.000000
+/balint1/biala/lfoSpeed 0.000000
+/balint1/biala/lfoType ramp
+/balint1/biala/pan 0.000000
+/balint1/biala/source allocator
+/balint1/biala/spread 0.000000
+/balint1/biala/width 0.000000
+# 
+/balint1/myEq/equalizer/bypass 0
+/balint1/myEq/equalizer/filter/number 4
+/balint1/myEq/equalizer/filter/1/type LowPass
+/balint1/myEq/equalizer/filter/1/active 1
+/balint1/myEq/equalizer/filter/1/freq 7711.000000
+/balint1/myEq/equalizer/filter/1/gain 0.000000
+/balint1/myEq/equalizer/filter/1/q 1.000000
+/balint1/myEq/equalizer/filter/2/type HighShelf
+/balint1/myEq/equalizer/filter/2/active 1
+/balint1/myEq/equalizer/filter/2/freq 538.000000
+/balint1/myEq/equalizer/filter/2/gain 15.000000
+/balint1/myEq/equalizer/filter/2/q 0.370000
+/balint1/myEq/equalizer/filter/3/type Notch
+/balint1/myEq/equalizer/filter/3/active 1
+/balint1/myEq/equalizer/filter/3/freq 3476.000000
+/balint1/myEq/equalizer/filter/3/gain 4.700000
+/balint1/myEq/equalizer/filter/3/q 0.250000
+/balint1/myEq/equalizer/filter/4/type HighPass
+/balint1/myEq/equalizer/filter/4/active 1
+/balint1/myEq/equalizer/filter/4/freq 196.000000
+/balint1/myEq/equalizer/filter/4/gain 0.000000
+/balint1/myEq/equalizer/filter/4/q 5.950000
+/balint1/myEq/equalizer/gain 0.000000
+/balint1/myEq/equalizer/mute 0
+/balint1/myEq/equalizer/samplerate 48000
+/balint1/myEq/equalizer/window/floating 0
+# 
+/balint1/myFilePlayer/soundFile 6.wav
+/balint1/myFilePlayer/audio/gain 3.000000
+/balint1/myFilePlayer/audio/mute 0
+/balint1/myFilePlayer/bufferName buffername 2984_bufferplayer
+/balint1/myFilePlayer/fileLength 39740.958333
+/balint1/myFilePlayer/fileLoaded 0
+/balint1/myFilePlayer/numChan 2
+/balint1/myFilePlayer/playbackBegin 4300.333333
+/balint1/myFilePlayer/playbackEnd 7023.645833
+/balint1/myFilePlayer/playbackLoop 1
+/balint1/myFilePlayer/playbackPlay 1
+/balint1/myFilePlayer/playbackSpeed 18.030000
+/balint1/myFilePlayer/playbackSync 0.031724
+/balint1/myFilePlayer/resetLoopPoints 0
+# 
+/balint1/theFilter/audio/bypass 0
+/balint1/theFilter/audio/gain 12.000000
+/balint1/theFilter/audio/mix 91.000000
+/balint1/theFilter/audio/mute 0
+/balint1/theFilter/cutoff 1415.000000
+/balint1/theFilter/filterType 0
+# 
+# ###########################################
+

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 328.0, 167.0, 891.0, 972.0 ],
+		"rect" : [ 890.0, 172.0, 607.0, 955.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,28 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"annotation" : "none",
+					"args" : [ "theFilter" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-5",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTMFilter.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 166.0, 133.0, 150.0, 35.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
 					"args" : [ "myEq" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -54,7 +76,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 455.0, 355.0, 300.0, 210.0 ],
+					"patching_rect" : [ 166.0, 184.0, 300.0, 210.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -76,7 +98,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 459.0, 233.0, 150.0, 105.0 ],
+					"patching_rect" : [ 166.0, 26.0, 150.0, 105.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -98,7 +120,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 272.0, 181.0, 150.0, 320.0 ],
+					"patching_rect" : [ 166.0, 408.0, 150.0, 320.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -335,6 +357,13 @@
 				"name" : "VTMEq.view.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMEq",
 				"patcherrelativepath" : "../../../patchers/Modules/VTMEq",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMFilter.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMFilter",
+				"patcherrelativepath" : "../../../patchers/Modules/VTMFilter",
 				"type" : "JSON",
 				"implicit" : 1
 			}
