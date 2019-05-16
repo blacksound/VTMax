@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 272.0, 81.0, 172.0, 787.0 ],
+		"rect" : [ 268.0, 79.0, 496.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,78 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 169.0, 764.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 228.0, 732.0, 34.0, 22.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 228.0, 706.0, 40.0, 22.0 ],
+					"text" : "active"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 201.0, 691.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 191.0, 803.0, 212.0, 22.0 ],
+					"text" : "/balint1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 228.0, 762.0, 161.0, 22.0 ],
+					"text" : "j.lazyReceive model:address"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-6",
@@ -120,9 +192,46 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -138,28 +247,28 @@
 		"dependency_cache" : [ 			{
 				"name" : "SceneCore.module.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/SceneCore",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/VTMax/patchers/SceneCore",
+				"patcherrelativepath" : "../../../patchers/SceneCore",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SceneCore.view.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/SceneCore",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/VTMax/patchers/SceneCore",
+				"patcherrelativepath" : "../../../patchers/SceneCore",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "VTM_UI_cellblock.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Widgets",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/VTMax/patchers/Widgets",
+				"patcherrelativepath" : "../../../patchers/Widgets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.lazyReceive.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../../patchers/ImportedFrom_vt_max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -172,7 +281,7 @@
 , 			{
 				"name" : "SceneCoreLogic.js",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
