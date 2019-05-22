@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 188.0, 78.0, 936.0, 937.0 ],
+		"rect" : [ 715.0, 79.0, 936.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1196.0, 672.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1201.0, 836.0, 79.0, 22.0 ],
 					"text" : "j.receive load"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1196.0, 703.0, 54.0, 22.0 ],
+					"patching_rect" : [ 1201.0, 867.0, 54.0, 22.0 ],
 					"text" : "deferlow"
 				}
 
@@ -379,11 +379,12 @@
 				"box" : 				{
 					"color" : [ 1.0, 0.0, 1.0, 1.0 ],
 					"id" : "obj-29",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 766.75, 626.5, 288.0, 22.0 ],
+					"patching_rect" : [ 766.75, 626.5, 162.0, 35.0 ],
 					"text" : "j.parameter playbackPos @type decimal @default 0."
 				}
 
@@ -739,7 +740,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 1196.0, 791.5, 55.0, 22.0 ],
+					"patching_rect" : [ 1201.0, 955.5, 55.0, 22.0 ],
 					"text" : "strippath"
 				}
 
@@ -751,7 +752,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1196.0, 763.5, 57.0, 22.0 ],
+					"patching_rect" : [ 1201.0, 927.5, 57.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -763,7 +764,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 1196.0, 734.5, 67.0, 22.0 ],
+					"patching_rect" : [ 1201.0, 898.5, 67.0, 22.0 ],
 					"text" : "opendialog"
 				}
 
@@ -775,7 +776,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1196.0, 820.5, 107.0, 22.0 ],
+					"patching_rect" : [ 1201.0, 984.5, 107.0, 22.0 ],
 					"text" : "j.remote soundFile"
 				}
 
