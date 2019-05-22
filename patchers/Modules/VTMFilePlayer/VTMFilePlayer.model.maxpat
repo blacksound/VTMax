@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 188.0, 78.0, 1341.0, 937.0 ],
+		"rect" : [ 188.0, 78.0, 936.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -326,6 +326,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
+					"hint" : "MC signal output",
 					"id" : "obj-9",
 					"index" : 2,
 					"maxclass" : "outlet",
@@ -338,6 +339,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
+					"hint" : "Jamoma model output",
 					"id" : "obj-3",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -350,6 +352,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
+					"hint" : "Jamoma model input",
 					"id" : "obj-2",
 					"index" : 1,
 					"maxclass" : "inlet",
