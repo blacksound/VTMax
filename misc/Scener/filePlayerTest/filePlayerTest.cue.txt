@@ -1,0 +1,44 @@
+- cue "eins"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/filePlayerTest/test/soundFile none
+/filePlayerTest/test/audio/gain 0.000000
+/filePlayerTest/test/audio/mute 0
+/filePlayerTest/test/bufferName buffername 1183_bufferplayer
+/filePlayerTest/test/fileLength 0.000000
+/filePlayerTest/test/fileLoaded 0
+/filePlayerTest/test/numChan 0
+/filePlayerTest/test/playbackBegin 0.000000
+/filePlayerTest/test/playbackEnd 0.000000
+/filePlayerTest/test/playbackLoop 0
+/filePlayerTest/test/playbackPlay 1
+/filePlayerTest/test/playbackSpeed 1.000000
+/filePlayerTest/test/playbackSync 0.287414
+/filePlayerTest/test/resetLoopPoints 0
+# 
+# ###########################################
+
+- cue "zwei"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/filePlayerTest/test/soundFile none
+/filePlayerTest/test/audio/gain 0.000000
+/filePlayerTest/test/audio/mute 0
+/filePlayerTest/test/bufferName buffername 1183_bufferplayer
+/filePlayerTest/test/fileLength 0.000000
+/filePlayerTest/test/fileLoaded 0
+/filePlayerTest/test/numChan 0
+/filePlayerTest/test/playbackBegin 0.000000
+/filePlayerTest/test/playbackEnd 0.000000
+/filePlayerTest/test/playbackLoop 0
+/filePlayerTest/test/playbackPlay 1
+/filePlayerTest/test/playbackSpeed 1.000000
+/filePlayerTest/test/playbackSync 0.031724
+/filePlayerTest/test/resetLoopPoints 0
+# 
+# ###########################################
+
