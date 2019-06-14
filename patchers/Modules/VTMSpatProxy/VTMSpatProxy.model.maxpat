@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 775.0, 98.0, 1290.0, 1072.0 ],
+		"rect" : [ 927.0, 127.0, 1290.0, 1072.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,31 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 458.0, 392.0, 174.0, 33.0 ],
+					"presentation_linecount" : 2,
+					"text" : "also osc path for responders should be updated"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-110",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 458.0, 357.0, 174.0, 33.0 ],
+					"text" : "more work needed, should went VTMax/allocator/freed"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-104",
 					"linecount" : 2,
