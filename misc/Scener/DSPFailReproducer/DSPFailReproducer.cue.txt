@@ -1,0 +1,57 @@
+- cue "first"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/DSPFailReproducer/dspBug.1/alias none
+/DSPFailReproducer/dspBug.1/db -96.000000
+/DSPFailReproducer/dspBug.1/destination gogo
+/DSPFailReproducer/dspBug.1/lfoAmount 0.000000
+/DSPFailReproducer/dspBug.1/lfoSpeed 0.000000
+/DSPFailReproducer/dspBug.1/lfoType ramp
+/DSPFailReproducer/dspBug.1/pan 0.159703
+/DSPFailReproducer/dspBug.1/source allocator
+/DSPFailReproducer/dspBug.1/spread 0.275430
+/DSPFailReproducer/dspBug.1/width 0.340663
+# 
+/DSPFailReproducer/dspBug.2/alias none
+/DSPFailReproducer/dspBug.2/db -96.000000
+/DSPFailReproducer/dspBug.2/destination genelec
+/DSPFailReproducer/dspBug.2/lfoAmount 0.000000
+/DSPFailReproducer/dspBug.2/lfoSpeed 0.000000
+/DSPFailReproducer/dspBug.2/lfoType ramp
+/DSPFailReproducer/dspBug.2/pan -0.550615
+/DSPFailReproducer/dspBug.2/source allocator
+/DSPFailReproducer/dspBug.2/spread 0.275430
+/DSPFailReproducer/dspBug.2/width 0.347911
+# 
+/DSPFailReproducer/dspBug.3/alias none
+/DSPFailReproducer/dspBug.3/db -96.000000
+/DSPFailReproducer/dspBug.3/destination genelec
+/DSPFailReproducer/dspBug.3/lfoAmount 0.000000
+/DSPFailReproducer/dspBug.3/lfoSpeed 0.000000
+/DSPFailReproducer/dspBug.3/lfoType ramp
+/DSPFailReproducer/dspBug.3/pan 0.580096
+/DSPFailReproducer/dspBug.3/source allocator
+/DSPFailReproducer/dspBug.3/spread 0.173956
+/DSPFailReproducer/dspBug.3/width 0.210196
+# 
+/DSPFailReproducer/dspBug.4/alias none
+/DSPFailReproducer/dspBug.4/db -96.000000
+/DSPFailReproducer/dspBug.4/destination sub
+/DSPFailReproducer/dspBug.4/lfoAmount 0.000000
+/DSPFailReproducer/dspBug.4/lfoSpeed 0.000000
+/DSPFailReproducer/dspBug.4/lfoType ramp
+/DSPFailReproducer/dspBug.4/pan 0.000000
+/DSPFailReproducer/dspBug.4/source allocator
+/DSPFailReproducer/dspBug.4/spread 0.000000
+/DSPFailReproducer/dspBug.4/width 0.000000
+/DSPFailReproducer/pos1 0.544584
+/DSPFailReproducer/pos2 0.484652
+/DSPFailReproducer/pos3 0.513645
+/DSPFailReproducer/pos4 0.457118
+/DSPFailReproducer/xy1 0.514618
+/DSPFailReproducer/xy2 0.529115
+# 
+# ###########################################
+
