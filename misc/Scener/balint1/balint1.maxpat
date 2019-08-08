@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 890.0, 172.0, 607.0, 955.0 ],
+		"rect" : [ 235.0, 225.0, 607.0, 955.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -76,7 +76,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 166.0, 184.0, 300.0, 210.0 ],
+					"patching_rect" : [ 166.0, 170.0, 150.0, 140.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -120,7 +120,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 166.0, 408.0, 150.0, 320.0 ],
+					"patching_rect" : [ 166.0, 312.0, 150.0, 320.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -226,9 +226,11 @@
 		"parameters" : 		{
 			"obj-9::obj-14" : [ "Gain", "Gain", 0 ],
 			"obj-9::obj-11" : [ "live.text[3]", "live.text", 0 ],
-			"obj-9::obj-13" : [ "live.text[4]", "live.text", 0 ],
 			"obj-9::obj-215" : [ "live.text[2]", "live.text", 0 ],
+			"obj-9::obj-17" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-9::obj-214" : [ "live.text", "live.text", 0 ],
+			"obj-9::obj-25" : [ "live.text[5]", "live.text[5]", 0 ],
+			"obj-9::obj-13" : [ "live.text[4]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
