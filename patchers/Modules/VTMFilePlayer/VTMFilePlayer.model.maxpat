@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 207.0, 79.0, 950.0, 937.0 ],
+		"rect" : [ 207.0, 79.0, 1538.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 766.75, 712.5, 60.0, 22.0 ],
+					"patching_rect" : [ 766.75, 703.0, 60.0, 22.0 ],
 					"text" : "zl.change"
 				}
 
@@ -957,7 +957,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 766.75, 745.5, 57.0, 22.0 ],
+					"patching_rect" : [ 766.75, 736.0, 57.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -1199,6 +1199,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
