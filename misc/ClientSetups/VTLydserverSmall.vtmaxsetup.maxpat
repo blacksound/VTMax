@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 262.0, 432.0, 640.0, 480.0 ],
+		"rect" : [ 262.0, 432.0, 236.0, 193.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,17 +45,17 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.0, 127.0, 39.0, 22.0 ],
-					"text" : "LPD8"
+					"patching_rect" : [ 86.0, 83.0, 55.0, 22.0 ],
+					"text" : "MIDIMIX"
 				}
 
 			}
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "LPD8.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/LPD8",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/LPD8",
+				"name" : "MIDIMIX.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/MIDIMIX",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/MIDIMIX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
