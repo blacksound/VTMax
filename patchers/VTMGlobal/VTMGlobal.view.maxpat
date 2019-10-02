@@ -131,7 +131,7 @@
 					"patching_rect" : [ 143.999969482421875, 241.0, 139.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 63.0, 108.0, 89.0, 20.0 ],
-					"text" : "bbb",
+					"text" : "<none>",
 					"textjustification" : 2
 				}
 
