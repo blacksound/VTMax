@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -106,12 +106,12 @@
 					"gradient" : 1,
 					"hint" : "Click to refresh network device status.",
 					"id" : "obj-57",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.0, 210.0, 52.0, 58.0 ],
+					"patching_rect" : [ 345.0, 220.0, 62.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 121.5, 152.0, 25.0 ],
 					"text" : "Network Device:",
@@ -366,15 +366,14 @@
 					"fontsize" : 10.0,
 					"gradient" : 0,
 					"id" : "obj-33",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 491.666656494140625, 341.0, 61.333343505859375, 36.0 ],
+					"patching_rect" : [ 523.5, 341.0, 29.5, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 62.0, 216.0, 94.0, 22.0 ],
-					"text" : "192.168.68.121",
+					"text" : ". . .",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 2
 				}
@@ -455,15 +454,14 @@
 					"fontsize" : 10.0,
 					"gradient" : 0,
 					"id" : "obj-21",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 491.666656494140625, 115.25, 54.0, 36.0 ],
+					"patching_rect" : [ 516.1666259765625, 116.0, 29.5, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 237.0, 101.0, 22.0 ],
-					"text" : "EABBook.local",
+					"text" : ". . .",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 2
 				}
@@ -504,10 +502,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 491.666656494140625, 40.0, 53.999969482421875, 22.0 ],
+					"patching_rect" : [ 516.1666259765625, 41.0, 29.5, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 51.5, 158.0, 101.0, 22.0 ],
-					"text" : "EABBook",
+					"text" : ". . .",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 2
 				}
@@ -842,15 +840,14 @@
 					"fontsize" : 10.0,
 					"gradient" : 0,
 					"id" : "obj-23",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 491.666656494140625, 265.75, 61.333343505859375, 36.0 ],
+					"patching_rect" : [ 523.5, 266.0, 29.5, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 178.0, 101.0, 22.0 ],
-					"text" : "EABBook.local",
+					"text" : ". . .",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 2
 				}
@@ -904,7 +901,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -916,7 +913,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1206,7 +1203,60 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "VTLydserverProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
+				"patcherrelativepath" : "../General/VTLydserverProxy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSceneStateList.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMSceneStateListContainer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SceneStateListBuilder.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "openSceneSet.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
