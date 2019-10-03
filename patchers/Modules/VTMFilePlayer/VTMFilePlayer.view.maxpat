@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 92.0, 99.0, 1295.0, 844.0 ],
+		"rect" : [ 92.0, 99.0, 774.0, 844.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -127,13 +127,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-30",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 525.25, 401.999999761581421, 50.0, 35.0 ],
-					"text" : "22.675737"
+					"patching_rect" : [ 525.25, 401.999999761581421, 50.0, 22.0 ],
+					"text" : "0."
 				}
 
 			}
@@ -599,13 +598,14 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "soundFile" ],
+					"args" : [ "fileName" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"id" : "obj-3",
+					"ignoreclick" : 1,
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "VTM_UI_textedit.maxpat",
@@ -824,7 +824,7 @@
 					"patching_rect" : [ 662.666667878627777, 291.499999463558197, 196.0, 33.833331999999928 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.25, 20.750002000000109, 147.5, 32.999997999999891 ],
-					"setminmax" : [ 0.0, 190491.671875 ],
+					"setminmax" : [ 0.0, 0.0 ],
 					"slidercolor" : [ 0.996078431372549, 0.0, 0.0, 1.0 ],
 					"thickness" : 1
 				}
@@ -1081,7 +1081,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"buffername" : "3419_bufferplayer",
+					"buffername" : "3662_bufferplayer",
 					"id" : "obj-28",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
