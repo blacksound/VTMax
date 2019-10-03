@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 92.0, 99.0, 1288.0, 844.0 ],
+		"rect" : [ 92.0, 99.0, 1295.0, 844.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,29 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1090.0, 83.0, 50.0, 22.0 ],
+					"text" : "0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 310.0, 704.0, 133.0, 22.0 ],
+					"text" : "mc.send~ placeholder1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.501960784313725, 0.0, 1.0 ],
 					"id" : "obj-8",
@@ -104,12 +127,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-30",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 525.25, 401.999999761581421, 50.0, 22.0 ],
-					"text" : "0."
+					"patching_rect" : [ 525.25, 401.999999761581421, 50.0, 35.0 ],
+					"text" : "22.675737"
 				}
 
 			}
@@ -195,8 +219,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -542,7 +566,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 197.5, 559.5, 105.0, 22.0 ],
+					"patching_rect" : [ 154.5, 656.5, 105.0, 22.0 ],
 					"text" : "j.receive meterSet"
 				}
 
@@ -554,8 +578,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 197.5, 699.0, 104.0, 22.0 ],
-					"text" : "mc.receive~ none"
+					"patching_rect" : [ 154.5, 704.0, 146.0, 22.0 ],
+					"text" : "mc.receive~ placeholder1"
 				}
 
 			}
@@ -567,7 +591,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 197.5, 745.0, 142.200000000000102, 23.0 ],
+					"patching_rect" : [ 154.5, 750.0, 142.200000000000102, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 76.25, 147.75, 22.0 ]
 				}
@@ -800,7 +824,7 @@
 					"patching_rect" : [ 662.666667878627777, 291.499999463558197, 196.0, 33.833331999999928 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.25, 20.750002000000109, 147.5, 32.999997999999891 ],
-					"setminmax" : [ 0.0, 0.0 ],
+					"setminmax" : [ 0.0, 190491.671875 ],
 					"slidercolor" : [ 0.996078431372549, 0.0, 0.0, 1.0 ],
 					"thickness" : 1
 				}
@@ -817,8 +841,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1057,7 +1081,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"buffername" : "1407_bufferplayer",
+					"buffername" : "3419_bufferplayer",
 					"id" : "obj-28",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -1170,12 +1194,11 @@
 				"box" : 				{
 					"color" : [ 1.0, 0.501960784313725, 0.0, 1.0 ],
 					"id" : "obj-17",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 197.5, 35.0, 75.0, 35.0 ],
+					"patching_rect" : [ 197.5, 35.0, 119.0, 22.0 ],
 					"text" : "j.receive bufferName"
 				}
 
@@ -1242,7 +1265,7 @@
 					"patching_rect" : [ 0.0, -1.0, 150.0, 140.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 280.0 ],
-					"text" : "/fil..omo"
+					"text" : "/are..yer"
 				}
 
 			}
@@ -1353,7 +1376,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"order" : 0,
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
+					"order" : 1,
 					"source" : [ "obj-37", 0 ]
 				}
 
