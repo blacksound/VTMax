@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 129.0, 144.0, 1166.0, 625.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,31 @@
 		"style" : "",
 		"subpatcher_template" : "opengl_starter",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 194.0, 524.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 234.0, 520.714294500000051, 240.0, 35.0 ],
+					"text" : "VTMDialog \"Are you sure you want to write mapping settings?\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-93",
 					"maxclass" : "newobj",
@@ -122,8 +147,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -162,7 +187,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "balint1" ],
+									"outlettype" : [ "", "Nananana" ],
 									"patching_rect" : [ 148.25, 183.0, 92.0, 22.0 ],
 									"text" : "t l #1"
 								}
@@ -639,7 +664,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 234.0, 513.214293999999995, 214.0, 49.0 ],
+					"patching_rect" : [ 382.0, 411.000000000000114, 214.0, 49.0 ],
 					"text" : "dialog Are you sure you want to write mapping settings? (Click OK to confirm)"
 				}
 
@@ -699,7 +724,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 234.0, 571.428588999999988, 152.0, 22.0 ],
+					"patching_rect" : [ 234.0, 571.428589000000102, 152.0, 22.0 ],
 					"text" : "j.lazyReceive coreFilePath"
 				}
 
@@ -954,14 +979,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 79.0, 813.0, 787.0 ],
+						"rect" : [ 34.0, 79.0, 1237.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -989,6 +1014,31 @@
 						"style" : "",
 						"subpatcher_template" : "opengl_starter",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1582.0, 146.5, 356.0, 22.0 ],
+									"text" : "VTMDialog \"Are you sure you want to write current cue settings?\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"linecount" : 3,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1721.0, 219.5, 261.0, 49.0 ],
+									"text" : "VTMDialog \"Are you sure you want to read stored cue settings? Unsaved changed will be lost.\""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-16",
 									"maxclass" : "newobj",
@@ -1200,7 +1250,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 1582.0, 149.5, 392.0, 35.0 ],
+									"patching_rect" : [ 1941.0, 146.5, 392.0, 35.0 ],
 									"text" : "dialog Are you sure you want to write current cue settings? (Click OK to confirm)"
 								}
 
@@ -1773,7 +1823,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 1721.0, 219.5, 278.0, 49.0 ],
+									"patching_rect" : [ 1998.0, 219.5, 278.0, 49.0 ],
 									"text" : "dialog Are you sure you want to read stored cue settings? Unsaved changed will be lost. (Click OK to confirm)"
 								}
 
@@ -2593,13 +2643,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-72", 0 ],
-									"source" : [ "obj-193", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-135", 0 ],
 									"source" : [ "obj-197", 0 ]
 								}
@@ -2678,7 +2721,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-193", 0 ],
+									"destination" : [ "obj-8", 0 ],
 									"source" : [ "obj-33", 0 ]
 								}
 
@@ -2701,6 +2744,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-65", 0 ],
 									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-73", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2864,13 +2914,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-73", 0 ],
-									"source" : [ "obj-69", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-48", 0 ],
 									"midpoints" : [ 1807.5, 678.833312999999976, 1593.5, 678.833312999999976 ],
 									"source" : [ "obj-70", 0 ]
@@ -2879,7 +2922,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-69", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-71", 0 ]
 								}
 
@@ -2937,6 +2980,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-79", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-72", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -3055,7 +3105,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "balint1", "int" ],
+					"outlettype" : [ "Nananana", "int" ],
 					"patching_rect" : [ 17.0, 935.0, 90.0, 22.0 ],
 					"text" : "t #1 i"
 				}
@@ -3634,13 +3684,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"source" : [ "obj-193", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -3841,8 +3884,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
@@ -3925,7 +3982,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-193", 0 ],
+					"destination" : [ "obj-56", 0 ],
 					"source" : [ "obj-73", 0 ]
 				}
 
