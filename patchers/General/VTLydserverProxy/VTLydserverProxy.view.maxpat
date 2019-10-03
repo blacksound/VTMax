@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -56,6 +56,7 @@
 					"bgoncolor" : [ 0.925490196078431, 0.364705882352941, 0.341176470588235, 0.0 ],
 					"fontname" : "Avenir Book",
 					"fontsize" : 10.0,
+					"hint" : "Click to query lydserver status",
 					"id" : "obj-4",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,

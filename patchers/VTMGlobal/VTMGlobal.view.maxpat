@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 272.0, 79.0, 969.0, 787.0 ],
+		"rect" : [ 157.0, 94.0, 969.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,31 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "/VTLydserver" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"hint" : "Click to query lydserver status",
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "VTLydserverProxy.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 740.0, 275.0, 158.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.0, 262.0, 151.0, 19.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-55",
 					"linecount" : 2,
@@ -1152,30 +1177,6 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "none",
-					"args" : [ "/VTLydserver" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-7",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "VTLydserverProxy.view.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 740.0, 275.0, 173.0, 125.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 262.0, 151.0, 19.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-16",
@@ -1831,13 +1832,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "VTLydserverProxy.view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
-				"patcherrelativepath" : "../General/VTLydserverProxy",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "VTMSceneStateList.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
 				"patcherrelativepath" : ".",
@@ -1863,6 +1857,13 @@
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTLydserverProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
+				"patcherrelativepath" : "../General/VTLydserverProxy",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
