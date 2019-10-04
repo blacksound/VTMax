@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
+		"rect" : [ 121.0, 79.0, 1612.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,61 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 951.75, 378.0, 57.0, 22.0 ],
+					"text" : "print sel0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1102.0, 397.0, 57.0, 22.0 ],
+					"text" : "print sel1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1132.0, 346.0, 57.0, 22.0 ],
+					"text" : "print play"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 852.900000000000091, 392.5, 55.0, 22.0 ],
+					"text" : "print end"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 618.0, 392.5, 65.0, 22.0 ],
+					"text" : "print begin"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-65",
 					"maxclass" : "message",
@@ -157,7 +212,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1093.5, 492.0, 125.0, 22.0 ],
+					"patching_rect" : [ 1093.5, 473.0, 125.0, 22.0 ],
 					"text" : "j.receive playbackEnd"
 				}
 
@@ -208,7 +263,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 12.0, 328.068704156479271, 264.0, 22.0 ],
-					"text" : "j.parameter numChan @type integer @default 0"
+					"text" : "j.parameter numChan @type integer @default 1"
 				}
 
 			}
@@ -409,8 +464,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 12.0, 216.315158924205377, 224.0, 22.0 ],
-					"text" : "j.parameter playbackEnd @type decimal"
+					"patching_rect" : [ 12.0, 216.315158924205377, 286.0, 22.0 ],
+					"text" : "j.parameter playbackEnd @type decimal @priority 2"
 				}
 
 			}
@@ -422,8 +477,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 12.0, 188.376772616136861, 233.0, 22.0 ],
-					"text" : "j.parameter playbackBegin @type decimal"
+					"patching_rect" : [ 12.0, 188.376772616136861, 295.0, 22.0 ],
+					"text" : "j.parameter playbackBegin @type decimal @priority 2"
 				}
 
 			}
@@ -433,7 +488,7 @@
 					"comment" : "MC signal output",
 					"hint" : "",
 					"id" : "obj-9",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -446,7 +501,7 @@
 					"comment" : "Jamoma model output",
 					"hint" : "Jamoma model output",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -459,7 +514,7 @@
 					"comment" : "Jamoma model input",
 					"hint" : "Jamoma model input",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -502,8 +557,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 564.200000000000045, 350.0, 191.0, 22.0 ],
-					"text" : "j.receive playbackBegin @active 1"
+					"patching_rect" : [ 564.200000000000045, 328.068704156479271, 135.0, 22.0 ],
+					"text" : "j.receive playbackBegin"
 				}
 
 			}
@@ -515,8 +570,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 792.899999999999977, 350.0, 182.0, 22.0 ],
-					"text" : "j.receive playbackEnd @active 1"
+					"patching_rect" : [ 788.899999999999977, 318.0, 125.0, 22.0 ],
+					"text" : "j.receive playbackEnd"
 				}
 
 			}
@@ -581,8 +636,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1087.0, 266.5, 179.0, 22.0 ],
-					"text" : "j.parameter play @type boolean"
+					"patching_rect" : [ 1087.0, 266.5, 356.0, 22.0 ],
+					"text" : "j.parameter play @type boolean @priority 3 @value 0 @default 0"
 				}
 
 			}
@@ -604,10 +659,10 @@
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1021.5, 40.901222493887531, 101.0, 22.0 ],
-					"text" : "j.return numChan"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1021.5, 40.901222493887531, 109.0, 22.0 ],
+					"text" : "j.receive numChan"
 				}
 
 			}
@@ -985,8 +1040,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 907.25, 624.5, 195.0, 22.0 ],
-					"text" : "j.parameter soundFile @type string"
+					"patching_rect" : [ 907.25, 624.5, 257.0, 22.0 ],
+					"text" : "j.parameter soundFile @type string @priority 1"
 				}
 
 			}
@@ -1011,8 +1066,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1121.25, 899.5, 207.0, 22.0 ],
-					"text" : "j.parameter fileLength @type decimal"
+					"patching_rect" : [ 1121.25, 899.5, 269.0, 22.0 ],
+					"text" : "j.parameter fileLength @type decimal @priority 1"
 				}
 
 			}
@@ -1175,6 +1230,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
+					"order" : 1,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -1196,6 +1260,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
+					"order" : 1,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -1203,6 +1276,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
+					"order" : 2,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 0 ],
+					"order" : 1,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 1 ],
+					"order" : 0,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1305,6 +1395,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
+					"order" : 0,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -1312,6 +1403,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
+					"order" : 0,
+					"source" : [ "obj-43", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"order" : 1,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"order" : 1,
 					"source" : [ "obj-43", 1 ]
 				}
 
@@ -1462,15 +1570,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-72", 1 ],
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"midpoints" : [ 1155.0, 150.0, 1280.0, 150.0, 1280.0, 209.0, 1280.0, 209.0, 1280.0, 335.0, 1031.0, 335.0 ],
+					"disabled" : 1,
+					"midpoints" : [ 1155.0, 150.0, 1409.0, 150.0, 1409.0, 209.0, 1409.0, 209.0, 1409.0, 335.0, 1031.0, 335.0 ],
 					"source" : [ "obj-67", 2 ]
 				}
 
@@ -1574,6 +1676,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-87", 0 ]
 				}
 
@@ -1586,6 +1689,39 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "bl.simpleLooper.gendsp",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Modules/VTMFilePlayer",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
