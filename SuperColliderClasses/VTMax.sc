@@ -111,7 +111,11 @@ VTMax {
 
 		routings.keysValuesDo({arg spatProxyPath, nodeProxyRoutings;
 			//
-			if(allocations.includesKey(spatProxyPath), {
+			"who are you?: %".format(allocations[spatProxyPath][0].class).postln;
+			"allocations on update proxy routings: %".format(allocations[spatProxyPath]).postln;
+			if(allocations.includesKey(spatProxyPath) and: allocations[spatProxyPath][0].isInteger,
+				// [0] because is the content of the array actually something which is usable as a busnum
+				{
 				nodeProxyRoutings.keysValuesDo({arg nodeProxy, routing;
 					var busnums = allocations[spatProxyPath] - 1;
 					var args = ();
