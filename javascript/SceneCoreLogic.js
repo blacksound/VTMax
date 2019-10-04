@@ -47,6 +47,19 @@ function sendPathToCue() {
   }
 }
 
+function sendPathToMappings() {
+  if (isOpenedInScenePatch()) {
+    var path = this.patcher.parentpatcher.filepath;
+    path = path.slice(0, -7); // removing ".maxpat" /
+    path += ".mappings";
+    outlet(deferlowOutlet, "/" + sceneName + "/pathToMappings", path);
+    return path;
+  } else {
+    post("not opened in scene patch\n");
+    return null;
+  }
+}
+
 function sendScenePathToSceneManager() {
   if (isOpenedInScenePatch()) {
     var path = this.patcher.parentpatcher.filepath;
@@ -106,6 +119,7 @@ function initSceneCore(sceneNameArg) {
     bindToAddress(sceneName);
     sendPathToCore();
     sendPathToCue();
+    sendPathToMappings();
     sendScenePathToSceneManager();
     initialized = true;
   } else {
