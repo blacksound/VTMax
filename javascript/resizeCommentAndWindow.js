@@ -89,6 +89,9 @@ function fitWindowTo(name) {
     var location = p.wind.location;
     var windHeight = location[3] - location[1];
     var width = getWidth(name);
+    if (width < 110) {
+      width = 110;
+    }
     p.message("window", "size", 100, 100, width + 120, windHeight + 120);
     p.message("window", "exec");
   }
