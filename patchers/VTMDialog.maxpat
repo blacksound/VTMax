@@ -80,7 +80,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 626.0, 342.0, 188.0, 136.0 ],
+						"rect" : [ 370.0, 246.0, 221.0, 102.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -279,16 +279,16 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 72.0, 68.0, 60.0, 29.0 ],
+									"patching_rect" : [ 72.0, 51.0, 47.5, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 144.0, 87.0, 60.0, 29.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_longname" : "live.text[1]",
-											"parameter_mmax" : 1,
 											"parameter_shortname" : "live.text",
 											"parameter_enum" : [ "val1", "val2" ],
-											"parameter_type" : 2
+											"parameter_type" : 2,
+											"parameter_longname" : "live.text[1]",
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -308,16 +308,16 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 10.0, 68.0, 60.0, 29.0 ],
+									"patching_rect" : [ 10.0, 51.0, 47.5, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 7.0, 87.0, 60.0, 29.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_longname" : "live.text",
-											"parameter_mmax" : 1,
 											"parameter_shortname" : "live.text",
 											"parameter_enum" : [ "val1", "val2" ],
-											"parameter_type" : 2
+											"parameter_type" : 2,
+											"parameter_longname" : "live.text",
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -329,14 +329,14 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 24.0,
+									"fontsize" : 13.0,
 									"id" : "obj-3",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 7.0, 168.0, 33.0 ],
+									"patching_rect" : [ 10.0, 7.0, 19.0, 21.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 7.0, 168.0, 33.0 ],
+									"presentation_rect" : [ 10.0, 7.0, 179.0, 21.0 ],
 									"varname" : "resizableCommentBox"
 								}
 
@@ -498,7 +498,7 @@
 						"bgcolor" : [ 0.623529411764706, 0.623529411764706, 0.623529411764706, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 18.5, 146.0, 181.0, 22.0 ],
+					"patching_rect" : [ 18.5, 146.0, 228.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -543,7 +543,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.5, 185.0, 30.0, 30.0 ]
+					"patching_rect" : [ 18.5, 180.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -558,7 +558,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 190.0, 178.0, 107.5, 178.0, 107.5, 106.0, 28.0, 106.0 ],
+					"midpoints" : [ 237.0, 178.0, 107.5, 178.0, 107.5, 106.0, 28.0, 106.0 ],
 					"source" : [ "obj-16", 1 ]
 				}
 
