@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -243,8 +243,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1013,8 +1013,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1054,7 +1054,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 763.5, 229.0, 74.0 ],
+									"patching_rect" : [ 45.0, 737.5, 230.0, 74.0 ],
 									"text" : "When new scenes are opened Jamoma adds the newly opened namespace to other j.cue objects. Doing a reinit here so that we keep the namespace solely for this scene."
 								}
 
@@ -1066,7 +1066,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 132.0, 870.0, 54.0, 22.0 ],
+									"patching_rect" : [ 61.0, 870.0, 54.0, 22.0 ],
 									"text" : "deferlow"
 								}
 
@@ -1078,7 +1078,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 132.0, 902.5, 22.0, 22.0 ],
+									"patching_rect" : [ 61.0, 902.5, 22.0, 22.0 ],
 									"text" : "t b"
 								}
 
@@ -1086,13 +1086,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 132.0, 828.0, 130.0, 35.0 ],
-									"text" : "j.receive /global/sceneOpened"
+									"patching_rect" : [ 61.0, 817.0, 185.0, 49.0 ],
+									"text" : "j.receive /global/sceneManager/sceneInitialized"
 								}
 
 							}
@@ -2177,7 +2177,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 103.0, 945.5, 135.0, 35.0 ],
+									"patching_rect" : [ 61.0, 945.5, 135.0, 35.0 ],
 									"text" : "j.lazyReceive model:address"
 								}
 
@@ -2189,7 +2189,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 90.0, 902.5, 32.0, 22.0 ],
+									"patching_rect" : [ 255.0, 844.0, 32.0, 22.0 ],
 									"text" : "j.init"
 								}
 
@@ -2202,7 +2202,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 103.0, 999.5, 135.0, 35.0 ],
+									"patching_rect" : [ 61.0, 999.5, 135.0, 35.0 ],
 									"text" : "namespace/unselect /, namespace/select $1"
 								}
 
@@ -4233,32 +4233,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-20::obj-4::obj-16::obj-5" : [ "live.text", "live.text", 0 ],
-			"obj-20::obj-8::obj-16::obj-6" : [ "live.text[3]", "live.text", 0 ],
-			"obj-56::obj-16::obj-6" : [ "live.text[4]", "live.text", 0 ],
-			"obj-20::obj-4::obj-16::obj-6" : [ "live.text[1]", "live.text", 0 ],
-			"obj-20::obj-8::obj-16::obj-5" : [ "live.text[2]", "live.text", 0 ],
 			"obj-56::obj-16::obj-5" : [ "live.text[5]", "live.text", 0 ],
+			"obj-20::obj-8::obj-16::obj-6" : [ "live.text[3]", "live.text", 0 ],
+			"obj-20::obj-4::obj-16::obj-6" : [ "live.text[1]", "live.text", 0 ],
+			"obj-56::obj-16::obj-6" : [ "live.text[4]", "live.text", 0 ],
+			"obj-20::obj-4::obj-16::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-20::obj-8::obj-16::obj-5" : [ "live.text[2]", "live.text", 0 ],
 			"parameterbanks" : 			{
-
-			}
-,
-			"parameter_overrides" : 			{
-				"obj-20::obj-8::obj-16::obj-6" : 				{
-					"parameter_longname" : "live.text[3]"
-				}
-,
-				"obj-56::obj-16::obj-6" : 				{
-					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-20::obj-8::obj-16::obj-5" : 				{
-					"parameter_longname" : "live.text[2]"
-				}
-,
-				"obj-56::obj-16::obj-5" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
 
 			}
 
