@@ -283,7 +283,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "Nananana" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 148.25, 183.0, 92.0, 22.0 ],
 									"text" : "t l #1"
 								}
@@ -1048,6 +1048,55 @@
 						"style" : "",
 						"subpatcher_template" : "opengl_starter",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 763.5, 229.0, 74.0 ],
+									"text" : "When new scenes are opened Jamoma adds the newly opened namespace to other j.cue objects. Doing a reinit here so that we keep the namespace solely for this scene."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 132.0, 870.0, 54.0, 22.0 ],
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 132.0, 902.5, 22.0, 22.0 ],
+									"text" : "t b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 132.0, 828.0, 130.0, 35.0 ],
+									"text" : "j.receive /global/sceneOpened"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-8",
 									"maxclass" : "newobj",
@@ -2140,7 +2189,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 106.5, 908.5, 32.0, 22.0 ],
+									"patching_rect" : [ 90.0, 902.5, 32.0, 22.0 ],
 									"text" : "j.init"
 								}
 
@@ -2748,6 +2797,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-83", 0 ],
 									"source" : [ "obj-30", 0 ]
 								}
@@ -2869,6 +2925,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-56", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-62", 2 ]
 								}
@@ -2943,6 +3006,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-101", 0 ],
 									"source" : [ "obj-68", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -3139,7 +3209,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "Nananana", "int" ],
+					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 17.0, 935.0, 90.0, 22.0 ],
 					"text" : "t #1 i"
 				}
@@ -3213,7 +3283,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3497,7 +3567,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3509,7 +3579,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -4161,7 +4231,117 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-20::obj-4::obj-16::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-20::obj-8::obj-16::obj-6" : [ "live.text[3]", "live.text", 0 ],
+			"obj-56::obj-16::obj-6" : [ "live.text[4]", "live.text", 0 ],
+			"obj-20::obj-4::obj-16::obj-6" : [ "live.text[1]", "live.text", 0 ],
+			"obj-20::obj-8::obj-16::obj-5" : [ "live.text[2]", "live.text", 0 ],
+			"obj-56::obj-16::obj-5" : [ "live.text[5]", "live.text", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-20::obj-8::obj-16::obj-6" : 				{
+					"parameter_longname" : "live.text[3]"
+				}
+,
+				"obj-56::obj-16::obj-6" : 				{
+					"parameter_longname" : "live.text[4]"
+				}
+,
+				"obj-20::obj-8::obj-16::obj-5" : 				{
+					"parameter_longname" : "live.text[2]"
+				}
+,
+				"obj-56::obj-16::obj-5" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "PassNonEmptySymbol.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTMDialog.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resizeCommentAndWindow.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ScriptCanvas.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
+				"patcherrelativepath" : "../General",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MappingScripter.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/Control",
+				"patcherrelativepath" : "../Control",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.return.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.cue.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
