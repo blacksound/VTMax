@@ -6,6 +6,8 @@ var jsendOutlet = 1;
 var addressOutlet = 2;
 var sceneName;
 var initialized = false;
+var VTM_scenes = new Dict("VTM_scenes");
+var sceneIsDuplicate = false;
 
 function bindToAddress(sceneNameArg) {
   sceneName = sceneNameArg;
@@ -104,7 +106,9 @@ function makeViewBpatcher(sceneName) {
 }
 
 function sceneClosed() {
-  outlet(jsendOutlet, "/global/sceneManager/sceneClosed", sceneName);
+  if (!sceneIsDuplicate) {
+    outlet(jsendOutlet, "/global/sceneManager/sceneClosed", sceneName);
+  }
 }
 
 function sceneOpened() {
@@ -112,20 +116,26 @@ function sceneOpened() {
 }
 
 function initSceneCore(sceneNameArg) {
-  if (isOpenedInScenePatch() && !initialized) {
-    sceneName = sceneNameArg;
-    makeViewBpatcher(sceneName);
-    sceneOpened();
-    bindToAddress(sceneName);
-    sendPathToCore();
-    sendPathToCue();
-    sendPathToMappings();
-    sendScenePathToSceneManager();
-    initialized = true;
+  if (VTM_scenes.contains(sceneNameArg) != 1) {
+    if (isOpenedInScenePatch() && !initialized) {
+      sceneName = sceneNameArg;
+      makeViewBpatcher(sceneName);
+      sceneOpened();
+      bindToAddress(sceneName);
+      sendPathToCore();
+      sendPathToCue();
+      sendPathToMappings();
+      sendScenePathToSceneManager();
+      initialized = true;
+    } else {
+      //this should never happen
+      post(
+        "Already initialized, or trying to initialize without being in a scene patch\n"
+      );
+    }
   } else {
-    //this should never happen
-    post(
-      "Already initialized, or trying to initialize without being in a scene patch\n"
-    );
+    post("Oops, duplicate scene, closing it now...\n");
+    sceneIsDuplicate = true;
+    this.patcher.parentpatcher.message("wclose");
   }
 }
