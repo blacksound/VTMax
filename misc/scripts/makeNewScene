@@ -7,9 +7,9 @@ fi
 SCENEPATH="$1"
 if [ ! -d "${SCENEPATH}" ]; then #has to be a string literal to avoid issues with spaces in names
   SCENENAME="$(basename "${SCENEPATH}")" #has to be a string literal to avoid issues with spaces in names
-  echo Make new scene in "$SCENEPATH"
-  echo Scene name is "$SCENENAME"
-  pwd
+  echo Making new scene in "$SCENEPATH"
+  #echo Scene name is "$SCENENAME"
+  #pwd
 
   mkdir -p "${SCENEPATH}"
   cp -n ../Scener/_template/_template.core.maxpat "${SCENEPATH}/${SCENENAME}.core.maxpat"
@@ -22,6 +22,8 @@ if [ ! -d "${SCENEPATH}" ]; then #has to be a string literal to avoid issues wit
   sed -e $SEDARGS <../Scener/_template/_template.maxpat >"$PATCHFILE"
   touch "${SCENEPATH}/${SCENENAME}.cue.txt"
   touch "${SCENEPATH}/${SCENENAME}.mappings"
+
+  echo load "${SCENEPATH}/${SCENENAME}.maxpat"
   exit 0
 else
   echo "scene already exists"
