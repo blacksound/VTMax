@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,21 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "opengl_starter",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "bang" ],
+					"patching_rect" : [ 234.0, 516.0, 215.0, 35.0 ],
+					"text" : "dialog \"Are you sure you want to write mapping settings?\" @mode 2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"linecount" : 3,
@@ -147,19 +161,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-56",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 234.0, 520.714294500000051, 240.0, 35.0 ],
-					"text" : "VTMDialog \"Are you sure you want to write mapping settings?\""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-93",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -243,8 +244,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -277,6 +278,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -754,19 +756,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-193",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 382.0, 411.000000000000114, 214.0, 49.0 ],
-					"text" : "dialog Are you sure you want to write mapping settings? (Click OK to confirm)"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-86",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -810,7 +799,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 17.0, 762.0, 155.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll #1.mappings"
@@ -1013,8 +1003,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1047,7 +1037,56 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "opengl_starter",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "bang" ],
+									"patching_rect" : [ 1721.0, 255.5, 541.0, 22.0 ],
+									"text" : "dialog \"Are you sure you want to read stored cue settings? Unsaved changed will be lost.\" @mode 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1891.0, 648.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1898.0, 559.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "bang" ],
+									"patching_rect" : [ 1584.0, 218.5, 384.0, 22.0 ],
+									"text" : "dialog \"Are you sure you want to write current cue settings?\" @mode 2"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-10",
 									"linecount" : 5,
@@ -1093,31 +1132,6 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 61.0, 817.0, 185.0, 49.0 ],
 									"text" : "j.receive /global/sceneManager/sceneInitialized"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 1582.0, 146.5, 356.0, 22.0 ],
-									"text" : "VTMDialog \"Are you sure you want to write current cue settings?\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"linecount" : 3,
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 1721.0, 219.5, 261.0, 49.0 ],
-									"text" : "VTMDialog \"Are you sure you want to read stored cue settings? Unsaved changed will be lost.\""
 								}
 
 							}
@@ -1322,19 +1336,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 295.0, 574.583312999999976, 56.0, 22.0 ],
 									"text" : "deferlow"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-193",
-									"linecount" : 2,
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 1941.0, 146.5, 392.0, 35.0 ],
-									"text" : "dialog Are you sure you want to write current cue settings? (Click OK to confirm)"
 								}
 
 							}
@@ -1561,8 +1562,8 @@
 									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "bang" ],
 									"patching_rect" : [ 917.0, 336.333312999999976, 71.0, 49.0 ],
 									"text" : "dialog New slot number:"
 								}
@@ -1707,8 +1708,8 @@
 									"id" : "obj-144",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "bang" ],
 									"patching_rect" : [ 642.25, 430.0, 147.0, 22.0 ],
 									"text" : "dialog New name for cue:"
 								}
@@ -1879,8 +1880,8 @@
 									"id" : "obj-85",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "bang" ],
 									"patching_rect" : [ 295.0, 439.583312999999976, 139.0, 22.0 ],
 									"text" : "dialog Name of new cue"
 								}
@@ -1895,19 +1896,6 @@
 									"outlettype" : [ "bang", "bang", "" ],
 									"patching_rect" : [ 295.0, 371.583312999999976, 200.0, 22.0 ],
 									"text" : "sel \"Store New\" \"Overwrite Current\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-69",
-									"linecount" : 3,
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 1998.0, 219.5, 278.0, 49.0 ],
-									"text" : "dialog Are you sure you want to read stored cue settings? Unsaved changed will be lost. (Click OK to confirm)"
 								}
 
 							}
@@ -2114,7 +2102,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1721.0, 100.0, 183.0, 22.0 ],
+									"patching_rect" : [ 1721.0, 174.0, 183.0, 22.0 ],
 									"text" : "j.message readCue @type none"
 								}
 
@@ -2315,7 +2303,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1582.0, 100.0, 125.0, 35.0 ],
+									"patching_rect" : [ 1584.0, 174.0, 125.0, 35.0 ],
 									"text" : "j.message writeCue @type none"
 								}
 
@@ -2337,9 +2325,23 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-72", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-96", 0 ],
 									"midpoints" : [ 442.5, 740.5, 322.5, 740.5 ],
 									"source" : [ "obj-101", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-11", 0 ]
 								}
 
 							}
@@ -2640,6 +2642,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-73", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-149", 0 ],
 									"source" : [ "obj-171", 0 ]
 								}
@@ -2811,7 +2820,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-33", 0 ]
 								}
 
@@ -2834,13 +2843,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-65", 0 ],
 									"source" : [ "obj-36", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-73", 0 ],
-									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -3026,7 +3028,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-17", 0 ],
 									"source" : [ "obj-71", 0 ]
 								}
 
@@ -3084,13 +3086,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-79", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-72", 0 ],
-									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -3988,13 +3983,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"source" : [ "obj-56", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-57", 0 ]
 				}
@@ -4004,6 +3992,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
@@ -4121,7 +4116,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
+					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-73", 0 ]
 				}
 
@@ -4233,16 +4228,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-56::obj-16::obj-5" : [ "live.text[5]", "live.text", 0 ],
-			"obj-20::obj-8::obj-16::obj-6" : [ "live.text[3]", "live.text", 0 ],
-			"obj-20::obj-4::obj-16::obj-6" : [ "live.text[1]", "live.text", 0 ],
-			"obj-56::obj-16::obj-6" : [ "live.text[4]", "live.text", 0 ],
-			"obj-20::obj-4::obj-16::obj-5" : [ "live.text", "live.text", 0 ],
-			"obj-20::obj-8::obj-16::obj-5" : [ "live.text[2]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -4263,20 +4253,6 @@
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General",
 				"patcherrelativepath" : "../General",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "VTMDialog.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "resizeCommentAndWindow.js",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
-				"patcherrelativepath" : "../../javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
