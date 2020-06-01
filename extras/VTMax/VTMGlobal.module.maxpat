@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 44.0, 170.0, 833.0 ],
+		"rect" : [ 0.0, 45.0, 170.0, 833.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -115,8 +115,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -285,8 +285,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 1,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -526,8 +526,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 761.0, 156.0, 33.0 ],
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"patching_rect" : [ 6.0, 761.0, 156.0, 33.0 ]
 				}
 
 			}
@@ -544,14 +543,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 979.0, 79.0, 576.0, 502.0 ],
+						"rect" : [ 512.0, 307.0, 576.0, 502.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -579,6 +578,58 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"annotation" : "none",
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 325.0, 353.0, 176.0, 22.0 ],
+									"text" : "VTMControlPage.model pageH"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "none",
+									"id" : "obj-19",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 325.0, 322.0, 176.0, 22.0 ],
+									"text" : "VTMControlPage.model pageG"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "none",
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 325.0, 289.0, 174.0, 22.0 ],
+									"text" : "VTMControlPage.model pageF"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "none",
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 325.0, 259.0, 175.0, 22.0 ],
+									"text" : "VTMControlPage.model pageE"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-13",
 									"maxclass" : "newobj",
@@ -633,7 +684,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 345.0, 68.0, 173.0, 22.0 ],
+									"patching_rect" : [ 344.0, 72.0, 173.0, 22.0 ],
 									"text" : "j.receive /global/sceneMapped"
 								}
 
@@ -645,7 +696,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 133.0, 68.0, 188.0, 22.0 ],
+									"patching_rect" : [ 133.0, 72.0, 188.0, 22.0 ],
 									"text" : "j.receive /global/sceneUnmapped"
 								}
 
@@ -905,13 +956,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "VTLydserverProxy.view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
-				"patcherrelativepath" : "../../patchers/General/VTLydserverProxy",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "VTMSceneStateList.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/VTMGlobal",
 				"patcherrelativepath" : "../../patchers/VTMGlobal",
@@ -937,6 +981,13 @@
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "VTLydserverProxy.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
+				"patcherrelativepath" : "../../patchers/General/VTLydserverProxy",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -968,68 +1019,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "aaa.setup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/misc/ClientSetups",
-				"patcherrelativepath" : "../../misc/ClientSetups",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400.model.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400Slot.model.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.lazyReceive.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400ButtonSet.model.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400ParseFaderValue.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400ParseEncoderValue.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "US2400SlotPageAssignScript.js",
-				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max/MIDIControllers/US2400",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "VTMGlobalLogic.js",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
 				"patcherrelativepath" : "../../javascript",
@@ -1051,6 +1040,40 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "VTMAnnouce.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers",
+				"patcherrelativepath" : "../../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zeroFilterGlobals.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "EspaceSpacesForGettingNetworkData.js",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.lazyReceive.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/ImportedFrom_vt_max",
+				"patcherrelativepath" : "../../patchers/ImportedFrom_vt_max",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "VTLydserverProxy.model.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/VTMax/patchers/General/VTLydserverProxy",
 				"patcherrelativepath" : "../../patchers/General/VTLydserverProxy",
@@ -1066,11 +1089,15 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "j.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "j.return.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1082,31 +1109,31 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.return.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.message.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "shell.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.message_array.mxo",
+				"name" : "zero.announce.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "zero.resolve.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "zero.browse.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.oscroute.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "shell.mxo",
 				"type" : "iLaX"
 			}
  ],
