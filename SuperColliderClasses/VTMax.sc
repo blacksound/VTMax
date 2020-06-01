@@ -111,10 +111,10 @@ VTMax {
 
 		routings.keysValuesDo({arg spatProxyPath, nodeProxyRoutings;
 			//
-			"who are you?: %".format(allocations[spatProxyPath][0].class).postln;
-			"allocations on update proxy routings: %".format(allocations[spatProxyPath]).postln;
+			//"who are you?: %".format(allocations[spatProxyPath][0].class).postln;
+			//"allocations on update proxy routings: %".format(allocations[spatProxyPath]).postln;
 			if(allocations.includesKey(spatProxyPath) and: allocations[spatProxyPath][0].isInteger,
-				// [0] because is the content of the array actually something which is usable as a busnum
+				// [0] because it is the content of the array - something which is usable as a busnum
 				{
 				nodeProxyRoutings.keysValuesDo({arg nodeProxy, routing;
 					var busnums = allocations[spatProxyPath] - 1;
@@ -123,6 +123,7 @@ VTMax {
 					args.putAll(routing[\args]);
 					routing[\monitor].performWithEnvir(\playN, args);
 				});
+				"update allocations on proxy routings: % : %".format(allocations[spatProxyPath], nodeProxyRoutings.keys).postln;
 			}, {
 				nodeProxyRoutings.keysValuesDo({arg nodeProxy, routing;
 					routing[\monitor].stop;
