@@ -80,12 +80,14 @@ function registerOpenedScene(sceneName) {
 
 function registerClosedScene(sceneName) {
   scenes.remove(sceneName);
-  sceneSet.remove(sceneName);
+  //sceneSet.remove(sceneName);
+  sceneSet.remove("scenes::"+sceneName);
   deleteSceneCore(sceneName);
 }
 
 function registerScenePath(sceneName, path) {
-  sceneSet.setparse(sceneName, '{"path": ' + '"' + path + '"}');
+  //sceneSet.setparse(sceneName, '{"path": ' + '"' + path + '"}');
+  sceneSet.replace("scenes::"+sceneName+"::path", path);
 }
 
 function newScene(scriptFolder, scenePath) {
