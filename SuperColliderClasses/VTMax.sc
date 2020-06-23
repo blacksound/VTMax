@@ -59,35 +59,54 @@ VTMax {
 	}*/
 
 	*addSpatProxyRoute{arg nodeProxy, spatProxyPath, args;
-		"addSpatProxyRoute: %:% \n\t%".format(this.class, thisMethod.name, [nodeProxy, spatProxyPath, args]).postln;
+		{
+			"addSpatProxyRoute: %:% \n\t%".format(this.class, thisMethod.name, [nodeProxy, spatProxyPath, args]).postln;
 
-		if(routings.includesKey(spatProxyPath).not, {
-			"no existing spatProxy routing for key: %".format(spatProxyPath).postln;
-			routings.put(spatProxyPath, Dictionary.new().put(
-				nodeProxy, (
-					monitor: NodeProxy.audio(nodeProxy.server, nodeProxy.numChannels).source_({
+			if(routings.includesKey(spatProxyPath).not, {
+				"no existing spatProxy routing for key: %".format(spatProxyPath).postln;
+				routings.put(spatProxyPath, Dictionary.new().put(
+					nodeProxy, (
+						monitor: NodeProxy.audio(nodeProxy.server, nodeProxy.numChannels).source_({
+							nodeProxy.ar(nodeProxy.numChannels);
+						}),
+						args: args
+					)
+				));
+				"created spatProxy routing for key: %".format(spatProxyPath).postln;
+			}, {"spatProxy routing for key: % already registered".format(spatProxyPath).postln});
+
+			if(routings[spatProxyPath].includesKey(nodeProxy), {
+				routings[spatProxyPath][nodeProxy][\monitor].source_({
+					//update the source just in case it has changed
+					nodeProxy.ar(nodeProxy.numChannels);
+				}).mold(nodeProxy.numChannels);
+			}, {
+				routings[spatProxyPath].put(nodeProxy, (
+					monitor: NodeProxy.audio(Server.default, nodeProxy.numChannels).source_({
 						nodeProxy.ar(nodeProxy.numChannels);
 					}),
 					args: args
-				)
-			));
-			"created spatProxy routing for key: %".format(spatProxyPath).postln;
-		}, {"spatProxy routing for key: % already registered".format(spatProxyPath).postln});
+				));
+			});
+			this.updateSpatProxyRoutings;
+		}.fork;
+		/*
+		this fork is here as a "hack" to be able to use .playSpat to multiple spats (quickly)
+		i.e
+		~testSpatProxies = [
+			'/test_spat_proxy_things/test.1',
+			'/test_spat_proxy_things/test.2',
+			'/test_spat_proxy_things/test.3'
+		];
+		Ndef(\tester, {PinkNoise.ar(0.3)});
+		~testSpatProxies.do{arg proxyPath;
+			Ndef(\tester).playSpat(proxyPath.asSymbol);
+		};
 
-		if(routings[spatProxyPath].includesKey(nodeProxy), {
-			routings[spatProxyPath][nodeProxy][\monitor].source_({
-				//update the source just in case it has changed
-				nodeProxy.ar(nodeProxy.numChannels);
-			}).mold(nodeProxy.numChannels);
-		}, {
-			routings[spatProxyPath].put(nodeProxy, (
-				monitor: NodeProxy.audio(Server.default, nodeProxy.numChannels).source_({
-					nodeProxy.ar(nodeProxy.numChannels);
-				}),
-				args: args
-			));
-		});
-		this.updateSpatProxyRoutings;
+		without this fork the "routings"/"this.updateSpatProxyRoutings" wont play nice together.
+		and thre result is that the scene has to be activated twice to get the PinkNoise to sound on all the spats.
+		something tells me that there is a timing issue. the first time around the test.2, and test.3 spats are not getting any outbusses.
+		*/
 	}
 
 	*removeSpatProxyRouting{arg nodeProxy, spatProxyPath;
